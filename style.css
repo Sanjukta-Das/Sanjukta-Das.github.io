@@ -1,0 +1,107 @@
+body, html{
+    height: 100%;
+    margin: 10%;
+}
+.navigation-bar{
+    overflow: hidden;
+    background-color: black;
+}
+.navigation-bar a{
+    float: right;
+    font-family: fantasy;
+    font: bold;
+    font-size: 30px;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.dropdown-menu{
+    float: left;
+    overflow: hidden;
+}
+.bar-container{
+    display: inline-block;
+    cursor: pointer;
+}
+/* set style for the menu icon bars */
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    margin: 6px 10px;
+    transition: 0.4s;
+    background-color: white;
+}
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: white;
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: white;
+}
+/* ------------------------------------------------------------------- */
+/* full height side navigation menu bar */
+.menu{
+    display: none;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 300px;
+    height: 100%;
+    padding-top: 20px;
+    /* overflow-x: hidden; */
+}
+/* set style for links and buttons inside menu class */
+.menu a, .dropdown-button{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+} 
+/* set hover style for text and background of items in menu bar */
+.menu a:hover, button:hover{
+    color: #f1f1f1;
+    background-color: salmon;
+}
+/* set style for main content of portfoli on right */
+.content-pane{
+    margin-left: 300px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+/* set style for button when active(clicked on)/expanded */
+.button-active{
+    background-color: green;
+    color: white;
+}
+/* hide the dropdowns by default, set a different background and padding for dropdown content */
+.menu .dropdown-container{
+    display: none;
+    background-color: #262626;
+    padding-left: 10px;
+}
+/* set style of caret to face down (font-awesome icon)*/
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+ }
+ /* TODO: set style for multiple screen compatibility (Laptop, phone, tablet) */
+
+.change .menu{
+    display: block;
+}

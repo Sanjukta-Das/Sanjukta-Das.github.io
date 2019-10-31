@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="#">Sanjukta Das</a>
+        <div class="dropdown-menu">
+            <div class="bar-container" onclick="showMenuFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div class="menu">
+                    <a href="#">About Me</a>
+                    <button class="dropdown-button">Experience
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Intel Corporation</a>
+                        <a href="#">HSBC</a>
+                        <a href="#">Parle Agro India Pvt. Ltd</a>
+                        <a href="#">IDBI Capital</a>
+                        <a href="#">OHPC Ltd.</a>
+                    </div>
+                    <button class="dropdown-button">Education
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">E1</a>
+                        <a href="#">E2</a>
+                    </div>
+                    <button class="dropdown-button">Skills
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Computer Science</a>
+                        <a href="#">Finance</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------- -->
+    <!-- <div class="menu">
+        <a href="#">About Me</a>
+        <button class="dropdown-button">Experience
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Intel Corporation</a>
+            <a href="#">HSBC</a>
+            <a href="#">Parle Agro India Pvt. Ltd</a>
+            <a href="#">IDBI Capital</a>
+            <a href="#">OHPC Ltd.</a>
+        </div>
+        <button class="dropdown-button">Education
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">E1</a>
+            <a href="#">E2</a>
+        </div>
+        <button class="dropdown-button">Skills
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Computer Science</a>
+            <a href="#">Finance</a>
+        </div>
+    </div> -->
+
+    <div class="content-pane">
+
+    </div>
+
+
+
+
+    <!-- TODO: 
+    <header></header>
+    <section></section>
+    <footer></footer> -->
+
+
+
+    <script>
+        // function to expand and fix the side navigation menu bar
+        function showMenuFunction(x){
+            x.classList.toggle("change");
+        }
+
+        
+        var dropdown_buttons = document.getElementsByClassName("dropdown-button");
+        for(var i = 0; i < dropdown_buttons.length; i++){
+            dropdown_buttons[i].addEventListener("click", function(){
+                this.classList.toggle("button-active");
+                var dropdown_content = this.nextElementSibling;
+                if(dropdown_content.style.display == "block"){
+                    dropdown_content.style.display = "none";
+                } else{
+                    dropdown_content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
