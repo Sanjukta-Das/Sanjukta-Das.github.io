@@ -1,8 +1,4 @@
-body, html{
-    height: 100%;
-    margin: 10%;
-}
-.about_me h1, p{
+.main h1, h3{
     text-align: center;
 }
 .center{

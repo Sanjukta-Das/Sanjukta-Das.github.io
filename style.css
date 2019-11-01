@@ -59,14 +59,6 @@ body, html{
     background-color: #262626;
     padding-left: 10px;
   }
-
-  /* Style the graduation cap icon */
-  .fa-graduation-cap {
-    float: left;
-    margin-right: 40px;
-    width: 1px;
-    height: 1px;
-  }
   
   /* Style the caret down icon */
   .fa-caret-down {
