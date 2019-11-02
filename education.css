@@ -1,26 +1,58 @@
+#content{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 30px;
+  margin-left: 10%;
+  margin-right: 15%;
+}
+#content h1{
+  color: black;
+}
+#schools {
+  border-collapse: collapse;
+  width: 60%;  
+}
+#schools td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#schools tr:nth-child(even){background-color: #f2f2f2;}
+
+#schools tr:hover {background-color: #ddd;}
+
+
+
+#schools th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(0, 81, 255, 0.788);
+  color: white;
+}
+
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color:  rgba(0, 81, 255, 0.788);
+    color: white;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
     transition: 0.4s;
+    margin-bottom: 5px;
+  }
+  .active, .accordion:hover {
+    background-color: peru; 
   }
   .fa-plus-circle{
     float: right;
   }
-  
-  .active, .accordion:hover {
-    background-color: #ccc; 
-  }
-  
   .panel {
     padding: 0 18px;
     display: none;
     background-color: white;
     overflow: hidden;
   }
+
