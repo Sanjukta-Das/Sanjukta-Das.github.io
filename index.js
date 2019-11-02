@@ -1,12 +1,14 @@
 // function to expand and fix the side navigation menu bar
 function showMenu(x){
     document.getElementById("navBar").style.width = "350px";
+    document.getElementById("footer").style.marginLeft = "350px";
     document.getElementById("main").style.marginLeft = "350px";
     document.getElementById("content").style.marginLeft = "350px";
 }
 
 function hideMenu(){
     document.getElementById("navBar").style.width = "0";
+    document.getElementById("footer").style.marginLeft = "0";
     document.getElementById("main").style.marginLeft= "0";
     document.getElementById("content").style.marginLeft = "0";
 }

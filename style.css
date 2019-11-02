@@ -54,10 +54,47 @@ body, html{
     padding: 16px;
     background-color:black;
 }
-    
+
 /* On smaller screens, where height is less than 450px, 
 change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .navigationBar {padding-top: 15px;}
     .navigationBar a {font-size: 18px;}
+}
+
+#footer{
+    transition: margin-left .5s;
+    padding: 16px;
+    bottom: 0;
+    position: absolute;
+    background-color: gray;
+    width: 100%;
+    border: black;
+}
+
+.fab{
+    font-size: 40px;
+    padding: 10px;
+    width: 35px;
+    /* margin:s 2px 2px; */
+    border-radius: 5px;
+}
+.fa-linkedin{
+    color: white;
+    background-color: rgb(0, 119, 255);
+}
+.fa-github{
+    color: white;
+    background-color: black;
+
+}
+.fa-envelope{
+    font-size: 40px;
+    padding: 10px;
+    width: 40px;
+    /* margin: 2px 2px; */
+    /* border-radius: 5px; */
+    color: red;
+    background-color: white;
+
 }
