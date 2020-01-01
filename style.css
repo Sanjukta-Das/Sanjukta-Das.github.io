@@ -1,4 +1,6 @@
 body, html{
+    overflow: auto;
+    position: relative;\
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .navigationBar {
@@ -66,10 +68,14 @@ change the style of the sidenav (less padding and a smaller font size) */
     transition: margin-left .5s;
     padding: 16px;
     bottom: 0;
-    position: fixed;
+    /* position: absolute; */
     background-color: gray;
-    width: 100%;
+    /* width: 90%; */
     border: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    float: bottom;
 }
 
 .fab{
