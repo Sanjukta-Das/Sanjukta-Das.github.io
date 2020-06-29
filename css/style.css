@@ -1,9 +1,43 @@
 body, html{
-    overflow: auto;
+    background-color: white;
     position: relative;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* overflow: auto; */
 }
-.navigationBar {
+nav{
+    background-color: white;
+    font-size: 20px;
+}
+.fa-home{
+    color: black;
+}
+.fa-linkedin{
+    color: rgb(0, 119, 255);
+}
+.fa-github{
+    color: black;
+}
+.fa-envelope{
+    color: red;
+}
+
+/* On smaller screens, where height is less than 450px, 
+change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .navigationBar {padding-top: 15px;}
+    .navigationBar a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .navigationBar {
     height: 100%;
     width: 0;
     position: fixed;
@@ -14,15 +48,15 @@ body, html{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 100px;
-  }
-.navigationBar .closebtn {
+} */
+/* .navigationBar .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-.navigationBar a {
+} */
+/* .navigationBar a {
     padding: 8px 8px 8px 32px;
     font-family: inherit;
     text-decoration: none;
@@ -30,24 +64,24 @@ body, html{
     color: white;
     display: block;
     transition: 0.3s;
-}
-.navigationBar a:hover{
+} */
+/* .navigationBar a:hover{
     background-color: gray;
-}
-.openbtn {
+} */
+/* .openbtn {
     cursor: pointer;
     background-color:black;
     text-align: left;
     padding: 10px 15px;
     border: black;
-}
-.fa-bars{
+} */
+/* .fa-bars{
     font-size: 30px;
     color: white;
     background-color:black;
     padding-left: 10px;
-}
-#main{
+} */
+/* #main{
     transition: margin-left .5s;
     padding: 16px;
 }
@@ -55,52 +89,13 @@ body, html{
     transition: margin-left .5s;
     padding: 16px;
     background-color:black;
-}
-
-/* On smaller screens, where height is less than 450px, 
-change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .navigationBar {padding-top: 15px;}
-    .navigationBar a {font-size: 18px;}
-}
-
-#footer{
-    transition: margin-left .5s;
-    padding: 16px;
-    bottom: 0;
-    /* position: absolute; */
-    background-color: gray;
-    /* width: 90%; */
-    border: black;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10px;
-    float: bottom;
-}
-
-.fab{
+} */
+/* .fab{
     font-size: 40px;
     padding: 10px;
     width: 35px;
-    /* margin:s 2px 2px; */
     border-radius: 5px;
-}
-.fa-linkedin{
-    color: white;
-    background-color: rgb(0, 119, 255);
-}
-.fa-github{
-    color: white;
-    background-color: black;
+} */
 
-}
-.fa-envelope{
-    font-size: 40px;
-    padding: 10px;
-    width: 40px;
-    /* margin: 2px 2px; */
-    /* border-radius: 5px; */
-    color: red;
-    background-color: white;
 
-}
+
