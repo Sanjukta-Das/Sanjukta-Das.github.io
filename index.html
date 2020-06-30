@@ -47,12 +47,13 @@
     <!------------------------------------------------------------ Other CDN ------------------------------------------------------------>
 
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="about_me.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/landingPage.css">
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
     
     <style>
-        
         .tab-btn{
             background-color: black;
             border: 3px solid white;
@@ -86,7 +87,6 @@
         #pcc{background-color: white;}
         #rcm{background-color: white;}
         #bjb{background-color: white;}
-        
     </style>
 
 </head>
@@ -125,6 +125,91 @@
     </nav>
     <hr>
     <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
+
+    <br>
+    <div class="container pb-5">
+        <pre id="typewriter">
+            Hi, I am Sanjukta. 
+            I am a Computer Science student at <b b style="color: lightgreen">Portland State University</b>, 
+            and also have an MBA in Finance. My professional experience consists 
+            of interning at <b style="color: blue">Intel Corporation</b> as a Business Intelligence Engineer.
+            Prior to that I was a HR-Executive at <b style="color: red">HSBC</b>, processing New Hires and 
+            Contingent Worker for US-Payroll, and also worked as Finance Analyst Intern 
+            at <b style="color: turquoise">IDBI Capital</b> and <b style="color: blue">OHPC</b>.
+    </div>
+
+    <script>
+        function setupTypewriter(t) {
+            var HTML = t.innerHTML;
+
+            t.innerHTML = "";
+
+            var cursorPosition = 0,
+                tag = "",
+                writingTag = false,
+                tagOpen = false,
+                typeSpeed = 100,
+            tempTypeSpeed = 0;
+
+            var type = function() {
+            
+                if (writingTag === true) {
+                    tag += HTML[cursorPosition];
+                }
+
+                if (HTML[cursorPosition] === "<") {
+                    tempTypeSpeed = 0;
+                    if (tagOpen) {
+                        tagOpen = false;
+                        writingTag = true;
+                    } else {
+                        tag = "";
+                        tagOpen = true;
+                        writingTag = true;
+                        tag += HTML[cursorPosition];
+                    }
+                }
+                if (!writingTag && tagOpen) {
+                    tag.innerHTML += HTML[cursorPosition];
+                }
+                if (!writingTag && !tagOpen) {
+                    if (HTML[cursorPosition] === " ") {
+                        tempTypeSpeed = 0;
+                    }
+                    else {
+                        tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                    }
+                    t.innerHTML += HTML[cursorPosition];
+                }
+                if (writingTag === true && HTML[cursorPosition] === ">") {
+                    tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                    writingTag = false;
+                    if (tagOpen) {
+                        var newSpan = document.createElement("span");
+                        t.appendChild(newSpan);
+                        newSpan.innerHTML = tag;
+                        tag = newSpan.firstChild;
+                    }
+                }
+
+                cursorPosition += 1;
+                if (cursorPosition < HTML.length - 1) {
+                    setTimeout(type, tempTypeSpeed);
+                }
+
+            };
+
+            return {
+                type: type
+            };
+        }
+
+        var typer = document.getElementById('typewriter');
+        typewriter = setupTypewriter(typewriter);
+        typewriter.type();
+    </script>
+    <br>
+    <br>
 
     <!-- ----------------------------------------------Menu Items---------------------------------------------- -->
     <!-- <nav class="navbar">
