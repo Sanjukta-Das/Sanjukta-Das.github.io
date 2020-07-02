@@ -48,9 +48,9 @@
 
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="about_me.css">
+    <!-- <link rel="stylesheet" href="about_me.css"> -->
+    <link rel="stylesheet" href="css/stepper.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/landingPage.css">
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
     
     <style>
@@ -92,7 +92,7 @@
 </head>
 <body>
     <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="justify-content-center p-3">
+    <nav class="justify-content-center p-5">
         <ul class="nav justify-content-center">
             <li  class="nav-item pr-5 pl-5">
                 <a href="https://sanjukta-das.github.io/">
@@ -101,7 +101,7 @@
             </li>
 
             <li class="nav-item pr-5 pl-5">
-                <a class="text-dark" href="#" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Portfolio</a>
+                <a class="text-dark" href="#projects" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Portfolio</a>
             </li>
 
             <li class="nav-item pr-5 pl-5">
@@ -122,21 +122,23 @@
                 </a>
             </li>
         </ul>
+        <hr>
     </nav>
-    <hr>
     <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
 
+    <!-- ----------------------------------------------About Me Start---------------------------------------------- -->
+
     <br>
-    <div class="container pb-5">
-        <pre id="typewriter">
-            Hi, I am Sanjukta. 
-            I am a Computer Science student at <b b style="color: lightgreen">Portland State University</b>, 
-            and also have an MBA in Finance. My professional experience consists 
-            of interning at <b style="color: blue">Intel Corporation</b> as a Business Intelligence Engineer.
-            Prior to that I was a HR-Executive at <b style="color: red">HSBC</b>, processing New Hires and 
-            Contingent Worker for US-Payroll, and also worked as Finance Analyst Intern 
-            at <b style="color: turquoise">IDBI Capital</b> and <b style="color: blue">OHPC</b>.
-    </div>
+    <!-- <div class="container"> -->
+
+        <pre class="justify-content-center m-5 pt-5 pb-5" id="typewriter" style="font-family: 'Courier New', Courier, monospace; font-size: x-large;">
+                                                        Hi, I am <b>Sanjukta</b>.
+                    I am a <b style="color: green">Computer Science</b> student at <b style="color: green">Portland State University</b>, and also an <b>MBA</b> in <b>Finance</b>. 
+                    My professional experience consists of interning at <b style="color: #0066cc">Intel Corporation</b> as a <b style="color: #0066cc">BI Engineer</b>.
+                    Prior to that I was a <b class="bg-danger text-white">HR-Executive</b> at <b>HSBC</b>, processing New Hires and CWR for US-Payroll, 
+                    and also worked as <b style="background-color: blueviolet; color: white">Finance Analyst Intern</b> at <b class="text-white" style="background-color: #009999">IDBI </b><b class="text-white" style="background-color: #ff8533">Capital</b> and <b style="background-color: blue; color: white;">OHPC</b>.
+        </pre>
+    <!-- </div> -->
 
     <script>
         function setupTypewriter(t) {
@@ -210,30 +212,181 @@
     </script>
     <br>
     <br>
+    <!-- ----------------------------------------------About Me End---------------------------------------------- -->
 
-    <!-- ----------------------------------------------Menu Items---------------------------------------------- -->
-    <!-- <nav class="navbar">
-        <ul class="nav justify-content-end fixed-top">
-            <li class="nav-item">
-                <a href="#home" class="nav-link" onclick="" id="default-page">
-                    <i class="fas fa-home    "></i>
-                </a>
-            </li>
-            <li class="nav-item"><a href="#"  class="nav-link" >About Me</a></li>    
-            <li class="nav-item"><a href="#experience" class="nav-link" onclick="">Work</a></li>
-            <li class="nav-item"><a href="#education" class="nav-link" onclick="">Education</a></li>
-            <li class="nav-item"><a href="#" class="nav-link" onclick="">Portfolio</a></li>
-            <li class="nav-item"><a href="../Sanjukta-Das.github.io/others/Sanjukta_Resume_2020.pdf" target="_blank" class="nav-link" onclick="">Resume</a></li>
-            <li class="nav-item"><a href="#"  class="nav-link" >Play</a></li>
-            <li class="nav-item"><a href="#contactForm" class="nav-link" onclick="openContactForm()">Contact</a></li>
-        </ul>
-    </nav> -->
-    
 
-    <!-- ----------------------------------------------Home---------------------------------------------- -->
-    <!-- <div id="home">
-        <img src="../Sanjukta-Das.github.io/e3_imgs/sanjukta.jpg" alt="sanjukta" class="rounded mx-auto">
-    </div> -->
+    	<!-- ---------------------------------------------- Stepper Start ---------------------------------------------- -->
+
+	<div class="row">
+
+		<div class="col">
+			<!-- ----------------------------------------------Experience Stepper Start---------------------------------------------- -->
+			<div class="container">
+				<div class="steps">
+					<h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Experience</h2>
+					<div class="step minimized">
+						<div class="step-header">
+							<div class="header">IOTG Profit Optimization Intern</div>
+							<div class="subheader">Intel Corporation</div>
+						</div>
+						<div class="step-content one">
+							<p class="p-3">
+								Collaborate with multiple teams (OM Task Force, IOTG-Finance, SMG) for data collection, analysis, modeling & visualization.
+								Built real-time KPI dashboard for tracking year-round IOTG Operating Margin.
+								Built interactive team website with one stop project management repository using SharePoint, HTML, CSS and JavaScript.
+								Built executive view dashboard with SKU level margin tool for SMG team to set margin goals and allow comparable margin visibility.
+							</p>
+							<!-- <button class="next-btn">Next</button> -->
+						</div>
+					</div>
+					
+					<div class="step minimized">
+						<div class="step-header">
+							<div class="header">HR-Executive US-Payroll</div>
+							<div class="subheader">HSBC</div>
+						</div>
+						<div class="step-content two">
+							<!-- <button class="next-btn">Next</button> -->
+						</div>
+					</div>
+
+					<div class="step minimized">
+						<div class="step-header">
+							<div class="header">Business Development Analyst</div>
+							<div class="subheader">Parle Agro</div>
+						</div>
+						<div class="step-content three">
+							<!-- <button class="next-btn">Next</button> -->
+						</div>
+					</div>
+					
+					<div class="step minimized">
+						<div class="step-header">
+							<div class="header">Finance Analyst Intern</div>
+							<div class="subheader">IDBI Capital</div>
+						</div>
+						<div class="step-content three">
+							<!-- <button class="next-btn">Next</button> -->
+						</div>
+					</div>
+					
+					<div class="step minimized">
+						<div class="step-header">
+							<div class="header">Finance Analyst Intern</div>
+							<div class="subheader">Orissa Hydro Power Corporation</div>
+						</div>
+						<div class="step-content three">
+							<!-- <button class="close-btn">Close</button> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ----------------------------------------------Experience Stepper End---------------------------------------------- -->
+		</div>
+		
+		
+		<div class="col">
+			<!-- ----------------------------------------------Education Stepper Start---------------------------------------------- -->
+			<div class="container">
+				<div class="steps-edu">
+					<h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Education</h2>
+					<div class="step-edu">
+						<div class="step-header">
+							<div class="header">MS in Computer Science</div>
+							<div class="subheader">Portland State University</div>
+						</div>
+					</div>
+					<div class="step-edu">
+						<div class="step-header">
+							<div class="header">Post-bacc in Computer Science</div>
+							<div class="subheader">Portland State University</div>
+						</div>
+					</div>
+					
+					<div class="step-edu">
+						<div class="step-header">
+							<div class="header">Computer Science(Transfer)</div>
+							<div class="subheader">Portland Community College</div>
+						</div>
+					</div>
+					
+					<div class="step-edu">
+						<div class="step-header">
+							<div class="header">MBA in Finance</div>
+							<div class="subheader">Regional College of Management</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ---------------------------------------------- Education Stepper End ---------------------------------------------- -->
+		</div>
+	</div>
+	<!-- ---------------------------------------------- Stepper End ---------------------------------------------- -->
+
+	<!-- ---------------------------------------------- Stepper JS Start ---------------------------------------------- -->
+	<script>
+	
+	let curOpen;
+	
+	$(document).ready(function() {
+		curOpen = $('.step')[0];
+		
+		$('.next-btn').on('click', function() {
+			let cur = $(this).closest('.step');
+			let next = $(cur).next();
+			$(cur).addClass('minimized');
+			setTimeout(function() {
+				$(next).removeClass('minimized');
+				curOpen = $(next);
+			}, 400);
+		});
+		
+		$('.close-btn').on('click', function() {
+			let cur = $(this).closest('.step');
+			$(cur).addClass('minimized');
+			curOpen = null;
+		});
+		
+		$('.step .step-content').on('click' ,function(e) {
+			e.stopPropagation();
+		});
+		
+		$('.step').on('click', function() {
+			if (!$(this).hasClass("minimized")) {
+				curOpen = null;
+				$(this).addClass('minimized');
+			}
+			else {
+				let next = $(this);
+				if (curOpen === null) {
+					curOpen = next;
+					$(curOpen).removeClass('minimized');
+				}
+				else {
+					$(curOpen).addClass('minimized');
+					setTimeout(function() {
+						$(next).removeClass('minimized');
+						curOpen = $(next);
+					}, 300);
+				}
+			}
+		});
+	})
+	</script>
+	<!-- ---------------------------------------------- Stepper JS End ---------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ----------------------------------------------Experience Start---------------------------------------------- -->
     <div align="center" class="menu-content" id="experience" style="padding: 10%;">
@@ -313,17 +466,6 @@
         <!-- OHPC -->        
     </div>
     <!-- ----------------------------------------------Experience End---------------------------------------------- -->
-
-
-    <!-- ----------------------------------------------Projects Start---------------------------------------------- -->
-    <iframe src="projects.html" class="w-100" style="height: 2000px;"></iframe>
-    <!-- ----------------------------------------------Projects End---------------------------------------------- -->
-
-
-
-
-
-
 
     <!-- ----------------------------------------------Education Start---------------------------------------------- -->
     <!-- <div class="jumbotron  menu-content"> -->
@@ -416,6 +558,10 @@
 
     <!-- </div> -->
     <!-- ----------------------------------------------Education End---------------------------------------------- -->
+
+    <!-- ----------------------------------------------Projects Start---------------------------------------------- -->
+    <iframe src="projects.html" class="w-100" style="height: 2000px;"></iframe>
+    <!-- ----------------------------------------------Projects End---------------------------------------------- -->
 
 
     <!-- ----------------------------------------------Contact Start---------------------------------------------- -->
