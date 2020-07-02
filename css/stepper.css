@@ -186,11 +186,11 @@ body {
     height: 0px;
 }
 
-.step-content.one {
-    height: 180px;
-    /* width: 100%; */
+.step-content.intel {
+    height: 220px;
     /* height: auto; */
-    width: 800px;
+    /* width: 100%; */
+    width: 700px;
     /* background-color: rgba(0, 0, 0, 0.05); */
     color: white;
     background-color: rgba(0, 0, 0, 0.781);
@@ -199,24 +199,46 @@ body {
     margin-left: 25px;
 }
 
-.step-content.two {
-    height: 600px;
-    width: 100%;
+.step-content.hsbc {
+    height: 270px;
+    width: 700px;
+    color: white;
     background-color: rgba(0, 0, 0, 0.781);
     border-radius: 4px;
     margin-top: 10px;
     margin-left: 25px;
 }
 
-.step-content.three {
-    height: 400px;
-    width: 100%;
+.step-content.parle-agro {
+    height: 170px;
+    width: 700px;
+    color: white;
     background-color: rgba(0, 0, 0, 0.781);
     border-radius: 4px;
     margin-top: 10px;
     margin-left: 25px;
 }
 
+.step-content.idbi-capital {
+    height: 100px;
+    width: 700px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.step-content.ohpc {
+    height: 100px;
+    width: 700px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+/* ---------------------------------------------------------------------------- */
 
 
 /* .next-btn {

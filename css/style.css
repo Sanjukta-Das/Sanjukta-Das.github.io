@@ -28,73 +28,54 @@ change the style of the sidenav (less padding and a smaller font size) */
 }
 
 
+/* __________________________________________________________________________________ */
 
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
+/* html {
+  height: 100%;
+  width: 100%;
+  background: #111;
+  color: black;
+} */
 
+/* p {
+  border-right: 2px solid #fff; */
+  /* keep text in one line */
+  /* white-space: nowrap;  */
+  /* hide text behind the cursor */
+  /* overflow: hidden;  */
+  /* margin: 0 auto; */
+/*   font-family: "Major Mono Display", monospace; */
+    /* font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  margin-top: 5%; */
 
+  /* define animation types for text + cursor */
+  /* animation: animated-text 6s steps(30, end) 1s 1 normal both,
+    animated-cursor 900ms steps(30, end) infinite;
+} */
 
+/* the cursor, blinking animation */
 
+/* @keyframes animated-cursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+  to {
+    border-right-color: transparent;
+  }
+} */
 
+/* the text, movement */
 
-
-/* .navigationBar {
-    height: 100%;
+/* @keyframes animated-text {
+  from {
     width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 100px;
-} */
-/* .navigationBar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-} */
-/* .navigationBar a {
-    padding: 8px 8px 8px 32px;
-    font-family: inherit;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-} */
-/* .navigationBar a:hover{
-    background-color: gray;
-} */
-/* .openbtn {
-    cursor: pointer;
-    background-color:black;
-    text-align: left;
-    padding: 10px 15px;
-    border: black;
-} */
-/* .fa-bars{
-    font-size: 30px;
-    color: white;
-    background-color:black;
-    padding-left: 10px;
-} */
-/* #main{
-    transition: margin-left .5s;
-    padding: 16px;
-}
-#menu-icon{
-    transition: margin-left .5s;
-    padding: 16px;
-    background-color:black;
-} */
-/* .fab{
-    font-size: 40px;
-    padding: 10px;
-    width: 35px;
-    border-radius: 5px;
+  }
+  to {
+    width: 75rem;
+  }
 } */
 
 
