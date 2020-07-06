@@ -1,531 +1,570 @@
+<!-- https://htmlcolorcodes.com/ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!------------------------------------------------------------ Material Design CDN ------------------------------------------------------------>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet"/>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+    <!------------------------------------------------------------ Material Design CDN ------------------------------------------------------------>
+
+    <!------------------------------------------------------------ Other CDN ------------------------------------------------------------>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://mdbootstrap.com/docs/jquery/components/buttons/"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+    <!------------------------------------------------------------ Other CDN ------------------------------------------------------------>
+
+	<!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
+
     <style>
-    .gallery {
-      -webkit-column-count: 3;
-      -moz-column-count: 3;
-      column-count: 3;
-      -webkit-column-width: 33%;
-      -moz-column-width: 33%;
-      column-width: 33%; }
-
-    .gallery .pics {
-      -webkit-transition: all 350ms ease;
-      transition: all 350ms ease; 
-    }
-    
-    .gallery .animation {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1); 
-    }
-
-    @media (max-width: 450px) {
-      .gallery {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-        -webkit-column-width: 100%;
-        -moz-column-width: 100%;
-        column-width: 100%;
+      .card {
+        height: 500px;
       }
-    }
-
-    @media (max-width: 400px) {
-      .btn.filter {
-        padding-left: 1.1rem;
-        padding-right: 1.1rem;
+      img {
+        width: 300px;
+        height: 250px;
+        /* box-shadow: 5px 5px 5px 5px #cccccc;
+			border-radius: 7px; */
       }
-    }
+      /* .btn {
+        background-color: #3399ff;
+        color: white;
+        margin: 10px;
+      } */
+      /* .gallery {
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+			-webkit-column-width: 33%;
+			-moz-column-width: 33%;
+			column-width: 33%; 
+		} */
+
+      /* .gallery .pics {
+			-webkit-transition: all 350ms ease;
+			transition: all 350ms ease; 
+		} */
+
+      /* .gallery .animation {
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1); 
+		} */
+
+      /* @media (max-width: 450px) {
+			.gallery {
+				-webkit-column-count: 1;
+				-moz-column-count: 1;
+				column-count: 1;
+				-webkit-column-width: 100%;
+				-moz-column-width: 100%;
+				column-width: 100%;
+			}
+		} */
+
+      /* @media (max-width: 400px) {
+			.btn.filter {
+				padding-left: 1.1rem;
+				padding-right: 1.1rem;
+			}
+		} */
     </style>
 </head>
 <body>
-  <!-- ----------------------------------------------Project Selection Buttons Start---------------------------------------------- -->
-  <div class="row">
-    <div class="col-md-12 d-flex justify-content-center mb-5">
-      <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
-      <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Android</button>
-      <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Algorithm</button>
-      <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="3">Computational Photography</button>
-      <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="4">Data Structure</button>
-      <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="5">Operating Systems</button>
-      <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="6">Web Development</button>
-    </div>
-  </div>
 
-  <!-- ----------------------------------------------Project Selection Buttons End---------------------------------------------- -->
-
-    <div class="container my-5">
-
-      <!-- Section: Block Content -->
-      <section class="dark-grey-text">
-    
-        <!-- <h3 class="text-center font-weight-bold mb-4 pb-2">Projects</h3>
-        <p class="text-center text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p> -->
-    
-        <!-- First row -->
-        <!-- <div class="row"> -->
-    
-          <!-- First column -->
-          <!-- <div class="col-md-6 mb-4"> -->
-
-            <!-- Card -->
-            <!-- <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(147).jpg" alt="Card image cap">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
+	<!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
+    <nav class="justify-content-center p-3">
+        <ul class="nav justify-content-center">
+            <li  class="nav-item pr-5 pl-5">
+                <a href="https://sanjukta-das.github.io/">
+                    <i class="fa fa-home" aria-hidden="true"></i>
                 </a>
-              </div>
-    
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color"> <i class="fa fa-github " style="font-size:36px" ></i> <i class="fa fa-chevron-right pl-1"></i></a>
-    
-              <div class="card-body">
-    
-                <h4 class="card-title">Read more about my project</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    
-              </div>
-            </div> -->
-            <!-- Card -->
-            
-          <!-- </div> -->
-          <!-- First column -->
-          
-          <!-- Second column -->
-          <!-- <div class="col-md-6 mb-4"> -->
-    
-            <!-- Card -->
-            <!-- <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(41).jpg" alt="Card image cap">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
+            </li>
+
+            <li class="nav-item pr-5 pl-5">
+                <a class="text-dark" href="projects.html" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Portfolio</a>
+            </li>
+
+            <li class="nav-item pr-5 pl-5">
+                <a href="linkedin.com/in/sanjukta-das-25333116a">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-              </div>
-    
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color"><i class="fa fa-chevron-right pl-1"></i></a>
-    
-              <div class="card-body">
-    
-                <h4 class="card-title">Read more about my project</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    
-              </div>
-            </div> -->
-            <!-- Card -->
-    
-          <!-- </div> -->
-          <!-- Second column -->
-    
-        <!-- </div> -->
-        <!-- First row -->
-        <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
+            </li>
 
-        <!-- Second row -->
-        <div class="row">
-
-          <!-- First column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="e3_imgs/android2.jpg" alt="xv6">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
+            <li class="nav-item pr-5 pl-5">
+                <a href="https://github.com/Sanjukta-Das/">
+                    <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
-              </div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">Hangman</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  a word guessing game given a limited number of wrong guesses. 
-                  It selects and sets a random word from a text file and asks 
-                  the user to guess the letters. Displays letters or next hanging 
-                  picture on every correct or wrong guess respectively. The user 
-                  loses once the hangman picture is complete.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- First column -->
+            </li>
 
-          <!-- Second column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="e3_imgs/xv6-1.png" alt="xv6">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
+            <li class="nav-item pr-5 pl-5">
+                <a href="#contact-me">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
                 </a>
-              </div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">XV6</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  Implemented System calls: a new system calls for date and time. 
-                  Process: system calls to support and obtain process ownership, 
-                  set and extract UID, GID, PID, track amount of time a process 
-                  uses CPU. Shell: create new user command(‘ps' and ‘ctrl+p’ command), 
-                  extract process detailed information. Scheduling: implemented MLFQ 
-                  scheduler. File system: chmod, chown, chgrp system calls to set and 
-                  modify file permissions that persist across xv6 sessions. Modified 
-                  ‘exec’ and ‘ls’ command to enforce and display new file permissions respectively.
-                </p>
-              </div>
-            </div>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+    <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
 
-          </div>
-          <!-- Second column -->
-
+    <!-- ----------------------------------------------Project Selection Buttons Start---------------------------------------------- -->
+    <!-- <div class="row text-white">
+		<div class="col-md-12 d-flex justify-content-center mb-5">
+			<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+			<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="machine-learning">Machine Learning</button>
+			<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="data-visualization">Data Visualization</button>
+			<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="web-development">Web Development</button>
+			<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="computational-photography">Computational Photography</button>
+			<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="algorithm">Algorithm</button>
+			<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="android">Android</button>
+			<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="data-structure">Data Structure</button>
+			<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="operating-systems">Operating Systems</button>
         </div>
-        <!-- Second row -->
-        <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    </div> -->
+	<!-- ----------------------------------------------Project Selection Buttons End---------------------------------------------- -->
+	
 
-        <!-- Third row -->
-        <div class="row">
-          <!-- First column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="e3_imgs/mosaic1.jpg" alt="xv6">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;"" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">Mosaic</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  tilling effect, implemented by splitting the image to tiles, 
-                  then averaging the color values and replacing each tile with a matching image.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- First column -->
+	<div class="container">
+		<!-- Section: Block Content -->
+		<section class="dark-grey-text">
+			<!-- Eighth row -->
+			<div class="row">
+				
+				<!-- First column -->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3 all data-structure">
+					<div class="card shadow p-3 mb-5 bg-white rounded">
+						<div class="view overlay">
+							<img class="card-img-top" src="e3_imgs/DV7.jpg" alt="Data Visualization"/>
+							<a>
+								<div class="mask rgba-white-slight"></div>
+							</a>
+						</div>
+			
+						<div class="card-body">
+							<h4 class="card-title">
+								<a class="text-dark stretched-link" href="html/data_visualization.html">Data Visualization</a>
+								<a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+									<i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+								</a>
+							</h4>
+							<hr>
+							<p class="card-text text-muted font-weight-light">Write description.</p>
+						</div>
+					</div>
+				</div>
+				<!-- First column -->
+			
+				<!-- Second column -->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+					<div class="card shadow p-3 mb-5 bg-white rounded">
+						<div class="view overlay">
+							<img class="card-img-top" src="e3_imgs/ML1.jpg" alt="Machine Learning" />
+							<a>
+								<div class="mask rgba-white-slight"></div>
+							</a>
+						</div>
+		
+						<div class="card-body">
+							<h4 class="card-title">
+								<a class="text-dark stretched-link" href="html/machine_learning.html">Machine Learning</a>
+								<a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+									<i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+								</a>
+							</h4>
+							<hr>
+							<p class="card-text text-muted font-weight-light">Write description.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Second column -->
+			
+				<!-- Third column -->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+					<div class="card shadow p-3 mb-5 bg-white rounded">
+						<div class="view overlay">
+							<img class="card-img-top" src="e3_imgs/algo7.png" alt="Algorithms" />
+							<a>
+								<div class="mask rgba-white-slight"></div>
+							</a>
+						</div>
+			
+						<div class="card-body">
+							<h4 class="card-title">
+								<a class="text-dark stretched-link" href="html/algorithm.html">Algorithms</a>
+								<a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+									<i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+								</a>
+							</h4>
+							<hr/>
+							<p class="card-text text-muted font-weight-light">
+								Analysis of various sorting and string matching algorithms using multiple random data set.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Third column -->
 
-          <!-- Second column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="e3_imgs/twitter1.jpg" alt="xv6">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-                
-              </div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">Twitter</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  An application which emulates the Twitter. Given a set of tweets as input, 
-                  it extracts information such as date and time, user, tags, keywords, etc. 
-                  and categorizes the tweets based on it.
-                </p>
-              </div>
-            </div>
-          </div>
+        	</div>
+			<!-- Eighth row -->
+			
+			<!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
+			<!-- Seventh row -->
+			<div class="row">
+				<!-- First column -->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3 all data-structure">
+					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="view overlay">
+						<img class="card-img-top" src="e3_imgs/ip1.jpg" alt="Internetworking Protocol"/>
+						<a><div class="mask rgba-white-slight"></div></a>
+					</div>
 
-          <!-- Second column -->
+					<div class="card-body">
+						<h4 class="card-title">
+							<a class="text-dark stretched-link" href="html/ip.html">Internetworking Protocol</a>
+							<a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+								<i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+							</a>
+						</h4>
+					<hr/>
+					<p class="card-text text-muted font-weight-light">Write description.</p>
+					</div>
+					</div>
+				</div>
+				<!-- First column -->
 
-        </div>
-        <!-- Third row -->
-        <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
+				<!-- Second column -->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="view overlay">
+						<img class="card-img-top" src="e3_imgs/db1.png" alt="Database" />
+						<a><div class="mask rgba-white-slight"></div></a>
+					</div>
 
-        <!-- Fourth row -->
-        <div class="row">
+					<div class="card-body">
+						<h4 class="card-title">
+							<a class="text-dark stretched-link" href="html/ip.html">Database</a>
+						<a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+							<i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+						</a>
+						</h4>
+						<hr>
+						<p class="card-text text-muted font-weight-light">Write description.</p>
+					</div>
+					</div>
+				</div>
+				<!-- Second column -->
 
-          <!-- First column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="e3_imgs/toonify2.jpg" alt="xv6">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">Toonify</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  a cartoon like effect to images. Emulated cel-shading 
-                  effects by applying median filter, canny edge detection, 
-                  morphological operation, edge filtering and bilateral filter.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- First column -->
+				<!-- Third column -->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="view overlay">
+						<img class="card-img-top" src="e3_imgs/cv2.jpg" alt="Computer Vision" />
+						<a>
+						<div class="mask rgba-white-slight"></div>
+						</a>
+					</div>
 
-          <!-- Second column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="e3_imgs/circle3.jpg" alt="xv6">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-                
-              </div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">Circle Packing</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  the effect of cluster of circles by storing all the pixel values 
-                  to fill the the circles and compare the (x, y) position within the 
-                  image bounds to prevent overlapping of circles.
-                </p>
-              </div>
-            </div>
-          </div>
+					<div class="card-body">
+						<h4 class="card-title">
+							<a class="text-dark stretched-link" href="html/ip.html">Computer Vision</a>
+						<a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+							<i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+						</a>
+						</h4>
+						<hr>
+						<p class="card-text text-muted font-weight-light">Write description.</p>
+					</div>
+					</div>
+				</div>
+				<!-- Third column -->
+			</div>
+			<!-- Seventh row -->
 
-          <!-- Second column -->
+        	<!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-        </div>
-        <!-- Fourth row -->
-        <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
+			<!-- Third row -->
+			<div class="row">
+			<!-- First column -->
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+				<div class="card shadow p-3 mb-5 bg-white rounded">
+				<div class="view overlay">
+					<img class="card-img-top" src="e3_imgs/web_crawler.png" alt="xv6"/>
+					<a><div class="mask rgba-white-slight"></div></a>
+				</div>
 
-        <!-- Fifth row -->
-        <div class="row">
+				<div class="card-body">
+					<h4 class="card-title">Web Crawler
+					<a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+						<i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+					</a>
+					</h4>
+					<hr>
+					<p class="card-text text-muted font-weight-light">traverse the world wide web to create search engine index with given seed links.</p>
+				</div>
+				</div>
+			</div>
+			<!-- First column -->
 
-          <!-- First column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="e3_imgs/web_crawler.png" alt="xv6">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">Web Crawler</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  traverse the world wide web to create search engine index with given seed links.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- First column -->
+			<!-- Second column -->
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+				<div class="card shadow p-3 mb-5 bg-white rounded">
+				<div class="view overlay">
+					<img class="card-img-top" src="e3_imgs/chatApp3.jpg" alt="xv6"/>
+					<a><div class="mask rgba-white-slight"></div></a>
+				</div>
 
-          <!-- Second column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="e3_imgs/chatApp3.jpg" alt="xv6">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-                
-              </div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">Chat App</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  A Text-based messaging application using Java swing 
-                  for designing GUI, HTML for aligned display of messages, 
-                  Java socket for client-server communication, MongoDB to persist users information.
-                </p>
-              </div>
-            </div>
-          </div>
+				<div class="card-body">
+					<h4 class="card-title">Chat App
+					<a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+						<i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+					</a>
+					</h4>
+					<hr>
+					<p class="card-text text-muted font-weight-light">
+					A Text-based messaging application using Java socket for
+					client-server communication, MongoDB to persist users
+					information, swing and HTML for designing GUI.
+					</p>
+				</div>
+				</div>
+			</div>
+			<!-- Second column -->
 
-          <!-- Second column -->
-
-        </div>
-        <!-- Fifth row -->
-
-        <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-        <!-- Sixth row -->
-        <div class="row">
-
-          <!-- First column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="e3_imgs/sorting.png" alt="xv6">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">Sorting Algorithms</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  analyzed various sorting algorithms using random data set.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- First column -->
-
-          <!-- Second column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="e3_imgs/circle3.jpg" alt="xv6">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-                
-              </div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">Circle Packing</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  the effect of cluster of circles by storing all the pixel values 
-                  to fill the the circles and compare the (x, y) position within the 
-                  image bounds to prevent overlapping of circles.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second column -->
-
-        </div>
-        <!-- Sixth row -->
-
-
-        <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-        <!-- Seventh row -->
-        <div class="row">
-
-          <!-- First column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="e3_imgs/sorting.png" alt="xv6">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">Sorting Algorithms</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  analyzed various sorting algorithms using random data set.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- First column -->
-
-          <!-- Second column -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              	<div class="view overlay">
-					<img class="card-img-top" src="e3_imgs/circle3.jpg" alt="xv6">
+			<!-- Third column -->
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+				<div class="card shadow p-3 mb-5 bg-white rounded">
+				<div class="view overlay">
+					<img class="card-img-top" src="e3_imgs/algo2.png" alt="xv6" />
 					<a>
 					<div class="mask rgba-white-slight"></div>
 					</a>
-                
-              	</div>
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color" href="">
-                <i class="fa fa-github " style="font-size:36px; color: black;" ></i> 
-                <!-- <i class="fa fa-chevron-right pl-1"></i> -->
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">Circle Packing</h4>
-                <hr>
-                <p class="card-text text-muted font-weight-light">
-                  the effect of cluster of circles by storing all the pixel values 
-                  to fill the the circles and compare the (x, y) position within the 
-                  image bounds to prevent overlapping of circles.
-                </p>
-              </div>
-            </div>
-          </div>
+				</div>
 
-          <!-- Second column -->
+				<div class="card-body">
+					<h4 class="card-title">Algorithms
+					<a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+						<i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+					</a>
+					</h4>
+					<hr>
+					<p class="card-text text-muted font-weight-light">
+					Analysis of various sorting algorithms using multiple random data set.
+					</p>
+				</div>
+				</div>
+			</div>
+			<!-- Third column -->
+			</div>
+			<!-- Third row -->
 
-        </div>
-        <!-- Seventh row -->
+			<!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-    
-      </section>
-      <!-- Section: Block Content -->
-      
-      
+			<!-- Second row -->
+			
+			<!-- Second row -->
+
+        	<!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+			<!-- First row -->
+			<div class="row" id="row1">
+			<!-- First column -->
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+				<div class="card shadow p-3 mb-5 bg-white rounded">
+				<div class="view overlay">
+					<img
+					class="card-img-top"
+					src="e3_imgs/android2.jpg"
+					alt="xv6"
+					/>
+					<a>
+					<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
+
+				<div class="card-body">
+					<h4 class="card-title">
+					Hangman
+					<a
+						class="float-right btn-floating btn-action ml-auto mr-0 mdb-color"
+						href=""
+					>
+						<i
+						class="fa fa-github bg-white"
+						style="font-size: 30px; color: black;"
+						></i>
+					</a>
+					</h4>
+					<hr />
+
+					<p class="card-text text-muted font-weight-light">
+					A word guessing game for android devices.
+					<!-- given a limited number of wrong guesses. 
+										It selects and sets a random word from a text file and asks 
+									the user to guess the letters. Displays letters or next hanging 
+									picture on every correct or wrong guess respectively. The user 
+									loses once the hangman picture is complete. -->
+					</p>
+				</div>
+				</div>
+			</div>
+			<!-- First column -->
+
+			<!-- Second column -->
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+				<div class="card shadow p-3 mb-5 bg-white rounded">
+				<div class="view overlay">
+					<img class="card-img-top" src="e3_imgs/xv6-1.png" alt="xv6" />
+					<a>
+					<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
+
+				<div class="card-body">
+					<h4 class="card-title">
+					XV6
+					<a
+						class="float-right btn-floating btn-action ml-auto mr-0 mdb-color"
+						href=""
+					>
+						<i
+						class="fa fa-github bg-white"
+						style="font-size: 30px; color: black;"
+						></i>
+					</a>
+					</h4>
+					<hr />
+					<p class="card-text text-muted font-weight-light">
+					A simple, Unix-like teaching operating system
+					<!-- Implemented System calls: a new system calls for date and time. 
+									Process: system calls to support and obtain process ownership, 
+									set and extract UID, GID, PID, track amount of time a process 
+									uses CPU. Shell: create new user command(‘ps' and ‘ctrl+p’ command), 
+									extract process detailed information. Scheduling: implemented MLFQ 
+									scheduler. File system: chmod, chown, chgrp system calls to set and 
+									modify file permissions that persist across xv6 sessions. Modified 
+									‘exec’ and ‘ls’ command to enforce and display new file permissions respectively. -->
+					</p>
+				</div>
+				</div>
+			</div>
+			<!-- Second column -->
+
+			<!-- Third column -->
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+				<div class="card shadow p-3 mb-5 bg-white rounded">
+				<div class="view overlay">
+					<img
+					class="card-img-top"
+					src="e3_imgs/twitter1.jpg"
+					alt="xv6"
+					/>
+					<a>
+					<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
+
+				<div class="card-body">
+					<h4 class="card-title">
+					Twitter
+					<a
+						class="float-right btn-floating btn-action ml-auto mr-0 mdb-color"
+						href=""
+					>
+						<i
+						class="fa fa-github bg-white"
+						style="font-size: 30px; color: black;"
+						></i>
+					</a>
+					</h4>
+					<hr />
+					<p class="card-text text-muted font-weight-light">
+					An application which emulates the Twitter.
+					<!-- Given a set of tweets as input, 
+									it extracts information such as date and time, user, tags, keywords, etc. 
+									and categorizes the tweets based on it. -->
+					</p>
+				</div>
+				</div>
+			</div>
+			<!-- Third column -->
+			</div>
+			<!-- First row -->
+        	<!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
+      	</section>
+      	<!-- Section: Block Content -->
     </div>
 
-
     <script>
-      $(function() {
+      $(function () {
         var selectedClass = "";
-          $(".filter").click(function(){
-            selectedClass = $(this).attr("data-rel");
-            $("#gallery").fadeTo(100, 0.1);
-            $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
-            setTimeout(function() {
-              $("."+selectedClass).fadeIn().addClass('animation');
-              $("#gallery").fadeTo(300, 1);
-            }, 300);
-          });
+        $(".filter").click(function () {
+          selectedClass = $(this).attr("data-rel");
+          $("#gallery").fadeTo(100, 0.1);
+          $("#gallery div")
+            .not("." + selectedClass)
+            .fadeOut()
+            .removeClass("animation");
+          setTimeout(function () {
+            $("." + selectedClass)
+              .fadeIn()
+              .addClass("animation");
+            $("#gallery").fadeTo(300, 1);
+          }, 300);
+        });
       });
-    </script>
+	</script>
+  
+  
+  <!-- ----------------------------------------------Footer Start---------------------------------------------- -->
 
-    
+  <!-- <footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div class="footer_bg">
+            <div class="footer_bg_one"></div>
+            <div class="footer_bg_two"></div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-7">
+                    <p class="mb-0 f_400"> © Sanjukta Das <i class="fa fa-heart text-danger" aria-hidden="true"></i> 2020. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> -->
+<!-- ----------------------------------------------Footer End---------------------------------------------- -->
+
+
 </body>
 </html>
