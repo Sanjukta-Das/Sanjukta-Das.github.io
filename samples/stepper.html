@@ -1,13 +1,4 @@
-<!-- 
-    ❏ your name and a brief bio
-    ❏ header, footer, and at least one section element
-    ❏ an ordered or unordered list of links
-    ❏ at least three types of headers
-    ❏ at least three photo elements
-    ❏ a contact form with input elements for email and a submit button
--->
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,177 +38,15 @@
     <!------------------------------------------------------------ Other CDN ------------------------------------------------------------>
 
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="about_me.css"> -->
-    <link rel="stylesheet" href="css/stepper.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
-    
-    <style>
-        /* .tab-btn{
-            background-color: black;
-            border: 3px solid white; */
-            /* outline: none; */
-            /* float: left;
-            cursor: pointer;
-            padding: 14px 16px;
-            font-size: 17px;
-            font-family: 'Times New Roman';
-            font-size: 25px;
-            width: 25%;
-            color: white; 
-        }
-        .tab-btn:hover{
-            background-color: #777;
-        }
-        .tab-content {
-            color: black;
-            display: none;
-            padding: 50px; */
-            /* text-align: center; */
-        /* } */
-        /* #F84747 */
-        /* #intel-corp {background-color: white}
-        #hsbc{background-color: white;}
-        #parle-agro{background-color: white;}
-        #idbi-cap{background-color: white;}
-        #ohpc{background-color: white;}
-
-        #psu{background-color: white;}
-        #pcc{background-color: white;}
-        #rcm{background-color: white;}
-        #bjb{background-color: white;} */
-    </style>
-
+	<link rel="stylesheet" href="../css/stepper.css">
+	<!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
+	
+	<style>
+	</style>
 </head>
 <body>
-    <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="justify-content-center p-5">
-        <ul class="nav justify-content-center">
-            <li  class="nav-item pr-5 pl-5">
-                <a href="https://sanjukta-das.github.io/">
-                    <i class="fa fa-home" aria-hidden="true"></i>
-                </a>
-            </li>
 
-            <li class="nav-item pr-5 pl-5">
-                <a class="text-dark" href="html/projects.html" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Portfolio</a>
-            </li>
-
-            <li class="nav-item pr-5 pl-5">
-                <a href="linkedin.com/in/sanjukta-das-25333116a">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-            </li>
-
-            <li class="nav-item pr-5 pl-5">
-                <a href="https://github.com/Sanjukta-Das/">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-            </li>
-
-            <li class="nav-item pr-5 pl-5">
-                <a href="#contact-me">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a>
-            </li>
-        </ul>
-        <hr>
-    </nav>
-    <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
-
-    <!-- ----------------------------------------------About Me Start---------------------------------------------- -->
-
-    <br>
-    <!-- <div class="container"> -->
-
-        <pre class="justify-content-center m-5 pt-5 pb-5" id="typewriter" style="font-family: 'Courier New', Courier, monospace; font-size: x-large;">
-                                                        Hi, I am <b>Sanjukta</b>.
-                    I am a <b style="color: green">Computer Science</b> student at <b style="color: green">Portland State University</b>, and also an <b>MBA</b> in <b>Finance</b>. 
-                    My professional experience consists of interning at <b style="color: #0066cc">Intel Corporation</b> as a <b style="color: #0066cc">BI Engineer</b>.
-                    Prior to that I was a <b class="bg-danger text-white">HR-Executive</b> at <b>HSBC</b>, processing New Hires and CWR for US-Payroll, 
-                    and also worked as <b style="background-color: blueviolet; color: white">Finance Analyst Intern</b> at <b class="text-white" style="background-color: #009999">IDBI </b><b class="text-white" style="background-color: #ff8533">Capital</b> and <b style="background-color: blue; color: white;">OHPC</b>.
-        </pre>
-    <!-- </div> -->
-
-    <script>
-        function setupTypewriter(t) {
-            var HTML = t.innerHTML;
-
-            t.innerHTML = "";
-
-            var cursorPosition = 0,
-                tag = "",
-                writingTag = false,
-                tagOpen = false,
-                typeSpeed = 100,
-            tempTypeSpeed = 0;
-
-            var type = function() {
-            
-                if (writingTag === true) {
-                    tag += HTML[cursorPosition];
-                }
-
-                if (HTML[cursorPosition] === "<") {
-                    tempTypeSpeed = 0;
-                    if (tagOpen) {
-                        tagOpen = false;
-                        writingTag = true;
-                    } else {
-                        tag = "";
-                        tagOpen = true;
-                        writingTag = true;
-                        tag += HTML[cursorPosition];
-                    }
-                }
-                if (!writingTag && tagOpen) {
-                    tag.innerHTML += HTML[cursorPosition];
-                }
-                if (!writingTag && !tagOpen) {
-                    if (HTML[cursorPosition] === " ") {
-                        tempTypeSpeed = 0;
-                    }
-                    else {
-                        tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-                    }
-                    t.innerHTML += HTML[cursorPosition];
-                }
-                if (writingTag === true && HTML[cursorPosition] === ">") {
-                    tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-                    writingTag = false;
-                    if (tagOpen) {
-                        var newSpan = document.createElement("span");
-                        t.appendChild(newSpan);
-                        newSpan.innerHTML = tag;
-                        tag = newSpan.firstChild;
-                    }
-                }
-
-                cursorPosition += 1;
-                if (cursorPosition < HTML.length - 1) {
-                    setTimeout(type, tempTypeSpeed);
-                }
-
-            };
-
-            return {
-                type: type
-            };
-        }
-
-        var typer = document.getElementById('typewriter');
-        typewriter = setupTypewriter(typewriter);
-        typewriter.type();
-    </script>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <!-- ----------------------------------------------About Me End---------------------------------------------- -->
-
-
-    <!-- ---------------------------------------------- Stepper Start ---------------------------------------------- -->
+	<!-- ---------------------------------------------- Stepper Start ---------------------------------------------- -->
 
 	<div class="row">
 
@@ -412,74 +241,6 @@
 	</script>
 	<!-- ---------------------------------------------- Stepper JS End ---------------------------------------------- -->
 
-
-    <!-- ----------------------------------------------Projects Start---------------------------------------------- -->
-    <!-- <iframe src="html/projects.html" class="w-100" style="height: 2000px;"></iframe> -->
-    <!-- ----------------------------------------------Projects End---------------------------------------------- -->
-
-    <br>
-    <br>
-    <br>
-    <!-- ----------------------------------------------Contact Start---------------------------------------------- -->
-    <div class="container form-gradient w-50 p-5" id="contact-me">
-        <!--Form with header-->
-        <div class="card">
-            <!--Header-->
-            <div class="header pt-3 purple-gradient">
-                <div class="row d-flex justify-content-center">
-                    <h3 class="white-text mb-4 pt-3 font-weight-bold">Contact Me</h3>
-                </div>
-            </div>
-            <!--Header-->
-            
-            <!--Body-->
-            <div class="card-body mx-4 mt-4">
-                <div class="md-form mb-4">
-                    <input type="text" id="form-name" class="form-control" placeholder="Your Name">
-                </div>
-                
-                <div class="md-form mb-4">
-                    <input type="text" id="form-email" class="form-control" placeholder="Email">
-                </div>
-                
-                <div class="md-form mb-5 mt-5">
-                    <textarea id="form-contact-message" class="form-control md-textarea" rows="1" placeholder="Message"></textarea>
-                </div>
-
-                
-                <div class="md-form mb-3 d-flex justify-content-center">
-                    <button type="button" class="pr-4 pl-4 pt-2 pb-2 btn btn-black text-white z-depth-1a" style="font-size: 20px;">Send</button>
-                </div>
-            </div>
-            <!--Body-->
-        </div>
-        <!--Form with header-->
-    </div>
-    <!-- ----------------------------------------------Contact End---------------------------------------------- -->
-
-    <br>
-    <br>
-    <br>
-
-    <!-- ----------------------------------------------Footer Start---------------------------------------------- -->
-    <footer class="new_footer_area bg_color">
-        <div class="new_footer_top">
-            <div class="footer_bg">
-                <div class="footer_bg_one"></div>
-                <div class="footer_bg_two"></div>
-            </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-sm-7">
-                        <p class="mb-0 f_400"> © Sanjukta Das <i class="fa fa-heart text-danger" aria-hidden="true"></i> 2020. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ----------------------------------------------Footer End---------------------------------------------- -->
     
 </body>
 </html>

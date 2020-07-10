@@ -1,0 +1,126 @@
+
+
+    <!-- 
+        id="form-contact-email"
+        id="form-contact-phone"
+        id="form-contact-company"
+        id="form-contact-message"
+    -->
+
+    <!-- <section class="text-white d-block contact-section card form p-5" 
+        style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/91.jpg'); background-repeat: no-repeat; background-position: center center;" 
+        id="contactForm"> -->
+
+        
+
+  <!-- ----------------------------------------------Gallery Start---------------------------------------------- -->
+
+  <!-- Grid row -->
+<div class="gallery" id="gallery">
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+  <!-- ----------------------------------------------Gallery End---------------------------------------------- -->
+
+
+
+
+        <!-- <h3 class="text-center font-weight-bold mb-4 pb-2">Projects</h3>
+        <p class="text-center text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p> -->
+    
+        <!-- First row -->
+        <!-- <div class="row"> -->
+    
+          <!-- First column -->
+          <!-- <div class="col-md-6 mb-4"> -->
+
+            <!-- Card -->
+            <!-- <div class="card">
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(147).jpg" alt="Card image cap">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+    
+              <a class="btn-floating btn-action ml-auto mr-4 mdb-color"> <i class="fa fa-github " style="font-size:36px" ></i> <i class="fa fa-chevron-right pl-1"></i></a>
+    
+              <div class="card-body">
+    
+                <h4 class="card-title">Read more about my project</h4>
+                <hr>
+                <p class="card-text text-muted font-weight-light">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    
+              </div>
+            </div> -->
+            <!-- Card -->
+            
+          <!-- </div> -->
+          <!-- First column -->
+          
+          <!-- Second column -->
+          <!-- <div class="col-md-6 mb-4"> -->
+    
+            <!-- Card -->
+            <!-- <div class="card">
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(41).jpg" alt="Card image cap">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+    
+              <a class="btn-floating btn-action ml-auto mr-4 mdb-color"><i class="fa fa-chevron-right pl-1"></i></a>
+    
+              <div class="card-body">
+    
+                <h4 class="card-title">Read more about my project</h4>
+                <hr>
+                <p class="card-text text-muted font-weight-light">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    
+              </div>
+            </div> -->
+            <!-- Card -->
+    
+          <!-- </div> -->
+          <!-- Second column -->
+    
+        <!-- </div> -->
+        <!-- First row -->
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->

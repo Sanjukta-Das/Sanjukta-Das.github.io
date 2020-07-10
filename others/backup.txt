@@ -1,0 +1,193 @@
+
+
+    <!-- ----------------------------------------------Experience Start---------------------------------------------- -->
+    <div align="center" class="menu-content" id="experience" style="padding: 10%;">
+        <!-- <h1>Experience</h1> -->
+        <div style="display: flex;">            
+            <button class="tab-btn" onclick="openTab('intel-corp', this, '#F84747')" id="default">
+                Intel Corporation
+            </button>
+            <button class="tab-btn" onclick="openTab('hsbc', this, '#F84747')">
+                HSBC
+            </button>
+            <button class="tab-btn" onclick="openTab('parle-agro', this, '#F84747')">
+                Parle Agro India Pvt. Ltd
+            </button>
+            <button class="tab-btn" onclick="openTab('idbi-cap', this, '#F84747')">
+                IDBI Capital
+            </button>
+            <button class="tab-btn" onclick="openTab('ohpc', this, '#F84747')">
+                OHPC
+            </button>
+        </div>
+
+        <!-- Intel -->
+        <div class="tab-content" id="intel-corp" style="border: 1px solid white;">
+            <img src="../Sanjukta-Das.github.io/e3_imgs/intel.jpg" class="img-thumbnail" alt="Intel Corporation" style="width: 250px; height: 150px;">
+            <h2 style="text-align: center">Role  :  IOTG Profit Optimization Intern</h2>
+            <ul style="text-align: left;">
+                <li>Collaborate with multiple teams (OM Task Force, IOTG-Finance, SMG) for data collection, analysis, modeling & visualization.</li>
+                <li>Built real-time dashboard for tracking year-round IOTG Operating Margin.</li>
+                <li>Built interactive team website with one stop project management repository using SharePoint, HTML, CSS and JavaScript.</li>
+                <li>Built executive view dashboard with SKU level margin tool for SMG team to set margin goals and allow comparable margin visibility.</li>
+            </ul>
+        </div>
+        <!-- Intel -->
+
+        <!-- HSBC -->
+        <div class="tab-content" id="hsbc" style="border: 1px solid white;">
+            <img src="e3_imgs/HSBC.jpg" class="img-thumbnail"  alt="" style="width: 250px; height: 150px;">
+            <h2>Role  :  HR-Executive</h2>
+            <ul style="text-align: left;">
+                <li>Maintenance of database, including high to low profile personnel in Group HR Systems (People Soft)</li>
+                <li>Handle New Hires, Contingent workers, Personal Changes, Needs Approval, Employee Self Service, Manager Self Service Transactions, On Call Pay queues</li>
+                <li>prepare reports(Taleo) on daily basis</li>
+                <li>Updating payroll format and Taxation</li>
+                <li>Prepare audit reports biweekly</li>
+                <li>Resolve new hires queries and cases</li>
+                <li>Verify and processing post hiring procedures</li> 
+            </ul>
+        </div>
+        <!-- HSBC -->
+
+        <!-- Parle Agro -->
+        <div class="tab-content" id="parle-agro" style="border: 1px solid white;">
+            <img src="e3_imgs/Parle-Agro.jpg" class="img-thumbnail"  alt="" style="width: 250px; height: 150px;">
+            <h2>Role  :  Business Development Officer</h2>
+            <ul  style="text-align: left;">
+                <li>Managing both Primary and Secondary Sales of Modern Trade division</li>
+                <li>Preparing daily, weekly & monthly basis Purchase Order Tracking & Sales Report, updating MBQ of the products </li>
+                <li>Channelizing stock from company - whole seller - distributor - retailer</li>
+                <li>Promotion Execution presentation</li>
+            </ul>
+        </div>
+        <!-- Parle Agro -->
+
+        <!-- IDBI Capital -->
+        <div class="tab-content" id="idbi-cap" style="border: 1px solid white;">
+            <img src="e3_imgs/idbi_cap.jpg" class="img-thumbnail"  alt="" style="width: 250px; height: 150px;">
+            <h2>Role  :  Analyst Intern</h2>
+        </div>
+        <!-- IDBI Capital -->
+
+        <!-- OHPC -->
+        <div class="tab-content" id="ohpc" style="border: 1px solid white;">
+            <img src="e3_imgs/ohpc.jpg" alt="" class="img-thumbnail" style="width: 250px; height: 150px;">
+            <h2>Role  :  Analyst Intern</h2>
+        </div>
+        <!-- OHPC -->        
+    </div>
+    <!-- ----------------------------------------------Experience End---------------------------------------------- -->
+
+    <!-- ----------------------------------------------Education Start---------------------------------------------- -->
+    <!-- <div class="jumbotron  menu-content"> -->
+
+    
+    <div align="center" class="jumbotron" id="education" style="padding: 10%;">
+        <h1>Education</h1>
+        <div style="display: flex;">            
+            <button class="tab-btn" onclick="openTab('psu', this, '#F84747')" id="default">
+                Portland State University
+            </button>
+            <button class="tab-btn" onclick="openTab('pcc', this, '#F84747')">
+                Portland Community College
+            </button>
+            <button class="tab-btn" onclick="openTab('rcm', this, '#F84747')">
+                Regional College of Management
+            </button>
+            <button class="tab-btn" onclick="openTab('bjb', this, '#F84747')">
+                Utkal University
+            </button>
+        </div>
+
+        <div class="tab-content" id="psu" style="border: 1px solid white;">
+            <img src="e3_imgs/psu.jpg" alt="" style="width: 250px; height: 200px;">
+            <h2>Masters of Science</h2>
+            <h2>Major : Computer Science</h2>
+            <p style="font-size: 20px;">Classes : </p>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+            <div class="container"></div>
+                <div class="row">
+                  <div class="col-md-2 mb-3">
+                      <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Projects</a>
+                        </li>
+                       </ul>
+                      </div>
+                      <!-- /.col-md-4 -->
+                      <div class="col-md-10">
+                        <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <h2>Home</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed accusantium eligendi molestiae quo hic velit nobis et, tempora placeat ratione rem blanditiis voluptates vel ipsam? Facilis, earum!</p>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <h2>Profile</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed accusantium eligendi molestiae quo hic velit nobis et, tempora placeat ratione rem blanditiis voluptates vel ipsam? Facilis, earum!</p>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <h2>Contact</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed accusantium eligendi molestiae quo hic velit nobis et, tempora placeat ratione rem blanditiis voluptates vel ipsam? Facilis, earum!</p>
+                
+                </div>
+              </div>
+                  </div>
+                  <!-- /.col-md-8 -->
+                </div>
+                
+                
+                
+              </div>
+              <!-- /.container -->
+            
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+        </div>
+        <div class="tab-content" id="pcc" style="border: 1px solid white;">
+            <img src="e3_imgs/pcc.jpg" alt="" style="width: 250px; height: 200px;">
+            <h2>Associates of Science Transfer</h2>
+            <h2>Major : Computer Science</h2>
+            <p style="font-size: 20px;">Classes : </p>
+        </div>
+        <div class="tab-content" id="rcm" style="border: 1px solid white;">
+            <img src="e3_imgs/rcm.jpg" alt="" style="width: 250px; height: 100px;">
+            <h2>Masters of Business Administration</h2>
+            <h2>Major : Finance</h2>
+            <p style="font-size: 20px;">Classes : </p>
+        </div>
+        <div class="tab-content" id="bjb" style="border: 1px solid white;">
+            <img src="e3_imgs/utkal_university.jpg" alt="" style="width: 250px; height: 200px;">
+            <h2>Bachelors of Business Administration</h2>
+            <h2>Major : Finance</h2>
+            <p style="font-size: 20px;">Classes : </p>
+        </div>      
+    <!-- </div> -->
+
+    <!-- </div> -->
+    <!-- ----------------------------------------------Education End---------------------------------------------- -->
+
+
+    <!-- ----------------------------------------------JavaScript Start---------------------------------------------- -->
+    <script>  
+        function openTab(idName, element, color){
+            var tab_content, tab_btn;
+            tab_content = document.getElementsByClassName("tab-content");
+            for(var i = 0; i < tab_content.length; i++){
+                tab_content[i].style.display = "none";
+            }
+
+            tab_btn = document.getElementsByClassName("tab-btn");
+            for(var i = 0; i < tab_btn.length; i++){
+                tab_btn[i].style.backgroundColor = "";
+            }
+            document.getElementById(idName).style.display = "block";
+            element.style.backgroundColor = color;
+        }
+        document.getElementById("default").click();
+    </script>
+    <!-- ----------------------------------------------JavaScript End---------------------------------------------- -->
