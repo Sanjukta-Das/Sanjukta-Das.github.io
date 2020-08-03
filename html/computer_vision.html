@@ -39,28 +39,15 @@
 
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="../css/about_me.css"> -->
-    <!-- <link rel="stylesheet" href="../css/stepper.css"> -->
+    <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="../css/footer.css">
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
-
-    <style>
-        .card {
-          height: 500px;
-        }
-        img {
-          width: 300px;
-          height: 250px;
-          /* box-shadow: 5px 5px 5px 5px #cccccc;
-              border-radius: 7px; */
-        }
-    </style>
     
 </head>
 <body>
 
     <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="justify-content-center p-5">
+    <nav class="pl-5 pr-5 pt-5 pb-3 fixed-top">
         <ul class="nav justify-content-center">
             <li  class="nav-item pr-5 pl-5">
                 <a href="https://sanjukta-das.github.io/">
@@ -94,15 +81,44 @@
     </nav>
     <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
 
+    <!-- ----------------------------------------------Cover Image Start---------------------------------------------- -->
+    <div class="container-fluid img-fluid mx-auto d-block" style="background-image: url(../images/cv1.jpeg); background-repeat: no-repeat; background-position: center; background-size: cover; height: 700px; width: 1800px;"></div>
+    <!-- ----------------------------------------------Cover Image End---------------------------------------------- -->
+        
+    <!-- ----------------------------------------------Back Button Start---------------------------------------------- -->
+    <div class="container p-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col">
+                <button class="btn btn-outline-dark hBack" type="button" style="border-radius: 100%; width: 50px;">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="col">
+                <h1>Computer Vision</h1>
+            </div>
+            <div class="col">
+                <h1> </h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(".hBack").on("click", function(e){
+            e.preventDefault();
+            window.history.back();
+            });
+    </script>
+    <!-- ----------------------------------------------Back Button End---------------------------------------------- -->
+
     <!-- ----------------------------------------------Gallery Start---------------------------------------------- -->
-    <div class="container">
+    <div class="container p-5">
 		<!-- Section: Block Content -->
 		<section class="dark-grey-text">
             <!-- First row -->
             <div class="row">
             <!-- First column -->
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
+                <div class="card shadow p-3 mb-5 bg-white rounded zoom">
                 <div class="view overlay">
                     <img class="card-img-top" src="../images/mosaic5.jpg" alt="xv6" />
                     <a>
@@ -133,7 +149,7 @@
 
             <!-- Second column -->
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
+                <div class="card shadow p-3 mb-5 bg-white rounded zoom">
                 <div class="view overlay">
                     <img class="card-img-top" src="../images/toonify2.jpg" alt="xv6"/>
                     <a>
@@ -162,7 +178,7 @@
 
             <!-- Third column -->
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
+                <div class="card shadow p-3 mb-5 bg-white rounded zoom">
                 <div class="view overlay">
                     <img class="card-img-top" src="../images/circle3.jpg" alt="xv6" />
                     <a>

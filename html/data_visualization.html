@@ -9,7 +9,7 @@
     <!------------------------------------------------------------ Material Design CDN ------------------------------------------------------------>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
-    <!-- Google Fonts -->
+    <!-- Importing Google Fonts (either here or in .css file) -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -39,27 +39,15 @@
 
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="../css/about_me.css"> -->
-    <!-- <link rel="stylesheet" href="../css/stepper.css"> -->
+    <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="../css/footer.css">
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
 
-    <style>
-        .card {
-          height: 500px;
-        }
-        img {
-          width: 300px;
-          height: 250px;
-          /* box-shadow: 5px 5px 5px 5px #cccccc;
-              border-radius: 7px; */
-        }
-    </style>
 </head>
 <body>
 
     <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="justify-content-center p-5">
+    <nav class="pr-5 pl-5 pt-5 pb-1 sticky-top m-0">
         <ul class="nav justify-content-center">
             <li  class="nav-item pr-5 pl-5">
                 <a href="https://sanjukta-das.github.io/">
@@ -69,6 +57,10 @@
 
             <li class="nav-item pr-5 pl-5">
                 <a class="text-dark" href="projects.html" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Portfolio</a>
+            </li>
+
+            <li class="nav-item pr-5 pl-5">
+                <a class="text-dark" href="" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Resume</a>
             </li>
 
             <li class="nav-item pr-5 pl-5">
@@ -93,106 +85,223 @@
     </nav>
     <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
 
+    <!-- ----------------------------------------------Cover Image Start---------------------------------------------- -->
+    <!-- <div class="img-fluid p-5 justify-content-center" style="width: 1820px; height: 580px;">
+        <img class="cover-img" src="../images/DV5.png" alt="" style=" max-height: 100%; max-width: 100%;">
+    </div> -->
+
+    <div class="p-1 d-flex justify-content-center"  >
+        <img class="img-fluid cover-img" src="../images/DV5.png" alt="" style="width: 1700px; height: 600px;">
+    </div>
+    <!-- ----------------------------------------------Cover Image End---------------------------------------------- -->
+    
+    <!-- ----------------------------------------------Back Button Start---------------------------------------------- -->
+    <div class="container p-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col">
+                <button class="btn btn-outline-dark hBack" id="back-button" type="button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="col">
+                <h1 id="heading">Data Visualization</h1>
+            </div>
+            <div class="col">
+                <h1> </h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(".hBack").on("click", function(e){
+            e.preventDefault();
+            window.history.back();
+            });
+    </script>
+    <!-- ----------------------------------------------Back Button End---------------------------------------------- -->
+
+
     <!-- ----------------------------------------------Gallery Start---------------------------------------------- -->
-    <div class="container">
+    <div class="container p-5">
 		<!-- Section: Block Content -->
 		<section class="dark-grey-text">
             <!-- First row -->
             <div class="row">
-            <!-- First column -->
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
-                <div class="view overlay">
-                    <img class="card-img-top" src="../images/mosaic5.jpg" alt="xv6" />
-                    <a>
-                    <div class="mask rgba-white-slight"></div>
-                    </a>
-                </div>
+                <!-- First column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="../images/Tableau-1.jpg" alt="xv6" />
+                            <a>
+                                <div class="mask rgba-black-strong"></div>
+                            </a>
+                        </div>
 
-                <div class="card-body">
-                    <h4 class="card-title">Mosaic
-                    <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
-                        <i class="fa fa-github bg-white" style="font-size: 30px; color: black;" ></i>
-                    </a>
-                    </h4>
-                    <hr>
-                    <p class="card-text text-muted font-weight-light">
-                    Images made by cementing together small tiles with the purpose
-                    of reproducing the original visual information rendered into a
-                    new mosaic-like style.
-                    <!-- Creation of mosaic images from a sequence of partial views is a powerful 
-                                    means of obtaining a larger view of a scene than available within a single view. -->
-                    <!-- tilling effect, implemented by splitting the image to tiles, 
-                                    then averaging the color values and replacing each tile with a matching image. -->
-                    </p>
+                        <div class="card-body">
+                            <h4 class="card-title">Tableau
+                                <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+                                    <i class="fa fa-github bg-white" style="font-size: 30px; color: black;" ></i>
+                                </a>
+                            </h4>
+                            <hr>
+                            <p class="card-text text-muted font-weight-light">
+                                Oregon Health Authority’s dashboard.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-            <!-- First column -->
+                <!-- First column -->
 
-            <!-- Second column -->
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
-                <div class="view overlay">
-                    <img class="card-img-top" src="../images/toonify2.jpg" alt="xv6"/>
-                    <a>
-                    <div class="mask rgba-white-slight"></div>
-                    </a>
-                </div>
+                <!-- Second column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="../images/maps-0" alt="xv6"/>
+                            <a>
+                                <div class="mask flex-center rgba-black-strong">
+                                    <p class="border text-white p-1 m-1">ggmap</p>
+                                    <p class="border text-white p-1 m-1">tmap</p>
+                                    <p class="border text-white p-1 m-1">arcGIS</p>
+                                </div>
+                            </a>
+                        </div>
 
-                <div class="card-body">
-                    <h4 class="card-title">
-                    Toonify
-                    <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color"
-                        href="">
-                        <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
-                    </a>
-                    </h4>
-                    <hr />
-                    <p class="card-text text-muted font-weight-light">
-                    a cartoon like effect to images. Emulated cel-shading effects
-                    by applying median filter, canny edge detection, morphological
-                    operation, edge filtering and bilateral filter.
-                    </p>
+                        <div class="card-body">
+                            <h4 class="card-title">Maps
+                                <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+                                    <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+                                </a>
+                            </h4>
+                            <hr>
+                            <p class="card-text text-muted font-weight-light">
+                                Used ggmap, ggspatial, tmap libraries & spatial dataset from City of Portland's GIS team to 
+                                create map of a Portland highlighting it's grocery stores, farmers market, parks, rivers, boundaries, etc. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-            <!-- Second column -->
+                <!-- Second column -->
 
-            <!-- Third column -->
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
-                <div class="view overlay">
-                    <img class="card-img-top" src="../images/circle3.jpg" alt="xv6" />
-                    <a>
-                    <div class="mask rgba-white-slight"></div>
-                    </a>
-                </div>
+                <!-- Third column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="../images/R-Shiny.png" alt="RShiny" />
+                            <a>
+                                <div class="mask rgba-black-strong"></div>
+                            </a>
+                        </div>
 
-                <div class="card-body">
-                    <h4 class="card-title">
-                    Circle Packing
-                    <a
-                        class="float-right btn-floating btn-action ml-auto mr-0 mdb-color"
-                        href="">
-                        <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
-                    </a>
-                    </h4>
-                    <hr />
-                    <p class="card-text text-muted font-weight-light">
-                    the effect of cluster of circles by storing all the pixel
-                    values to fill the the circles and compare the (x, y) position
-                    within the image bounds to prevent overlapping of circles.
-                    </p>
+                        <div class="card-body">
+                            <h4 class="card-title">R Shiny
+                                <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+                                    <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+                                </a>
+                            </h4>
+                            <hr>
+                            <p class="card-text text-muted font-weight-light">
+                            the effect of cluster of circles by storing all the pixel
+                            values to fill the the circles and compare the (x, y) position
+                            within the image bounds to prevent overlapping of circles.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-            <!-- Third column -->
+                <!-- Third column -->
             </div>
             <!-- First row -->
+
+            <!-- Second row -->
+            <div class="row">
+                <!-- First column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                    <div class="view overlay">
+                        <img class="card-img-top" src="../images/moma-3.jpg" alt="xv6" />
+                        <a>
+                            <div class="mask rgba-black-strong"></div>
+                        </a>
+                    </div>
+    
+                    <div class="card-body">
+                        <h4 class="card-title">MoMA
+                        <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+                            <i class="fa fa-github bg-white" style="font-size: 30px; color: black;" ></i>
+                        </a>
+                        </h4>
+                        <hr>
+                        <p class="card-text text-muted font-weight-light">
+                        Write Description.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <!-- First column -->
+    
+                <!-- Second column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                    <div class="view overlay">
+                        <img class="card-img-top" src="../images/toonify2.jpg" alt="xv6"/>
+                        <a>
+                        <div class="mask rgba-black-strong"></div>
+                        </a>
+                    </div>
+    
+                    <div class="card-body">
+                        <h4 class="card-title">
+                        Toonify
+                        <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color"
+                            href="">
+                            <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+                        </a>
+                        </h4>
+                        <hr />
+                        <p class="card-text text-muted font-weight-light">
+                        a cartoon like effect to images. Emulated cel-shading effects
+                        by applying median filter, canny edge detection, morphological
+                        operation, edge filtering and bilateral filter.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <!-- Second column -->
+    
+                <!-- Third column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                    <div class="view overlay">
+                        <img class="card-img-top" src="../images/circle3.jpg" alt="xv6" />
+                        <a>
+                        <div class="mask rgba-black-strong"></div>
+                        </a>
+                    </div>
+    
+                    <div class="card-body">
+                        <h4 class="card-title">
+                        Circle Packing
+                        <a
+                            class="float-right btn-floating btn-action ml-auto mr-0 mdb-color"
+                            href="">
+                            <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+                        </a>
+                        </h4>
+                        <hr />
+                        <p class="card-text text-muted font-weight-light">
+                        the effect of cluster of circles by storing all the pixel
+                        values to fill the the circles and compare the (x, y) position
+                        within the image bounds to prevent overlapping of circles.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <!-- Third column -->
+                </div>
+                <!-- Second row -->
         </section>
     </div>
     <!-- ----------------------------------------------Gallery End---------------------------------------------- -->
+
 
     <!-- ----------------------------------------------Footer Start---------------------------------------------- -->
     <footer class="new_footer_area bg_color">

@@ -1,11 +1,15 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"); */
+
 body, html{
-    background-color: white;
-    position: relative;
-    /* overflow: auto; */
+	background-color: white;
+	/* height: 100%; */
+	/* position: relative; */
+	/* display: block; */
 }
+
 nav{
     background-color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 .fa-home{
     color: black;
@@ -20,17 +24,17 @@ nav{
     color: red;
 }
 
+
 /* On smaller screens, where height is less than 450px, 
 change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+/* @media screen and (max-height: 450px) {
     .navigationBar {padding-top: 15px;}
     .navigationBar a {font-size: 18px;}
-}
+} */
 
 
 /* __________________________________________________________________________________ */
 
-@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
 /* html {
   height: 100%;

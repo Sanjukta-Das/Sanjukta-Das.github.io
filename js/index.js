@@ -1,36 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function to expand and fix the side navigation menu bar
-function showMenu(x){
-    document.getElementById("navBar").style.width = "350px";
-    document.getElementById("footer").style.marginLeft = "350px";
-    document.getElementById("main").style.marginLeft = "350px";
-    document.getElementById("content").style.marginLeft = "350px";
-}
+// function showMenu(x){
+//     document.getElementById("navBar").style.width = "350px";
+//     document.getElementById("footer").style.marginLeft = "350px";
+//     document.getElementById("main").style.marginLeft = "350px";
+//     document.getElementById("content").style.marginLeft = "350px";
+// }
 
-function hideMenu(){
-    document.getElementById("navBar").style.width = "0";
-    document.getElementById("footer").style.marginLeft = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("content").style.marginLeft = "0";
-}
+// function hideMenu(){
+//     document.getElementById("navBar").style.width = "0";
+//     document.getElementById("footer").style.marginLeft = "0";
+//     document.getElementById("main").style.marginLeft= "0";
+//     document.getElementById("content").style.marginLeft = "0";
+// }
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+// var acc = document.getElementsByClassName("accordion");
+// var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
-
-
-
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     } else {
+//       panel.style.display = "block";
+//     }
+//   });
+// }
 
 
 // var dropdown_buttons = document.getElementsByClassName("menu-item");

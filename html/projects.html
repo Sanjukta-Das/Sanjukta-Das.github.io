@@ -41,6 +41,7 @@
 
 	<!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
 	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="../css/footer.css">
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
 
@@ -101,7 +102,7 @@
 <body>
 
 	<!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="justify-content-center p-3">
+    <nav class="justify-content-center p-5 sticky-top">
         <ul class="nav justify-content-center">
             <li  class="nav-item pr-5 pl-5">
                 <a href="https://sanjukta-das.github.io/">
@@ -130,10 +131,35 @@
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </a>
             </li>
-        </ul>
+		</ul>
+		<hr>
     </nav>
-    <hr>
-    <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
+	<!-- ----------------------------------------------Menubar End---------------------------------------------- -->
+	
+	<!-- ----------------------------------------------Back Button Start---------------------------------------------- -->
+    <div class="container p-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col">
+                <button class="btn btn-outline-dark hBack" id="back-button" type="button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="col">
+                <h1 id="heading">Projects</h1>
+            </div>
+            <div class="col">
+                <h1> </h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(".hBack").on("click", function(e){
+            e.preventDefault();
+            window.history.back();
+            });
+    </script>
+    <!-- ----------------------------------------------Back Button End---------------------------------------------- -->
 
     <!-- ----------------------------------------------Project Selection Buttons Start---------------------------------------------- -->
     <!-- <div class="row text-white">
@@ -152,15 +178,18 @@
 	<!-- ----------------------------------------------Project Selection Buttons End---------------------------------------------- -->
 	
 
-	<div class="container">
+	<div class="container p-5 pt-5">
 		<!-- Section: Block Content -->
 		<section class="dark-grey-text">
-			<!-- Fifth row -->
+
+			<!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+			<!-- Fourth row -->
 			<div class="row">
 				
 				<!-- First column -->
 				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3 all data-structure">
-					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 						<div class="view overlay">
 							<img class="card-img-top" src="../images/DV7.jpg" alt="Data Visualization"/>
 							<a>
@@ -184,7 +213,7 @@
 			
 				<!-- Second column -->
 				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 						<div class="view overlay">
 							<img class="card-img-top" src="../images/ML1.jpg" alt="Machine Learning" />
 							<a>
@@ -208,7 +237,7 @@
 			
 				<!-- Third column -->
 				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 						<div class="view overlay">
 							<img class="card-img-top" src="../images/algo7.png" alt="Algorithms" />
 							<a>
@@ -218,7 +247,7 @@
 			
 						<div class="card-body">
 							<h4 class="card-title">
-								<a class="text-dark stretched-link" href="html/algorithm.html">Algorithms</a>
+								<a class="text-dark stretched-link" href="algorithm.html">Algorithms</a>
 								<a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
 									<i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
 								</a>
@@ -233,15 +262,15 @@
 				<!-- Third column -->
 
         	</div>
-			<!-- Fifth row -->
+			<!-- Fourth row -->
 			
 			<!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
         
-			<!-- Fourth row -->
+			<!-- Third row -->
 			<div class="row">
 				<!-- First column -->
 				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3 all data-structure">
-					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 					<div class="view overlay">
 						<img class="card-img-top" src="../images/ip1.jpg" alt="Internetworking Protocol"/>
 						<a><div class="mask rgba-white-slight"></div></a>
@@ -263,7 +292,7 @@
 
 				<!-- Second column -->
 				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 					<div class="view overlay">
 						<img class="card-img-top" src="../images/db1.png" alt="Database" />
 						<a><div class="mask rgba-white-slight"></div></a>
@@ -285,7 +314,7 @@
 
 				<!-- Third column -->
 				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 						<div class="view overlay">
 							<img class="card-img-top" src="../images/cv2.jpg" alt="Computer Vision" />
 							<a>
@@ -309,15 +338,15 @@
 				</div>
 				<!-- Third column -->
 			</div>
-			<!-- Fourth row -->
+			<!-- Third row -->
 
         	<!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-			<!-- Third row -->
+			<!-- Second row -->
 			<div class="row">
 			<!-- First column -->
 			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-				<div class="card shadow p-3 mb-5 bg-white rounded">
+				<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 					<div class="view overlay">
 						<img class="card-img-top" src="../images/fe-0.png" alt="frontend development"/>
 						<a><div class="mask rgba-white-slight"></div></a>
@@ -341,7 +370,7 @@
 
 			<!-- Second column -->
 			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-				<div class="card shadow p-3 mb-5 bg-white rounded">
+				<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 					<div class="view overlay">
 						<img class="card-img-top" src="../images/fs-0.jpg" alt="fullstack development"/>
 						<a><div class="mask rgba-white-slight"></div></a>
@@ -365,7 +394,7 @@
 
 			<!-- Third column -->
 			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-				<div class="card shadow p-3 mb-5 bg-white rounded">
+				<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 				<div class="view overlay">
 					<img class="card-img-top" src="../images/cc-1.png" alt="xv6" />
 					<a>
@@ -389,15 +418,7 @@
 			</div>
 			<!-- Third column -->
 			</div>
-			<!-- Third row -->
-
-			<!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-			<!-- Second row -->
-			
-			
-			
-			<!-- Second row -->
+			<!-- Second row -->			
 
         	<!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -405,7 +426,7 @@
 			<div class="row" id="row1">
 				<!-- First column -->
 				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 						<div class="view overlay">
 							<img class="card-img-top" src="../images/sw-3.jpg" alt="xv6"/>
 							<a>
@@ -434,7 +455,7 @@
 			
 				<!-- Second column -->
 				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 						<div class="view overlay">
 							<img class="card-img-top" src="../images/OS1.jpg" alt="os" />
 							<a>
@@ -468,7 +489,7 @@
 
 				<!-- Third column -->
 				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-					<div class="card shadow p-3 mb-5 bg-white rounded">
+					<div class="card shadow p-3 mb-5 bg-white rounded zoom">
 						<div class="view overlay">
 							<img class="card-img-top" src="../images/android2.jpg" alt="hangman"/>
 							<a>

@@ -52,47 +52,14 @@
     <link rel="stylesheet" href="css/stepper.css">
     <link rel="stylesheet" href="css/footer.css">
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
-    
-    <style>
-        /* .tab-btn{
-            background-color: black;
-            border: 3px solid white; */
-            /* outline: none; */
-            /* float: left;
-            cursor: pointer;
-            padding: 14px 16px;
-            font-size: 17px;
-            font-family: 'Times New Roman';
-            font-size: 25px;
-            width: 25%;
-            color: white; 
-        }
-        .tab-btn:hover{
-            background-color: #777;
-        }
-        .tab-content {
-            color: black;
-            display: none;
-            padding: 50px; */
-            /* text-align: center; */
-        /* } */
-        /* #F84747 */
-        /* #intel-corp {background-color: white}
-        #hsbc{background-color: white;}
-        #parle-agro{background-color: white;}
-        #idbi-cap{background-color: white;}
-        #ohpc{background-color: white;}
-
-        #psu{background-color: white;}
-        #pcc{background-color: white;}
-        #rcm{background-color: white;}
-        #bjb{background-color: white;} */
-    </style>
 
 </head>
 <body>
+    <div class="bg" style=" background-image: url(./images/bridge1.jpg); background-position: center; background-repeat: no-repeat; background-size: contain; height: 60%; width: 1800px;"></div>
+
+
     <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="justify-content-center p-5">
+    <nav class="justify-content-center p-5 sticky-top">
         <ul class="nav justify-content-center">
             <li  class="nav-item pr-5 pl-5">
                 <a href="https://sanjukta-das.github.io/">
@@ -127,18 +94,16 @@
     <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
 
     <!-- ----------------------------------------------About Me Start---------------------------------------------- -->
-
     <br>
-    <!-- <div class="container"> -->
-
-        <pre class="justify-content-center m-5 pt-5 pb-5" id="typewriter" style="font-family: 'Courier New', Courier, monospace; font-size: x-large;">
+    <div>
+        <pre class="justify-content-center m-5" id="typewriter" style="font-family: 'Courier New', Courier, monospace; font-size: x-large;">
                                                         Hi, I am <b>Sanjukta</b>.
                     I am a <b style="color: green">Computer Science</b> student at <b style="color: green">Portland State University</b>, and also an <b>MBA</b> in <b>Finance</b>. 
                     My professional experience consists of interning at <b style="color: #0066cc">Intel Corporation</b> as a <b style="color: #0066cc">BI Engineer</b>.
                     Prior to that I was a <b class="bg-danger text-white">HR-Executive</b> at <b>HSBC</b>, processing New Hires and CWR for US-Payroll, 
                     and also worked as <b style="background-color: blueviolet; color: white">Finance Analyst Intern</b> at <b class="text-white" style="background-color: #009999">IDBI </b><b class="text-white" style="background-color: #ff8533">Capital</b> and <b style="background-color: blue; color: white;">OHPC</b>.
         </pre>
-    <!-- </div> -->
+    </div>
 
     <script>
         function setupTypewriter(t) {
@@ -210,19 +175,15 @@
         typewriter = setupTypewriter(typewriter);
         typewriter.type();
     </script>
-    <br>
-    <br>
-    <br>
-    <hr>
     <!-- ----------------------------------------------About Me End---------------------------------------------- -->
 
+    <hr class="p-5">
 
     <!-- ---------------------------------------------- Stepper Start ---------------------------------------------- -->
-
 	<div class="row">
 
+        <!-- ----------------------------------------------Experience Stepper Start---------------------------------------------- -->
 		<div class="col">
-			<!-- ----------------------------------------------Experience Stepper Start---------------------------------------------- -->
 			<div class="container">
 				<div class="steps">
 					<h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Experience</h2>
@@ -318,12 +279,13 @@
 					</div>
 				</div>
 			</div>
-			<!-- ----------------------------------------------Experience Stepper End---------------------------------------------- -->
-		</div>
-		
-		
-		<div class="col">
-			<!-- ----------------------------------------------Education Stepper Start---------------------------------------------- -->
+        </div>
+        <!-- ----------------------------------------------Experience Stepper End---------------------------------------------- -->
+        
+        <!-- ---------------------------------------------- ************************ ---------------------------------------------- -->
+
+        <!-- ----------------------------------------------Education Stepper Start---------------------------------------------- -->
+        <div class="col">
 			<div class="container">
 				<div class="steps-edu">
 					<h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Education</h2>
@@ -355,8 +317,9 @@
 					</div>
 				</div>
 			</div>
-			<!-- ---------------------------------------------- Education Stepper End ---------------------------------------------- -->
-		</div>
+        </div>
+        <!-- ---------------------------------------------- Education Stepper End ---------------------------------------------- -->
+
 	</div>
 	<!-- ---------------------------------------------- Stepper End ---------------------------------------------- -->
 
@@ -410,16 +373,19 @@
 		});
 	})
 	</script>
-	<!-- ---------------------------------------------- Stepper JS End ---------------------------------------------- -->
+    <!-- ---------------------------------------------- Stepper JS End ---------------------------------------------- -->
+
+    <!-- ---------------------------------------------- Skills JS Start ---------------------------------------------- -->
+    <div class="container"></div>
+    
+    <!-- ---------------------------------------------- Skills JS End ---------------------------------------------- -->
 
 
     <!-- ----------------------------------------------Projects Start---------------------------------------------- -->
     <!-- <iframe src="html/projects.html" class="w-100" style="height: 2000px;"></iframe> -->
     <!-- ----------------------------------------------Projects End---------------------------------------------- -->
 
-    <br>
-    <br>
-    <br>
+    
     <!-- ----------------------------------------------Contact Start---------------------------------------------- -->
     <div class="container form-gradient w-50 p-5" id="contact-me">
         <!--Form with header-->

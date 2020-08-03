@@ -1,0 +1,39 @@
+/* Importing Google Fonts */
+/* @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Major+Mono+Display&display=swap");
+
+#back-button{
+    border-radius: 100%; 
+    width: 50px;
+}
+
+#heading{
+	font-family: 'Anton';
+	/* font-family: 'Major Mono Display', monospace; */
+	background-color: black;
+	opacity: 100%;
+	padding: 25px;
+	color: white;
+}
+
+.card {
+  height: 550px;
+  width: 335px;
+
+}
+
+img {
+  width: 300px;
+  height: 250px;
+}
+
+/* .hover-to-show { 
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+
+.hover-to-show-link:hover .hover-to-show {
+  opacity: 1;
+  transition: all .2s ease-in-out;
+}
+ */
