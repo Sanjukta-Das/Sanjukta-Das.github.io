@@ -39,27 +39,15 @@
 
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="../css/about_me.css"> -->
-    <!-- <link rel="stylesheet" href="../css/stepper.css"> -->
+    <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="../css/footer.css">
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
 
-    <style>
-        .card {
-          height: 500px;
-        }
-        img {
-          width: 300px;
-          height: 250px;
-          /* box-shadow: 5px 5px 5px 5px #cccccc;
-              border-radius: 7px; */
-        }
-    </style>
 </head>
 <body>
 
     <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="justify-content-center p-5">
+    <nav class="pr-5 pl-5 pt-5 pb-1 sticky-top m-0">
         <ul class="nav justify-content-center">
             <li  class="nav-item pr-5 pl-5">
                 <a href="https://sanjukta-das.github.io/">
@@ -68,7 +56,11 @@
             </li>
 
             <li class="nav-item pr-5 pl-5">
-                <a class="text-dark" href="projects.html" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Portfolio</a>
+                <a class="text-dark" id="menu-item" href="projects.html">Portfolio</a>
+            </li>
+
+            <li class="nav-item pr-5 pl-5">
+                <a class="text-dark" id="menu-item" href="../others/Sanjukta_Resume_2020.pdf" target="_blank">Resume</a>
             </li>
 
             <li class="nav-item pr-5 pl-5">
@@ -92,6 +84,37 @@
         <hr>
     </nav>
     <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
+
+    <!-- ----------------------------------------------Cover Image Start---------------------------------------------- -->
+    <div class="p-1 d-flex justify-content-center"  >
+        <img class="img-fluid img-responsive cover-img border" src="../images/sw-.jpg" alt="" style="width: 1700px; height: 600px;">
+    </div>
+    <!-- ----------------------------------------------Cover Image End---------------------------------------------- -->
+
+    <!-- ----------------------------------------------Back Button Start---------------------------------------------- -->
+    <div class="container p-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col">
+                <button class="btn btn-outline-dark hBack" id="back-button" type="button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="col">
+                <h1 id="heading">Software Engineering</h1>
+            </div>
+            <div class="col">
+                <h1> </h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(".hBack").on("click", function(e){
+            e.preventDefault();
+            window.history.back();
+            });
+    </script>
+    <!-- ----------------------------------------------Back Button End---------------------------------------------- -->
 
 
     <!-- ----------------------------------------------Gallery Start---------------------------------------------- -->
@@ -190,9 +213,14 @@
 
             </div>
             <!-- First row -->
+
         </section>
+        
     </div>
     <!-- ----------------------------------------------Gallery End---------------------------------------------- -->
+
+    <iframe src="../others/Sanjukta_Resume_2020.pdf#toolbar=0" width="100%" height="500px">
+    </iframe>
 
 
 

@@ -1,6 +1,7 @@
 /* Importing Google Fonts */
-/* @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Major+Mono+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Major+Mono+Display&family=Monoton&display=swap');
+
 
 #back-button{
     border-radius: 100%; 
@@ -8,32 +9,21 @@
 }
 
 #heading{
-	font-family: 'Anton';
-	/* font-family: 'Major Mono Display', monospace; */
-	background-color: black;
+	font-family: 'Fredericka the Great', cursive;
+	text-align: center;
+	/* background-color: black; */
 	opacity: 100%;
 	padding: 25px;
-	color: white;
+	/* color: white; */
 }
 
-.card {
+/* .card {
   height: 550px;
   width: 335px;
-
 }
 
 img {
   width: 300px;
   height: 250px;
-}
+} */
 
-/* .hover-to-show { 
-  opacity: 0;
-  transition: all .2s ease-in-out;
-}
-
-.hover-to-show-link:hover .hover-to-show {
-  opacity: 1;
-  transition: all .2s ease-in-out;
-}
- */

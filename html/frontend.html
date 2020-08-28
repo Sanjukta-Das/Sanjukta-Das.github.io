@@ -38,15 +38,15 @@
     <!------------------------------------------------------------ Other CDN ------------------------------------------------------------>
 
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="about_me.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
 </head>
 <body>
 
     <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="justify-content-center p-3">
+    <nav class="pr-5 pl-5 pt-5 pb-1 sticky-top m-0">
         <ul class="nav justify-content-center">
             <li  class="nav-item pr-5 pl-5">
                 <a href="https://sanjukta-das.github.io/">
@@ -55,7 +55,11 @@
             </li>
 
             <li class="nav-item pr-5 pl-5">
-                <a class="text-dark" href="#" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Portfolio</a>
+                <a class="text-dark" id="menu-item" href="projects.html">Portfolio</a>
+            </li>
+
+            <li class="nav-item pr-5 pl-5">
+                <a class="text-dark" id="menu-item" href="../others/Sanjukta_Resume_2020.pdf" target="_blank">Resume</a>
             </li>
 
             <li class="nav-item pr-5 pl-5">
@@ -71,14 +75,228 @@
             </li>
 
             <li class="nav-item pr-5 pl-5">
-                <a href="#">
+                <a href="#contact-me">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
+        <hr>
     </nav>
-    <hr>
     <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
+
+    <!-- ----------------------------------------------Cover Image Start---------------------------------------------- -->
+    <div class="p-1 d-flex justify-content-center"  >
+        <img class="img-fluid img-responsive cover-img" src="../images/fe-0.png" alt="" style="width: 1700px; height: 600px;">
+    </div>
+    <!-- ----------------------------------------------Cover Image End---------------------------------------------- -->
+
+    <!-- ----------------------------------------------Back Button Start---------------------------------------------- -->
+    <div class="container p-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col">
+                <button class="btn btn-outline-dark hBack" id="back-button" type="button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="col">
+                <h1 id="heading">Frontend Development</h1>
+            </div>
+            <div class="col">
+                <h1> </h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(".hBack").on("click", function(e){
+            e.preventDefault();
+            window.history.back();
+            });
+    </script>
+    <!-- ----------------------------------------------Back Button End---------------------------------------------- -->
+
+    <!-- ----------------------------------------------Gallery Start---------------------------------------------- -->
+    <div class="container p-5">
+		<!-- Section: Block Content -->
+		<section class="dark-grey-text">
+            <!-- First row -->
+            <div class="row">
+
+                <!-- First column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="../images/string-matching-02.jpeg" alt="xv6"/>
+                            <a>
+                                <div class="mask flex-center rgba-black-strong">
+                                    <p class="border text-white p-1 m-1 tag">ReactJS</p>
+                                    <p class="border text-white p-1 m-1 tag">Marvel API</p>
+                                    <p class="border text-white p-1 m-1 tag">VS Code</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Marvel API
+                                <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+                                    <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+                                </a>
+                            </h4>
+                            <hr>
+                            <p class="card-text text-muted font-weight-light">
+                                Performance analysis of various String Matching algorithms by implenting Brute Force, KMP, Boyer-Moore, Shift-OR, 
+                                Rabin-Karp, etc., executed each of them using DNA sequence dataset and observing their time and space complexities.   
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- First column -->
+
+                <!-- Second column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="../images/" alt="xv6" />
+                            <a>
+                                <div class="mask rgba-black-strong"></div>
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+                                    <i class="fa fa-github bg-white" style="font-size: 30px; color: black;" ></i>
+                                </a>
+                            </h4>
+                            <hr>
+                            <p class="card-text text-muted font-weight-light">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second column -->
+
+                <!-- Third column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="../images/" alt="RShiny" />
+                            <a>
+                                <div class="mask rgba-black-strong"></div>
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+                                    <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+                                </a>
+                            </h4>
+                            <hr>
+                            <p class="card-text text-muted font-weight-light">
+                            the effect of cluster of circles by storing all the pixel
+                            values to fill the the circles and compare the (x, y) position
+                            within the image bounds to prevent overlapping of circles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third column -->
+            </div>
+            <!-- First row -->
+
+            <!-- Second row -->
+            <div class="row">
+                <!-- First column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                    <div class="view overlay">
+                        <img class="card-img-top" src="../images/" alt="xv6" />
+                        <a>
+                            <div class="mask rgba-black-strong"></div>
+                        </a>
+                    </div>
+    
+                    <div class="card-body">
+                        <h4 class="card-title">
+                        <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
+                            <i class="fa fa-github bg-white" style="font-size: 30px; color: black;" ></i>
+                        </a>
+                        </h4>
+                        <hr>
+                        <p class="card-text text-muted font-weight-light">
+                        Write Description.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <!-- First column -->
+    
+                <!-- Second column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                    <div class="view overlay">
+                        <img class="card-img-top" src="../images/" alt="xv6"/>
+                        <a>
+                        <div class="mask rgba-black-strong"></div>
+                        </a>
+                    </div>
+    
+                    <div class="card-body">
+                        <h4 class="card-title">
+                        Toonify
+                        <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color"
+                            href="">
+                            <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+                        </a>
+                        </h4>
+                        <hr />
+                        <p class="card-text text-muted font-weight-light">
+                        a cartoon like effect to images. Emulated cel-shading effects
+                        by applying median filter, canny edge detection, morphological
+                        operation, edge filtering and bilateral filter.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <!-- Second column -->
+    
+                <!-- Third column -->
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
+                    <div class="view overlay">
+                        <img class="card-img-top" src="../images/circle3.jpg" alt="xv6" />
+                        <a>
+                        <div class="mask rgba-black-strong"></div>
+                        </a>
+                    </div>
+    
+                    <div class="card-body">
+                        <h4 class="card-title">
+                        Circle Packing
+                        <a
+                            class="float-right btn-floating btn-action ml-auto mr-0 mdb-color"
+                            href="">
+                            <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
+                        </a>
+                        </h4>
+                        <hr />
+                        <p class="card-text text-muted font-weight-light">
+                        the effect of cluster of circles by storing all the pixel
+                        values to fill the the circles and compare the (x, y) position
+                        within the image bounds to prevent overlapping of circles.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <!-- Third column -->
+            </div>
+            <!-- Second row -->
+        </section>
+    </div>
+    <!-- ----------------------------------------------Gallery End---------------------------------------------- -->
+
+
 
     <!-- ----------------------------------------------Footer Start---------------------------------------------- -->
     <footer class="new_footer_area bg_color">

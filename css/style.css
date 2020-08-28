@@ -1,4 +1,8 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Major+Mono+Display&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato&family=Lora:ital,wght@1,600&family=Major+Mono+Display&family=Roboto+Slab:wght@200&family=Sail&display=swap');
 
 body, html{
 	background-color: white;
@@ -9,7 +13,11 @@ body, html{
 
 nav{
     background-color: white;
-    font-size: 25px;
+    font-size: 20px;
+}
+#menu-item{
+	font-family: 'Lora', serif;
+	/* font-family: 'Fredericka the Great', cursive; */
 }
 .fa-home{
     color: black;
@@ -23,6 +31,28 @@ nav{
 .fa-envelope{
     color: red;
 }
+
+/* Small devices (phones : 576px and down) */
+@media screen and (min-width: 576px) {
+
+
+}
+
+/* Medium devices (tablets : 768px and up) */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Large devices (desktops monitors : 992px and up) */
+@media screen and (min-width: 992px) {
+
+}
+
+/* Extra Large devices (large desktops monitors : 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+}
+
 
 
 /* On smaller screens, where height is less than 450px, 
