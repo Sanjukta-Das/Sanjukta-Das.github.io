@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Courier+Prime&family=DM+Serif+Display&family=Lato&family=Lora:ital,wght@1,600&family=Major+Mono+Display&family=Montserrat+Alternates&family=Red+Rose&family=Roboto+Slab:wght@200&family=Sail&display=swap');
 
 :root {
     --background-color: #113AAA;
     --primary-color: #f56f86;
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -43,7 +44,7 @@ body {
     height: 13px;
     width: 13px;
     background-color: var(--primary-color);
-    /* box-shadow: 0px 0px 5px 0px var(--primary-color); */
+    box-shadow: 0px 0px 5px 0px var(--primary-color);
     border-radius: 15px;
     left: calc(50px / 2);
     bottom: 24px;
@@ -180,26 +181,34 @@ body {
     transition: all 0.3s ease-in-out;
     overflow: hidden;
     position: relative;
+    font-family: 'Aref Ruqaa', serif;
+    color: #37009c;
+    background-color: #fdebf1;
+    /* background-color: #e6f7ff; */
+    /* background-color: rgba(0, 0, 0, 0.781); */
+    height: auto;
+    width: 700px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 25px;
+    
 }
 
 .step.minimized > .step-content {
     height: 0px;
 }
 
-.step-content.intel {
-    height: 220px;
-    /* height: auto; */
-    /* width: 100%; */
+/* .step-content.intel {
+    height: auto;
     width: 700px;
-    /* background-color: rgba(0, 0, 0, 0.05); */
     color: white;
     background-color: rgba(0, 0, 0, 0.781);
     border-radius: 4px;
     margin-top: 10px;
     margin-left: 25px;
-}
+} */
 
-.step-content.hsbc {
+/* .step-content.hsbc {
     height: 270px;
     width: 700px;
     color: white;
@@ -207,9 +216,9 @@ body {
     border-radius: 4px;
     margin-top: 10px;
     margin-left: 25px;
-}
+} */
 
-.step-content.parle-agro {
+/* .step-content.parle-agro {
     height: 170px;
     width: 700px;
     color: white;
@@ -217,27 +226,27 @@ body {
     border-radius: 4px;
     margin-top: 10px;
     margin-left: 25px;
-}
+} */
 
-.step-content.idbi-capital {
-    height: 100px;
-    width: 700px;
+/* .step-content.idbi-capital {
+    height: 100px; 
+    width: 700px; 
     color: white;
     background-color: rgba(0, 0, 0, 0.781);
     border-radius: 4px;
     margin-top: 10px;
-    margin-left: 25px;
-}
+    margin-left: 25px; 
+} */
 
-.step-content.ohpc {
-    height: 100px;
+/* .step-content.ohpc {
     width: 700px;
+    height: 100px;
     color: white;
     background-color: rgba(0, 0, 0, 0.781);
     border-radius: 4px;
     margin-top: 10px;
-    margin-left: 25px;
-}
+    margin-left: 25px; 
+} */
 /* ---------------------------------------------------------------------------- */
 
 

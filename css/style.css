@@ -15,6 +15,12 @@ nav{
     background-color: white;
     font-size: 20px;
 }
+
+#partition{
+  border-top: 1px solid #000000;
+  width: 60%;
+}
+
 #menu-item{
 	font-family: 'Lora', serif;
 	/* font-family: 'Fredericka the Great', cursive; */
