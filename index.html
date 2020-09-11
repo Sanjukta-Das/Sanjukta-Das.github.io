@@ -468,49 +468,77 @@
 
     <!-- ---------------------------------------------- Skills JS Start ---------------------------------------------- -->
     <div class="container-fluid" style="width: 85%;">
-        <h1 class="text-center" >Skills</h1>
+        <h1 class="text-center">Skills</h1>
 
         <div class="row">
-            <div class="col">
-                <h3 class="text-center">Technical</h3>
-                <canvas id="horizontalBar-technical"></canvas>
-                <!-- <div class="progress">
-                    <p class="text-white">Python</p>
-                    <div class="progress-bar" style="width: 70%;"></div>
-                </div> -->
+            <div class="col-md-4">
+                <h3 class="text-center">Programming Languages</h3>
+                <canvas id="horizontalBar-programming-language"></canvas>
             </div>
 
-            <div class="col">
+            <div class="col-md-4">
+                <h3 class="text-center">Database</h3>
+                <canvas id="horizontalBar-database"></canvas>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="text-center">Data Visualization</h3>
+                <canvas id="horizontalBar-data-visualization"></canvas>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="text-center">Web Development</h3>
+                <canvas id="horizontalBar-web-development"></canvas>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="text-center">Cloud</h3>
+                <canvas id="horizontalBar-cloud"></canvas>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="text-center">Version Controlling</h3>
+                <canvas id="horizontalBar-version-controll"></canvas>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="text-center">Tools & Miscellaneous</h3>
+                <canvas id="horizontalBar-misc"></canvas>
+            </div>
+
+            <div class="col-md-4">
                 <h3 class="text-center">Business</h3>
                 <canvas id="horizontalBar-business"></canvas>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="text-center">Technical</h3>
+                <canvas id="horizontalBar-technical"></canvas>
             </div>
         </div>
     </div>
     <hr class="p-5" id="partition">
 
     <!-- Technical Skills -->
-    <!-- <script>
-        new Chart(document.getElementById("horizontalBar-technical"), {
+    <script>
+
+
+        function creatBarChart(id, labels, labelsData){
+            new Chart(document.getElementById(id), {
             "type": "horizontalBar",
             "data": {
                 // "labels": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey"],
-                "labels": ["R", "RMarkdown", "C", "C++", "Java", "Linux", "Flask", "Amazon Web Services (AWS)", "Google Cloud Platform (GCP)", 
-                            "Azure", "Docker", "Kubernetes", "GIT", "Bitbucket", "Java", "JUnit Testing", "MongoDB", "SQL", "PostgreSQL", 
-                            "Google Web Toolkit", "JSP", "Servlet", "REST API", "Android", "HTML", "CSS", "Javascript", "React JS", "SharePoint", 
-                            "Power BI", "C#", ".NET", "OLAP, Microsoft Office", "SDLC", "Object-Oriented Programming", "Data Mining", "Data Wrangling", 
-                            "Data Modelling", "Data Analysis"],
+                "labels": labels,
                 "datasets": [{
                     "label": "Technical",
-                    "data": [22, 33, 55, 12, 86, 23, 14, 22, 33, 55, 12, 86, 23, 14, 22, 33, 55, 12, 86, 23, 14, 22, 33, 55, 12, 86, 23, 14],
+                    "data": labelsData,
                     "fill": false,
-                    "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
-                    "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)",
-                    "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"
-                    ],
-                    "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
-                    "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"
-                    ],
-                    "borderWidth": 1
+                    "backgroundColor": "#F07124"
+                    // ,
+                    // "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
+                    // "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"
+                    // ],
+                    // "borderWidth": 1
                 }]
             }
             // ,
@@ -524,41 +552,57 @@
             //     }
             // }
         });
-    </script> -->
 
-    <!-- Business Skills -->
-    <!-- <script>
-        new Chart(document.getElementById("horizontalBar-business"), {
-            "type": "horizontalBar",
-            "data": {
-                // "labels": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey"],
-                "labels": ["Ratio Analysis", "Cash Flow Management", "Security Analysis", "Capital Budgeting", "Trading & P/L", "Balance Sheet Reports", "Financial Reporting"],
-                "datasets": [{
-                    "label": "Business",
-                    "data": [22, 33, 55, 12, 86, 23, 14],
-                    "fill": false,
-                    "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
-                    "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)",
-                    "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"
-                    ],
-                    "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
-                    "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"
-                    ],
-                    "borderWidth": 1
-                }]
-            }
-            ,
-            "options": {
-                "scales": {
-                    "xAxes": [{
-                        "ticks": {
-                            "beginAtZero": true
+        }
+        
+        creatBarChart("horizontalBar-programming-language", ["Python", "C", "C++", "Java", "C#", ".NET"], [85, 60, 75, 80, 30, 15])    
+        creatBarChart("horizontalBar-database", ["MongoDB", "SQL", "PostgreSQL"], [65, 75, 85])    
+        creatBarChart("horizontalBar-data-visualization", ["R", "RMarkdown", "Power BI", "DAX", "OLAP", "Data Mining", "Data Wrangling", "Data Modelling", "Data Analysis"], [22, 33, 55, 86, 23, 14, 22, 33, 55])    
+        creatBarChart("horizontalBar-web-development", ["Flask", "HTML", "CSS", "Bootstrap", "Javascript", "React JS", "SharePoint", "GWT", "JSP", "Servlet", "REST API"], [22, 33, 55, 86, 23, 14, 22, 33, 55, 86, 44])    
+        creatBarChart("horizontalBar-cloud", ["MongoDB", "SQL", "PostgreSQL"], [22, 33, 55])    
+        creatBarChart("horizontalBar-version-controll", ["Github", "Bit Bucket"], [22, 33, 55])    
+        creatBarChart("horizontalBar-misc", ["Github", "Bit Bucket"], [22, 33, 55])    
+        creatBarChart("horizontalBar-business", ["Ratio Analysis", "Cash Flow Management", "Security Analysis", "Capital Budgeting", "Trading & P/L", "Balance Sheet Reports", "Financial Reporting"], [22, 33, 55])    
+        creatBarChart("horizontalBar-technical", ["MongoDB", "SQL", "PostgreSQL"], [22, 33, 55])  
+        
+        
+        var ctx = document.getElementById('horizontalBar-misc').getContext('2d');
+        new Chart(
+                ctx, 
+                {
+                    type: 'horizontalBar',data: {  
+                        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],  
+                        datasets: [{    label: '# of Votes',    
+                        data: [12, 39, 20, 10, 25, 18],    
+                        backgroundColor: '#27AAC8'}]},
+                    options: {  
+                        legend: {
+                            display: false,
+                            labels: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero:true,
+                                    fontSize: 10,
+                                    max: 80
+                                }
+                            }],
+                            xAxes: [{      
+                                ticks: {        
+                                    beginAtZero:true,        
+                                    fontSize: 11      
+                                }    
+                            }]  
                         }
-                    }]
+                    }
                 }
-            }
-        });
-    </script> -->
+            );
+
+    </script>
+    
     <!-- ---------------------------------------------- Skills JS End ---------------------------------------------- -->
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
@@ -728,7 +772,7 @@
             <div class="col-md-4 mb-3">
                 <div class="card shadow zoom">
                     <div class="view overlay">
-                        <img class="card-img-top" id="three-items" src="images/cloud-1.jpg" alt="Cloud-Container"/>
+                        <img class="card-img-top" id="three-items" src="images/cloud-0.jpg" alt="Cloud-Container"/>
                         <a>
                             <div class="mask flex-center rgba-black-strong">
                                 <div class="justify-content-center">
@@ -838,7 +882,7 @@
                             <div class="mask flex-center rgba-black-strong">
                                 <div class="justify-content-center">
                                     <h2 class="text-white">Android</h2>
-                                    <a class="border text-white p-2" href="">See Project   
+                                    <a class="border text-white p-2" href="html/android.html">See Project   
                                         <i class="fas fa-arrow-right px-2" aria-hidden="true"></i> 
                                     </a>
                                 </div>
