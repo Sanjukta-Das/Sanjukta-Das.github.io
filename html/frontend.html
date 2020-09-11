@@ -37,16 +37,22 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!------------------------------------------------------------ Other CDN ------------------------------------------------------------>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="../css/footer.css">
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
+
 </head>
 <body>
 
     <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="pr-5 pl-5 pt-5 pb-1 sticky-top m-0">
+    <nav class="justify-content-center px-5 pb-3 pt-5 sticky-top">
         <ul class="nav justify-content-center">
             <li  class="nav-item pr-5 pl-5">
                 <a href="https://sanjukta-das.github.io/">
@@ -59,7 +65,7 @@
             </li>
 
             <li class="nav-item pr-5 pl-5">
-                <a class="text-dark" id="menu-item" href="../others/Sanjukta_Resume_2020.pdf" target="_blank">Resume</a>
+                <a class="text-dark" id="menu-item" href="resume.html" target="_blank">Resume</a>
             </li>
 
             <li class="nav-item pr-5 pl-5">
@@ -80,30 +86,27 @@
                 </a>
             </li>
         </ul>
-        <hr>
+        <hr id="partition">
     </nav>
     <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
 
-    <!-- ----------------------------------------------Cover Image Start---------------------------------------------- -->
-    <div class="p-1 d-flex justify-content-center"  >
-        <img class="img-fluid img-responsive cover-img" src="../images/fe-0.png" alt="" style="width: 1700px; height: 600px;">
-    </div>
-    <!-- ----------------------------------------------Cover Image End---------------------------------------------- -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
     <!-- ----------------------------------------------Back Button Start---------------------------------------------- -->
-    <div class="container p-5">
-        <div class="row d-flex justify-content-center">
-            <div class="col">
+
+    <div class="container py-2 px-5">
+        <div class="row d-flex flex-center text-center justify-content-center">
+            <!-- <div class="col"> -->
                 <button class="btn btn-outline-dark hBack" id="back-button" type="button">
                     <i class="fas fa-arrow-left"></i>
                 </button>
-            </div>
-            <div class="col">
+            <!-- </div> -->
+            <!-- <div class="col"> -->
                 <h1 id="heading">Frontend Development</h1>
-            </div>
-            <div class="col">
+            <!-- </div> -->
+            <!-- <div class="col">
                 <h1> </h1>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -115,188 +118,114 @@
     </script>
     <!-- ----------------------------------------------Back Button End---------------------------------------------- -->
 
-    <!-- ----------------------------------------------Gallery Start---------------------------------------------- -->
-    <div class="container p-5">
-		<!-- Section: Block Content -->
-		<section class="dark-grey-text">
-            <!-- First row -->
-            <div class="row">
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
-                <!-- First column -->
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
-                        <div class="view overlay">
-                            <img class="card-img-top" src="../images/string-matching-02.jpeg" alt="xv6"/>
-                            <a>
-                                <div class="mask flex-center rgba-black-strong">
-                                    <p class="border text-white p-1 m-1 tag">ReactJS</p>
-                                    <p class="border text-white p-1 m-1 tag">Marvel API</p>
-                                    <p class="border text-white p-1 m-1 tag">VS Code</p>
+    <!-- --------------------------------------- Marvel Explorer --------------------------------------- -->
+    <div class="container my-5 py-5 z-depth-1">
+        <!--Section: Content-->
+        <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+            <!-- Grid row-3 -->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3 class="font-weight-bold">Marvel Explorer</h3>
+                    <hr>
+                    <p class="text-muted" id="project-description">
+                        Developed a user-friendly and interactive website using ReactJS to explore comics by series & super heroes of Marvel Universe.
+                    </p>
+                    <a class="btn btn-block peach-gradient btn-rounded text-white stretched-link" href="https://github.com/Sanjukta-Das/CS510-Front-End_Web_Technologies-Project" target="blank">Source
+                        <i class="fa fa-github px-3" aria-hidden="true"></i>
+                    </a>
+                    <a class="btn btn-block btn-black text-white btn-rounded" href="https://github.com/Sanjukta-Das/CS510-Front-End_Web_Technologies-Project" target="blank">Report 
+                        <i class="fas fa-arrow-right px-3" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../images/marvel.jpg" class="img-fluid" alt="">
+
+                        <!-- carousel start -->
+                        <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="../images/clustering-01.png" alt="auto-tagging-0">
                                 </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../images/k-means-1.jpg" alt="auto-tagging-1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../images/kmeans-0.png" alt="auto-tagging-2">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
                             </a>
-                        </div>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div> -->
+                        <!-- carousel end -->
 
-                        <div class="card-body">
-                            <h4 class="card-title">Marvel API
-                                <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
-                                    <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
-                                </a>
-                            </h4>
-                            <hr>
-                            <p class="card-text text-muted font-weight-light">
-                                Performance analysis of various String Matching algorithms by implenting Brute Force, KMP, Boyer-Moore, Shift-OR, 
-                                Rabin-Karp, etc., executed each of them using DNA sequence dataset and observing their time and space complexities.   
-                            </p>
-                        </div>
+                        <a href="#">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
                     </div>
                 </div>
-                <!-- First column -->
-
-                <!-- Second column -->
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
-                        <div class="view overlay">
-                            <img class="card-img-top" src="../images/" alt="xv6" />
-                            <a>
-                                <div class="mask rgba-black-strong"></div>
-                            </a>
-                        </div>
-
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
-                                    <i class="fa fa-github bg-white" style="font-size: 30px; color: black;" ></i>
-                                </a>
-                            </h4>
-                            <hr>
-                            <p class="card-text text-muted font-weight-light">
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Second column -->
-
-                <!-- Third column -->
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
-                        <div class="view overlay">
-                            <img class="card-img-top" src="../images/" alt="RShiny" />
-                            <a>
-                                <div class="mask rgba-black-strong"></div>
-                            </a>
-                        </div>
-
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
-                                    <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
-                                </a>
-                            </h4>
-                            <hr>
-                            <p class="card-text text-muted font-weight-light">
-                            the effect of cluster of circles by storing all the pixel
-                            values to fill the the circles and compare the (x, y) position
-                            within the image bounds to prevent overlapping of circles.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Third column -->
+                <!--Grid column-->
             </div>
-            <!-- First row -->
-
-            <!-- Second row -->
-            <div class="row">
-                <!-- First column -->
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="../images/" alt="xv6" />
-                        <a>
-                            <div class="mask rgba-black-strong"></div>
-                        </a>
-                    </div>
-    
-                    <div class="card-body">
-                        <h4 class="card-title">
-                        <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color" href="">
-                            <i class="fa fa-github bg-white" style="font-size: 30px; color: black;" ></i>
-                        </a>
-                        </h4>
-                        <hr>
-                        <p class="card-text text-muted font-weight-light">
-                        Write Description.
-                        </p>
-                    </div>
-                    </div>
-                </div>
-                <!-- First column -->
-    
-                <!-- Second column -->
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="../images/" alt="xv6"/>
-                        <a>
-                        <div class="mask rgba-black-strong"></div>
-                        </a>
-                    </div>
-    
-                    <div class="card-body">
-                        <h4 class="card-title">
-                        Toonify
-                        <a class="float-right btn-floating btn-action ml-auto mr-0 mdb-color"
-                            href="">
-                            <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
-                        </a>
-                        </h4>
-                        <hr />
-                        <p class="card-text text-muted font-weight-light">
-                        a cartoon like effect to images. Emulated cel-shading effects
-                        by applying median filter, canny edge detection, morphological
-                        operation, edge filtering and bilateral filter.
-                        </p>
-                    </div>
-                    </div>
-                </div>
-                <!-- Second column -->
-    
-                <!-- Third column -->
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
-                    <div class="card shadow p-3 mb-5 bg-white rounded zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="../images/circle3.jpg" alt="xv6" />
-                        <a>
-                        <div class="mask rgba-black-strong"></div>
-                        </a>
-                    </div>
-    
-                    <div class="card-body">
-                        <h4 class="card-title">
-                        Circle Packing
-                        <a
-                            class="float-right btn-floating btn-action ml-auto mr-0 mdb-color"
-                            href="">
-                            <i class="fa fa-github bg-white" style="font-size: 30px; color: black;"></i>
-                        </a>
-                        </h4>
-                        <hr />
-                        <p class="card-text text-muted font-weight-light">
-                        the effect of cluster of circles by storing all the pixel
-                        values to fill the the circles and compare the (x, y) position
-                        within the image bounds to prevent overlapping of circles.
-                        </p>
-                    </div>
-                    </div>
-                </div>
-                <!-- Third column -->
-            </div>
-            <!-- Second row -->
+            <!-- Grid row-3 -->
         </section>
+        <!--Section: Content-->
     </div>
-    <!-- ----------------------------------------------Gallery End---------------------------------------------- -->
 
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    
+    <!-- ----------------------------------------------Contact Start---------------------------------------------- -->
+    <!-- <div class="bg-blue-gradient"> -->
+        <div class="container form-gradient w-50 p-5" id="contact-me">
+            <!--Form with header-->
+            <div class="card">
+                <!--Header-->
+                <div class="header pt-3 purple-gradient">
+                    <div class="row d-flex justify-content-center">
+                        <h3 class="white-text mb-4 pt-3 font-weight-bold">Contact Me</h3>
+                    </div>
+                </div>
+                <!--Header-->
+                
+                <!--Body-->
+                <div class="card-body mx-4 mt-4">
+                    <div class="md-form mb-4">
+                        <input type="text" id="form-name" class="form-control" placeholder="Your Name">
+                    </div>
+                    
+                    <div class="md-form mb-4">
+                        <input type="text" id="form-email" class="form-control" placeholder="Email">
+                    </div>
+                    
+                    <div class="md-form mb-5 mt-5">
+                        <textarea id="form-contact-message" class="form-control md-textarea" rows="1" placeholder="Message"></textarea>
+                    </div>
 
+                    
+                    <div class="md-form mb-3 d-flex justify-content-center">
+                        <button type="button" class="pr-4 pl-4 pt-2 pb-2 btn btn-black text-white z-depth-1a" style="font-size: 20px;">Send</button>
+                    </div>
+                </div>
+                <!--Body-->
+            </div>
+            <!--Form with header-->
+        </div>
+    <!-- </div> -->
+    <!-- ----------------------------------------------Contact End---------------------------------------------- -->
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
     <!-- ----------------------------------------------Footer Start---------------------------------------------- -->
     <footer class="new_footer_area bg_color">
@@ -317,6 +246,31 @@
         </div>
     </footer>
     <!-- ----------------------------------------------Footer End---------------------------------------------- -->
+    
+    <!-- ----------------------------------------------Back-to-top Start---------------------------------------------- -->
+    <a id="back-to-top" href="#" class="btn rounded back-to-top" role="button">
+        <i class="fa fa-angle-double-up" aria-hidden="true" style="color: #d30484; size: 20px;"></i>
+        <!-- <i class="fas fa-chevron-up"></i> -->
+    </a>
 
+    <script>
+        $(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 200) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});
+    </script>
+    <!-- ----------------------------------------------Back-to-top End---------------------------------------------- -->
 </body>
 </html>

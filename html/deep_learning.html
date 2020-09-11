@@ -52,7 +52,7 @@
 <body>
 
     <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="justify-content-center p-5 sticky-top">
+    <nav class="justify-content-center px-5 pb-3 pt-5 sticky-top">
         <ul class="nav justify-content-center">
             <li  class="nav-item pr-5 pl-5">
                 <a href="https://sanjukta-das.github.io/">
@@ -93,21 +93,21 @@
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
     <!-- ----------------------------------------------Back Button Start---------------------------------------------- -->
-	<div class="container p-5">
-		<div class="row d-flex justify-content-center">
-			<div class="col">
-				<button class="btn btn-outline-dark hBack" id="back-button" type="button">
-					<i class="fas fa-arrow-left"></i>
-				</button>
-			</div>
-			<div class="col">
-				<h1 id="heading">Deep Learning</h1>
-			</div>
-			<div class="col">
-				<h1> </h1>
-			</div>
-		</div>
-	</div>
+    <div class="container py-2 px-5">
+        <div class="row d-flex flex-center text-center justify-content-center">
+            <!-- <div class="col"> -->
+                <button class="btn btn-outline-dark hBack" id="back-button" type="button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            <!-- </div> -->
+            <!-- <div class="col"> -->
+                <h1 id="heading">Deep Learning</h1>
+            <!-- </div> -->
+            <!-- <div class="col">
+                <h1> </h1>
+            </div> -->
+        </div>
+    </div>
 
     <script>
         $(".hBack").on("click", function(e){
@@ -126,6 +126,7 @@
                 <!--Grid column-->
                 <div class="col-md-6 mb-4 mb-md-0">
                     <h3 class="font-weight-bold">Auto Tagging Stack Overflow Questions</h3>
+                    <hr>
                     <p class="text-muted" id="project-description">
                         Stack sample dataset (10% of stack overflow Questions and answers)
                         Implement a tag suggestion system using both Machine Learning and Deep Learning models.
@@ -133,9 +134,15 @@
                         Implemented classifiers - SGC Classifier, Multinomial Naïve Bayes Classifier, Random Forest Classifier, etc.
                         Libraries used - pandas, numpy, matplotlib, seaborn, pickle, sklearn, bs4 (beautiful soup 4), nltk.tokenize, logging, scipy.sparse
                     </p>
-                    <a class="stretched-link ml-0" href="#" role="button">
-                        <i class="fa fa-github" aria-hidden="true"></i>
+                    <a class="btn btn-block peach-gradient btn-rounded text-white stretched-link" href="#" target="blank">Source
+                        <i class="fa fa-github px-3" aria-hidden="true"></i>
                     </a>
+                    <a class="btn btn-block btn-black text-white btn-rounded" href="#" target="blank">Report 
+                        <i class="fas fa-arrow-right px-3" aria-hidden="true"></i>
+                    </a>
+                    <!-- <a class="stretched-link ml-0" href="#" role="button">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a> -->
                 </div>
                 <!--Grid column-->
         
@@ -186,7 +193,7 @@
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     
     <!-- ----------------------------------------------Contact Start---------------------------------------------- -->
-    <div class="container form-gradient w-25 p-5" id="contact-me">
+    <div class="container form-gradient w-50 p-5" id="contact-me">
         <!--Form with header-->
         <div class="card">
             <!--Header-->
