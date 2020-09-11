@@ -42,9 +42,9 @@
     <!------------------------------------------------------------ Other CDN ------------------------------------------------------------>
 
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/projects.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <!-- <link rel="stylesheet" href="../css/projects.css"> -->
+    <!-- <link rel="stylesheet" href="../css/footer.css"> -->
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
 
 
@@ -58,6 +58,13 @@
             text-decoration: underline;
             text-decoration-color: rgb(80, 80, 80);
         }
+        #heading{
+            color: #000080;
+        }
+        #degree{
+            font-family: 'Roboto Slab', serif; 
+            font-size: x-large;
+        }
         #school, #company{
             font-family: 'Red Rose', cursive;
         }
@@ -66,12 +73,10 @@
         }
     </style>
 
-
-
 </head>
 <body>
 
-    <div class="m-5">
+    <div class="mx-5 my-2">
         <h1 style="color: #ff1ac6; font-family: 'DM Serif Display', serif;">Sanjukta Das</h1>
         <div class="row font-weight-bold" style="font-family: garamond; font-size: larger; color: rgb(80, 80, 80);">
             <div class="col-sm-3 m-0">
@@ -91,23 +96,23 @@
     <section id="education">
         <div class="row mx-5 mt-5 mb-0">
             <div class="col-l-1">
-                <h2>EDUCATION</h2>
+                <h2 id="heading">EDUCATION</h2>
             </div>
             <div class="col justify-content-bottom">
-                <hr style="border-top: 2px solid #000000;">
+                <hr class="mt-4" style="border-top: 2px solid #000000;">
             </div>
         </div>
 
         <div class="mx-5 mt-0">
-            <p class="m-0" style="font-family: 'Roboto Slab', serif; font-size: x-large;">M.S. in Computer Science (3.55/4)</p>
+            <p class="m-0" id="degree">M.S. in Computer Science (3.55/4)</p>
             <div class="row" style="font-size: large;">
                 <div class="col-sm-3 text-primary font-weigtht-bold" id="school">Portland State University </div>
-                <div class="col-sm-3">🗓 2019 – Present </div>
+                <div class="col-sm-3">🗓 Spring 2019 – Summer 2020</div>
             </div>
         </div>
 
         <div class="mx-5 mt-3">
-            <p class="m-0" style="font-family: 'Roboto Slab', serif; font-size: x-large;">Post-bacc in Computer Science (3.33/4)</p>
+            <p class="m-0" id="degree" style="font-family: 'Roboto Slab', serif; font-size: x-large;">Post-bacc in Computer Science (3.33/4)</p>
             <div class="row" style="font-size: large;">
                 <div class="col-sm-3 text-primary font-weigtht-bold" id="school">Portland State University</div>
                 <div class="col-sm-3">🗓 2017 – 2018 </div>
@@ -115,7 +120,7 @@
         </div>
 
         <div class="mx-5 mt-3">
-            <p class="m-0" style="font-family: 'Roboto Slab', serif; font-size: x-large;">Computer Science (Transfer)</p>
+            <p class="m-0" id="degree" style="font-family: 'Roboto Slab', serif; font-size: x-large;">Computer Science (Transfer)</p>
             <div class="row" style="font-size: large;">
                 <div class="col-sm-3 text-primary font-weigtht-bold" id="school">Portland Community College</div>
                 <div class="col-sm-3">🗓 2016 – 2018 </div>
@@ -123,7 +128,7 @@
         </div>
 
         <div class="mx-5 mt-3">
-            <p class="m-0" style="font-family: 'Roboto Slab', serif; font-size: x-large;">MBA in Finance</p>
+            <p class="m-0" id="degree" style="font-family: 'Roboto Slab', serif; font-size: x-large;">MBA in Finance</p>
             <div class="row" style="font-size: large;">
                 <div class="col-sm-3 text-primary font-weigtht-bold" id="school">Regional College of Management, India</div>
                 <div class="col-sm-3">🗓 2011 – 2013 </div>
@@ -136,10 +141,10 @@
     <section id="work-experience">
         <div class="row mx-5 mt-5 mb-0">
             <div class="col-l-1">
-                <h2>WORK EXPERIENCE</h2>
+                <h2 id="heading">WORK EXPERIENCE</h2>
             </div>
             <div class="col justify-content-bottom">
-                <hr style="border-top: 2px solid #000000;">
+                <hr class="mt-4" style="border-top: 2px solid #000000;">
             </div>
         </div>
 
@@ -247,218 +252,225 @@
 
 
     <!-- ------------------------------------------------------------------------- -->
-    <div class="row mx-5 mt-5 mb-0">
-        <div class="col-l-1">
-            <h2>SKILLS</h2>
+    <section id="skills">
+        <div class="row mx-5 mt-5 mb-0">
+            <div class="col-l-1">
+                <h2 id="heading">SKILLS</h2>
+            </div>
+            <div class="col justify-content-bottom">
+                <hr class="mt-4" style="border-top: 2px solid #000000;">
+            </div>
         </div>
-        <div class="col justify-content-bottom">
-            <hr style="border-top: 2px solid #000000;">
+        <div class="mx-5 mb-5 mt-0">
+            <h5 class="text-primary font-weigtht-bold" id="company">Computer Science:</h5>
+            <p id="we-list-item">
+                Linux, C, C++, Java, Python, R, RMarkdown, Flask, AWS, Google Cloud Platform, Docker, Kubernetes, GIT, Bitbucket, 
+                Java, JUnit Testing, MongoDB, SQL, PostgreSQL, Google Web Toolkit, JSP, Servlet, REST API, Android, HTML, CSS, 
+                Javascript, React JS, Redux, SharePoint, Power BI, C#, .NET, OLAP, Microsoft Office, SDLC, Object-Oriented Programming, 
+                Data Mining, Data Wrangling, Data Modelling, Data Analysis, 
+            </p>
+            <h5 class="text-primary font-weigtht-bold" id="company">Finance:</h5>
+            <p id="we-list-item">
+                Ratio Analysis, Cash Flow Management, Security Analysis, Capital Budgeting, Trading & P/L, Balance Sheet Reports, Financial Reporting.
+            </p>
         </div>
-    </div>
-    <div class="mx-5 mb-5 mt-0">
-        <h5 class="text-primary font-weigtht-bold" id="company">Computer Science:</h5>
-        <p id="we-list-item">
-            Linux, C, C++, Java, Python, R, RMarkdown, Flask, AWS, Google Cloud Platform, Docker, Kubernetes, GIT, Bitbucket, 
-            Java, JUnit Testing, MongoDB, SQL, PostgreSQL, Google Web Toolkit, JSP, Servlet, REST API, Android, HTML, CSS, 
-            Javascript, React JS, Redux, SharePoint, Power BI, C#, .NET, OLAP, Microsoft Office, SDLC, Object-Oriented Programming, 
-            Data Mining, Data Wrangling, Data Modelling, Data Analysis, 
-        </p>
-        <h5 class="text-primary font-weigtht-bold" id="company">Finance:</h5>
-        <p id="we-list-item">
-            Ratio Analysis, Cash Flow Management, Security Analysis, Capital Budgeting, Trading & P/L, Balance Sheet Reports, Financial Reporting.
-        </p>
-    </div>
+    </section>
 
     <!-- ------------------------------------------------------------------------- -->
-    <div class="row mx-5 mt-5 mb-0">
-        <div class="col-l-1">
-            <h2>COURSE WORK</h2>
+
+    <section id="course-work">
+        <div class="row mx-5 mt-5 mb-0">
+            <div class="col-l-1">
+                <h2>COURSE WORK</h2>
+            </div>
+            <div class="col justify-content-bottom">
+                <hr class="mt-4" style="border-top: 2px solid #000000;">
+            </div>
         </div>
-        <div class="col justify-content-bottom">
-            <hr style="border-top: 2px solid #000000;">
+        <div class="mx-5 mb-5 mt-0">
+            <h5 class="text-primary font-weigtht-bold" id="company">Computer Science:</h5>
+            <p id="we-list-item">
+                Data Visualization, Machine Learning, Algorithm, Internetworking Protocol, DBMS Implementations, Computer Vision, 
+                Frontend Development, Full-Stack Web Development, Internet and cloud Systems, Cloud & Cluster database, 
+                Advanced Java Programming, Data Structure, Operating Systems, Linux, Software Engineering, Computational Photography, 
+                Database Management System, Engineering & Technology Roadmapping etc. 
+            </p>
+            <h5 class="text-primary font-weigtht-bold" id="company">Finance:</h5>
+            <p id="we-list-item">
+                Economics, Financial Analysis, Capital Budgeting, Business Statistics, Research Methodology, Insurance & Risk Management, 
+                Quantitative Techniques, Financial Accounting, Financial Management, Economic Environment of Business, Management Information System, 
+                Working Capital Management, Management Accounting for Decision Making, Operations Management, Banking & Insurance Management, 
+                Financial Services, Security Analysis & Portfolio Management, International Finance, Financial Planning and Wealth Management, 
+                Financial Derivative, Business Valuation & Financial Modelling,  Project Planning & Control, etc.
+            </p>
         </div>
-    </div>
-    <div class="mx-5 mb-5 mt-0">
-        <h5 class="text-primary font-weigtht-bold" id="company">Computer Science:</h5>
-        <p id="we-list-item">
-            Data Visualization, Machine Learning, Algorithm, Internetworking Protocol, DBMS Implementations, Computer Vision, 
-            Frontend Development, Full-Stack Web Development, Internet and cloud Systems, Cloud & Cluster database, 
-            Advanced Java Programming, Data Structure, Operating Systems, Linux, Software Engineering, Computational Photography, 
-            Database Management System, Engineering & Technology Roadmapping etc. 
-        </p>
-        <h5 class="text-primary font-weigtht-bold" id="company">Finance:</h5>
-        <p id="we-list-item">
-            Economics, Financial Analysis, Capital Budgeting, Business Statistics, Research Methodology, Insurance & Risk Management, 
-            Quantitative Techniques, Financial Accounting, Financial Management, Economic Environment of Business, Management Information System, 
-            Working Capital Management, Management Accounting for Decision Making, Operations Management, Banking & Insurance Management, 
-            Financial Services, Security Analysis & Portfolio Management, International Finance, Financial Planning and Wealth Management, 
-            Financial Derivative, Business Valuation & Financial Modelling,  Project Planning & Control, etc.
-        </p>
-    </div>
+    </section>
 
     <!-- ------------------------------------------------------------------------- -->
-    <div class="row mx-5 mt-5 mb-0">
-        <div class="col-l-1">
-            <h2>ACADEMIC PROJECTS</h2>
+    <section id="academic-projects">
+        <div class="row mx-5 mt-5 mb-0">
+            <div class="col-l-1">
+                <h2 id="heading">ACADEMIC PROJECTS</h2>
+            </div>
+            <div class="col justify-content-bottom">
+                <hr class="mt-4" style="border-top: 2px solid #000000;">
+            </div>
         </div>
-        <div class="col justify-content-bottom">
-            <hr style="border-top: 2px solid #000000;">
-        </div>
-    </div>
-    <div class="mx-5 mb-5 mt-0">
-        <div class="text-primary font-weigtht-bold" id="company">Deep Learning:</div>
-        <p id="we-list-item">
-            •	Auto Tagging Stack Overflow Questions – 
-                o	Stack sample dataset (10% of stack overflow Questions and answers)
-                o	Implement a tag suggestion system using both Machine Learning and Deep Learning models.
-                o	Performance evaluation of both the approaches.
-                o	Implemented classifiers -  SGC Classifier, Multinomial Naïve Bayes Classifier, Random Forest Classifier, etc.
-                o	Libraries used - pandas, numpy, matplotlib, seaborn, pickle, sklearn, bs4 (beautiful soup 4), nltk.tokenize, logging, scipy.sparse
-        </p>
-        
-        <div class="text-primary font-weigtht-bold" id="company">Data Visualization:</div>
-        <p id="we-list-item">
-            Multiple data visualization projects on Museum of Modern Arts(MOMA), COVID-19, ArcGIS Maps, developing static and dynamic website using Shiny, Leaflet, ArcGIS, Tidyverse, ggplot, dplyr, RMarkdown, blogdown, Hugo, etc.
-        </p>
-
-        <div class="text-primary font-weigtht-bold" id="company">Machine Learning: </div>
-        <p id="we-list-item">
-            •	Stock Price Prediction – Linear Regression, SVM, Longest-Path
-            •	Clustering – K-Means and Fuzzy Means Clustering
-            •	Spambase – This project involves solving a classification problem in ML i.e. identifying spam/non-spam emails from Spambase dataset(UCI ML repo) using linear SVMs
-            •	MNIST – Recognized handwritten digits from MNIST Dataset by implementing perceptron learning algorithm. Trained 10 perceptron to learn and classify as a group, the handwritten digits in the MINST dataset, where each perceptron has 785 inputs consisting of 784 pixels i.e., 28x28 pixel image represented as gray scaled value (0 – 255) and one output i.e., either 0 or 1. Each perceptron’s target is one of the 10-digits (0-9) and it learns using the perceptron learning algorithm. 
-        </p>
-
-        <div class="text-primary font-weigtht-bold" id="company">Internet Relay Chat:</div>
-        <p id="we-list-item">
-            This project involves implementing a simple Internet Relay Chat (IRC) application layer protocol for real-time text-based messaging in Java. It provides a generic message passing framework for multiple clients to communicate with each other via a central forwarding server. 
-        </p>
-        
-        <div class="text-primary font-weigtht-bold" id="company">String Matching:</div>
-        <p id="we-list-item">
-            •	KMP
-            •	Boyer-More
-            •	Shift-Or
-            •	Brute Force
-        </p>
-        
-
-
-        <div class="text-primary font-weigtht-bold" id="company">Computer Vision:</div>
-        <p id="we-list-item">
-            •	Video Frame interpolation – 
-            •	Panorama – Developing a program to stitch multiple images to obtain a wide seamless panorama,  using Scale Invariant Feature Transform (SIFT) to extract local features in the input images, implemented K-Nearest Neighbors algorithm and Random Sample Consensus (RANSAC) to match the features and compute the homographic matrix for image wrapping respectively and followed by application of weighted matrix as a mask for image blending. 
-            •	Color Transfer – 
-            •	Unwanted object removal –
+        <div class="mx-5 mb-5 mt-0">
+            <div class="text-primary font-weigtht-bold" id="company">Deep Learning:</div>
+            <p id="we-list-item">
+                Auto Tagging Stack Overflow Questions – 
+                    o	Stack sample dataset (10% of stack overflow Questions and answers)
+                    o	Implement a tag suggestion system using both Machine Learning and Deep Learning models.
+                    o	Performance evaluation of both the approaches.
+                    o	Implemented classifiers -  SGC Classifier, Multinomial Naïve Bayes Classifier, Random Forest Classifier, etc.
+                    o	Libraries used - pandas, numpy, matplotlib, seaborn, pickle, sklearn, bs4 (beautiful soup 4), nltk.tokenize, logging, scipy.sparse
+            </p>
             
-        </p>
+            <div class="text-primary font-weigtht-bold" id="company">Data Visualization:</div>
+            <p id="we-list-item">
+                Multiple data visualization projects on Museum of Modern Arts(MOMA), COVID-19, ArcGIS Maps, developing static and dynamic website using Shiny, Leaflet, ArcGIS, Tidyverse, ggplot, dplyr, RMarkdown, blogdown, Hugo, etc.
+            </p>
 
-        <div class="text-primary font-weigtht-bold" id="company">MongoDB:</div>
-        <p id="we-list-item">
-            - Hands-on experience with cloud-based data management system
-            - MongoDB Atlas
-            - Freeway dataset
-            - Data modelling and application design
-            - Design the schema (model/storage) of the data
-            - Implement various queries in Java
-        </p>
-        
-        <div class="text-primary font-weigtht-bold" id="company">PostgreSQL Benchmarking: </div>
-        <p id="we-list-item">
-            A multi-phased project that involves designing and implementation of various experiments for performance benchmarking of PostgreSQL database. It involved working with PostgreSQL’s configuration settings, Index, query optimization, Joins and scans including generation of large datasets consisting of millions of rows.
-        </p>
-        
+            <div class="text-primary font-weigtht-bold" id="company">Machine Learning: </div>
+            <p id="we-list-item">
+                •	Stock Price Prediction – Linear Regression, SVM, Longest-Path
+                •	Clustering – K-Means and Fuzzy Means Clustering
+                •	Spambase – This project involves solving a classification problem in ML i.e. identifying spam/non-spam emails from Spambase dataset(UCI ML repo) using linear SVMs
+                •	MNIST – Recognized handwritten digits from MNIST Dataset by implementing perceptron learning algorithm. Trained 10 perceptron to learn and classify as a group, the handwritten digits in the MINST dataset, where each perceptron has 785 inputs consisting of 784 pixels i.e., 28x28 pixel image represented as gray scaled value (0 – 255) and one output i.e., either 0 or 1. Each perceptron’s target is one of the 10-digits (0-9) and it learns using the perceptron learning algorithm. 
+            </p>
 
-        <div class="text-primary font-weigtht-bold" id="company">Pokedox:</div>
-        <p id="we-list-item">
+            <div class="text-primary font-weigtht-bold" id="company">Internet Relay Chat:</div>
+            <p id="we-list-item">
+                This project involves implementing a simple Internet Relay Chat (IRC) application layer protocol for real-time text-based messaging in Java. It provides a generic message passing framework for multiple clients to communicate with each other via a central forwarding server. 
+            </p>
             
-        </p>
+            <div class="text-primary font-weigtht-bold" id="company">String Matching:</div>
+            <p id="we-list-item">
+                •	KMP
+                •	Boyer-More
+                •	Shift-Or
+                •	Brute Force
+            </p>
+            
+            <div class="text-primary font-weigtht-bold" id="company">Computer Vision:</div>
+            <p id="we-list-item">
+                •	Video Frame interpolation – 
+                •	Panorama – Developing a program to stitch multiple images to obtain a wide seamless panorama,  using Scale Invariant Feature Transform (SIFT) to extract local features in the input images, implemented K-Nearest Neighbors algorithm and Random Sample Consensus (RANSAC) to match the features and compute the homographic matrix for image wrapping respectively and followed by application of weighted matrix as a mask for image blending. 
+                •	Color Transfer – 
+                •	Unwanted object removal –
+                
+            </p>
 
-        <div class="text-primary font-weigtht-bold" id="company">Marvel Comics Browser:</div>
-        <p id="we-list-item">
-            Developed a user-friendly and interactive website using ReactJS to explore comics by series & super heroes of Marvel Universe. 
-        </p>
-        
+            <div class="text-primary font-weigtht-bold" id="company">MongoDB:</div>
+            <p id="we-list-item">
+                - Hands-on experience with cloud-based data management system
+                - MongoDB Atlas
+                - Freeway dataset
+                - Data modelling and application design
+                - Design the schema (model/storage) of the data
+                - Implement various queries in Java
+            </p>
+            
+            <div class="text-primary font-weigtht-bold" id="company">PostgreSQL Benchmarking: </div>
+            <p id="we-list-item">
+                A multi-phased project that involves designing and implementation of various experiments for performance benchmarking of PostgreSQL database. It involved working with PostgreSQL’s configuration settings, Index, query optimization, Joins and scans including generation of large datasets consisting of millions of rows.
+            </p>
+            
 
+            <div class="text-primary font-weigtht-bold" id="company">Pokedox:</div>
+            <p id="we-list-item">
+                
+            </p>
 
-        <div class="text-primary font-weigtht-bold" id="company">Instapix (Flask, SQL, gcloud storage, Cloud Vision & Translate API):</div>
-        <p id="we-list-item">
-            Designed and developed a Google cloud-based application to allow users to follow other users, share/comment/like posts/photos, and view timeline etc.
-        </p>
-
-
-        <div class="text-primary font-weigtht-bold" id="company">Bubble Tea (Flask, SQL, GCP):</div>
-        <p id="we-list-item">
-            Designed and developed a Google cloud-based application to allow users to add different Bubble Tea store details (name, location, hours, contact, drinks, etc.) and give reviews.
-        </p>
-
-
-        <div class="text-primary font-weigtht-bold" id="company">Web Crawler (Python, BS4):</div>
-        <p id="we-list-item">
-            Traverse the world wide web to create search engine index with given seed links.
-        </p>
-
-
-        <div class="text-primary font-weigtht-bold" id="company">Operating Systems XV6(C, UNIX):</div>
-        <p id="we-list-item">
-            Implemented System calls: a new system calls for date and time. Process: system calls to support and obtain process ownership, set and extract UID, GID, PID, track amount of time a process uses CPU. Shell: create new user command (‘ps’ and ‘ctrl+p’ command), extract process detailed information. Scheduling: implemented MLFQ scheduler. File system: chmod, chown, chgrp system calls to set and modify file permissions that persist across xv6 sessions. Modified ‘exec’ and ‘ls’ command to enforce and display new file permissions respectively. 
-        </p>
-
-
-        <div class="text-primary font-weigtht-bold" id="company">Buddy System (C):</div>
-        <p id="we-list-item">
-            Module that imitate malloc and free to manage a block of memory (e.g. heap)
-        </p>
-
-
-        <div class="text-primary font-weigtht-bold" id="company">Twitter (Java):</div>
-        <p id="we-list-item">
-            An application which emulates the Twitter. Given a set of tweets as input, it extracts information such as date and time, user, tags, keywords, etc. and categorizes the tweets based on it. 
-        </p>
-
-
-        <div class="text-primary font-weigtht-bold" id="company">Chat Application (Java):</div>
-        <p id="we-list-item">
-            A Text-based messaging application using Java swing for designing GUI, HTML for aligned display of messages, Java socket for client-server communication, MongoDB to persist user’s information. 
-        </p>
+            <div class="text-primary font-weigtht-bold" id="company">Marvel Comics Browser:</div>
+            <p id="we-list-item">
+                Developed a user-friendly and interactive website using ReactJS to explore comics by series & super heroes of Marvel Universe. 
+            </p>
+            
 
 
-        <div class="text-primary font-weigtht-bold" id="company">Phone Bill (Java, GWT):</div>
-        <p id="we-list-item">
-            Web application that maintains the phone call record details. Features implemented are: display a README manual describing how the program works, adding a new call record, display details of all calls or calls recorded within a certain period of time. 
-        </p>
+            <div class="text-primary font-weigtht-bold" id="company">Instapix (Flask, SQL, gcloud storage, Cloud Vision & Translate API):</div>
+            <p id="we-list-item">
+                Designed and developed a Google cloud-based application to allow users to follow other users, share/comment/like posts/photos, and view timeline etc.
+            </p>
 
 
-        <div class="text-primary font-weigtht-bold" id="company">Computational Photography Projects (C++):</div>
-        <p id="we-list-item">
-            Image processing Toonify - gives a cartoon like effect to images. Emulated cel-shading effects by applying median filter, canny edge detection, morphological operation, edge filtering and bilateral filter. Mosaic - gives a tilling effect, implemented by splitting the image to tiles, then averaging the color values and replacing each tile with a matching image. Circle Packing - gives the effect of cluster of circles by storing all the pixel values to fill the the circles and compare the (x, y) position within the image bounds to prevent overlapping of circles. 
-        </p>
+            <div class="text-primary font-weigtht-bold" id="company">Bubble Tea (Flask, SQL, GCP):</div>
+            <p id="we-list-item">
+                Designed and developed a Google cloud-based application to allow users to add different Bubble Tea store details (name, location, hours, contact, drinks, etc.) and give reviews.
+            </p>
 
 
-        <div class="text-primary font-weigtht-bold" id="company">Hangman (Android):</div>
-        <p id="we-list-item">
-            Developed a word guessing game given a limited number of wrong guesses. It selects and sets a random word from a text file and asks the user to guess the letters. Displays letters or next hanging picture on every correct or wrong guess respectively. The user loses once the hangman picture is complete. 
-        </p>
+            <div class="text-primary font-weigtht-bold" id="company">Web Crawler (Python, BS4):</div>
+            <p id="we-list-item">
+                Traverse the world wide web to create search engine index with given seed links.
+            </p>
 
 
-        <div class="text-primary font-weigtht-bold" id="company">Data Structure & Algorithms (Java and C++):</div>
-        <p id="we-list-item">
-            Implemented Multiply linked list: with three separate link chains to keep the data entries unique and sorted by three different fields. AVL Tree: set container like in STL using AVL tree that supports union, intersection, cross product, and power set operations. Sorting Algorithms: analyzed various sorting algorithms using random data set. Graph Algorithm: Kruskal’s and Prim’s method of finding the Minimum Spanning Tree on random graphs, using union find data structure. Shunting Yard: Dijkstra’s shunting yard algorithm using stack to evaluate logical expressions with AND, OR, NOT, etc. based on their order of precedence. 
-        </p>
+            <div class="text-primary font-weigtht-bold" id="company">Operating Systems XV6(C, UNIX):</div>
+            <p id="we-list-item">
+                Implemented System calls: a new system calls for date and time. Process: system calls to support and obtain process ownership, set and extract UID, GID, PID, track amount of time a process uses CPU. Shell: create new user command (‘ps’ and ‘ctrl+p’ command), extract process detailed information. Scheduling: implemented MLFQ scheduler. File system: chmod, chown, chgrp system calls to set and modify file permissions that persist across xv6 sessions. Modified ‘exec’ and ‘ls’ command to enforce and display new file permissions respectively. 
+            </p>
 
-    </div>
+
+            <div class="text-primary font-weigtht-bold" id="company">Buddy System (C):</div>
+            <p id="we-list-item">
+                Module that imitate malloc and free to manage a block of memory (e.g. heap)
+            </p>
+
+
+            <div class="text-primary font-weigtht-bold" id="company">Twitter (Java):</div>
+            <p id="we-list-item">
+                An application which emulates the Twitter. Given a set of tweets as input, it extracts information such as date and time, user, tags, keywords, etc. and categorizes the tweets based on it. 
+            </p>
+
+
+            <div class="text-primary font-weigtht-bold" id="company">Chat Application (Java):</div>
+            <p id="we-list-item">
+                A Text-based messaging application using Java swing for designing GUI, HTML for aligned display of messages, Java socket for client-server communication, MongoDB to persist user’s information. 
+            </p>
+
+
+            <div class="text-primary font-weigtht-bold" id="company">Phone Bill (Java, GWT):</div>
+            <p id="we-list-item">
+                Web application that maintains the phone call record details. Features implemented are: display a README manual describing how the program works, adding a new call record, display details of all calls or calls recorded within a certain period of time. 
+            </p>
+
+
+            <div class="text-primary font-weigtht-bold" id="company">Computational Photography Projects (C++):</div>
+            <p id="we-list-item">
+                Image processing Toonify - gives a cartoon like effect to images. Emulated cel-shading effects by applying median filter, canny edge detection, morphological operation, edge filtering and bilateral filter. Mosaic - gives a tilling effect, implemented by splitting the image to tiles, then averaging the color values and replacing each tile with a matching image. Circle Packing - gives the effect of cluster of circles by storing all the pixel values to fill the the circles and compare the (x, y) position within the image bounds to prevent overlapping of circles. 
+            </p>
+
+
+            <div class="text-primary font-weigtht-bold" id="company">Hangman (Android):</div>
+            <p id="we-list-item">
+                Developed a word guessing game given a limited number of wrong guesses. It selects and sets a random word from a text file and asks the user to guess the letters. Displays letters or next hanging picture on every correct or wrong guess respectively. The user loses once the hangman picture is complete. 
+            </p>
+
+
+            <div class="text-primary font-weigtht-bold" id="company">Data Structure & Algorithms (Java and C++):</div>
+            <p id="we-list-item">
+                Implemented Multiply linked list: with three separate link chains to keep the data entries unique and sorted by three different fields. AVL Tree: set container like in STL using AVL tree that supports union, intersection, cross product, and power set operations. Sorting Algorithms: analyzed various sorting algorithms using random data set. Graph Algorithm: Kruskal’s and Prim’s method of finding the Minimum Spanning Tree on random graphs, using union find data structure. Shunting Yard: Dijkstra’s shunting yard algorithm using stack to evaluate logical expressions with AND, OR, NOT, etc. based on their order of precedence. 
+            </p>
+
+        </div>
+    </section>
 
 
     <!-- ------------------------------------------------------------------------- -->
-    <div class="row mx-5 mt-5 mb-0">
-        <div class="col-l-1">
-            <h2>REFERENCES</h2>
+    <section id="references"></section>
+        <div class="row mx-5 mt-5 mb-0">
+            <div class="col-l-1">
+                <h2 id="heading">REFERENCES</h2>
+            </div>
+            <div class="col justify-content-bottom">
+                <hr class="mt-4" style="border-top: 2px solid #000000;">
+            </div>
         </div>
-        <div class="col justify-content-bottom">
-            <hr style="border-top: 2px solid #000000;">
-        </div>
-    </div>
-    <div class="mx-5 mb-5"><p>Available on request.</p></div>
+        <div class="mx-5 mb-5"><p>Available on request.</p></div>
+    </section>
     
 
 

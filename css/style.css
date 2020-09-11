@@ -5,14 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato&family=Lora:ital,wght@1,600&family=Major+Mono+Display&family=Roboto+Slab:wght@200&family=Sail&display=swap');
 
 body, html{
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.815);
 	/* height: 100%; */
 	/* position: relative; */
 	/* display: block; */
 }
 
 nav{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.815);
     font-size: 20px;
 }
 
@@ -25,6 +25,9 @@ nav{
 	font-family: 'Lora', serif;
 	/* font-family: 'Fredericka the Great', cursive; */
 }
+.fa{
+  font-size: 25px;
+}
 .fa-home{
     color: black;
 }
@@ -36,6 +39,21 @@ nav{
 }
 .fa-envelope{
     color: red;
+}
+
+#two-items{
+  height: 400px;
+}
+
+#three-items{
+  height: 350px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
 }
 
 /* Small devices (phones : 576px and down) */
