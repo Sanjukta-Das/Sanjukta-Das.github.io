@@ -33,7 +33,7 @@ hr{
   height: 100%;
 }
 
-div.card.shadow {
+div.card.shadow.rounded.zoom {
   height: 650px;
 }
 img .card-img-top {
