@@ -52,7 +52,7 @@
     
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="about_me.css"> -->
+    <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/stepper.css">
     <link rel="stylesheet" href="css/footer.css">
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
@@ -409,7 +409,7 @@
         <!-- ---------------------------------------------- Education Stepper End ---------------------------------------------- -->
 
     </div>
-    <hr class="p-5" id="partition">
+    <hr class="px-5 py-2" id="partition">
 	<!-- ---------------------------------------------- Stepper End ---------------------------------------------- -->
 
 	<!-- ---------------------------------------------- Stepper JS Start ---------------------------------------------- -->
@@ -467,53 +467,50 @@
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
     <!-- ---------------------------------------------- Skills JS Start ---------------------------------------------- -->
-    <div class="container-fluid" style="width: 85%;">
-        <h1 class="text-center">Skills</h1>
+    <div class="container">
+        <h1 class="text-center" id="heading">Skills</h1>
 
-        <div class="row">
-            <div class="col-md-4">
-                <h3 class="text-center">Programming Languages</h3>
-                <canvas id="horizontalBar-programming-language"></canvas>
-            </div>
-
-            <div class="col-md-4">
-                <h3 class="text-center">Database</h3>
-                <canvas id="horizontalBar-database"></canvas>
-            </div>
-
-            <div class="col-md-4">
+        <div class="row pb-2">
+            <div class="col-md-6">
                 <h3 class="text-center">Data Visualization</h3>
                 <canvas id="horizontalBar-data-visualization"></canvas>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-6">
+                <h3 class="text-center">Database</h3>
+                <canvas id="horizontalBar-database"></canvas>
+            </div>
+        </div>
+
+        <div class="row pb-2">
+            <div class="col-md-6">
                 <h3 class="text-center">Web Development</h3>
                 <canvas id="horizontalBar-web-development"></canvas>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-6">
+                <h3 class="text-center">Programming Languages</h3>
+                <canvas id="horizontalBar-programming-language"></canvas>
+            </div>
+        </div>
+
+        <div class="row pb-2">
+            <div class="col-md-6">
                 <h3 class="text-center">Cloud</h3>
                 <canvas id="horizontalBar-cloud"></canvas>
             </div>
 
-            <div class="col-md-4">
-                <h3 class="text-center">Version Controlling</h3>
-                <canvas id="horizontalBar-version-controll"></canvas>
+            <div class="col-md-6">
+                <h3 class="text-center">OS & Tools:</h3>
+                <canvas id="horizontalBar-OS-Tools:"></canvas>
             </div>
+        </div>
+        
+        <div class="row pb-2">  
 
-            <div class="col-md-4">
-                <h3 class="text-center">Tools & Miscellaneous</h3>
-                <canvas id="horizontalBar-misc"></canvas>
-            </div>
-
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <h3 class="text-center">Business</h3>
                 <canvas id="horizontalBar-business"></canvas>
-            </div>
-
-            <div class="col-md-4">
-                <h3 class="text-center">Technical</h3>
-                <canvas id="horizontalBar-technical"></canvas>
             </div>
         </div>
     </div>
@@ -555,348 +552,18 @@
 
         }
         
-        creatBarChart("horizontalBar-programming-language", ["Python", "C", "C++", "Java", "C#", ".NET"], [85, 60, 75, 80, 30, 15])    
-        creatBarChart("horizontalBar-database", ["MongoDB", "SQL", "PostgreSQL"], [65, 75, 85])    
-        creatBarChart("horizontalBar-data-visualization", ["R", "RMarkdown", "Power BI", "DAX", "OLAP", "Data Mining", "Data Wrangling", "Data Modelling", "Data Analysis"], [22, 33, 55, 86, 23, 14, 22, 33, 55])    
+        creatBarChart("horizontalBar-programming-language", ["Python", "C", "C++", "Java", "C#", ".NET"], [85, 60, 75, 80, 50, 50])    
+        creatBarChart("horizontalBar-database", ["MongoDB", "SQL", "PostgreSQL"], [70, 75, 85])    
+        creatBarChart("horizontalBar-data-visualization", ["R", "RMarkdown", "Power BI", "DAX", "OLAP", "Data Mining", "Data Wrangling", "Data Modelling", "Data Analysis"], [80, 80, 90, 75, 50, 75, 70, 75, 65])    
         creatBarChart("horizontalBar-web-development", ["Flask", "HTML", "CSS", "Bootstrap", "Javascript", "React JS", "SharePoint", "GWT", "JSP", "Servlet", "REST API"], [22, 33, 55, 86, 23, 14, 22, 33, 55, 86, 44])    
-        creatBarChart("horizontalBar-cloud", ["MongoDB", "SQL", "PostgreSQL"], [22, 33, 55])    
-        creatBarChart("horizontalBar-version-controll", ["Github", "Bit Bucket"], [22, 33, 55])    
-        creatBarChart("horizontalBar-misc", ["Github", "Bit Bucket"], [22, 33, 55])    
+        creatBarChart("horizontalBar-cloud", ["Amazon Web Services (AWS)", "Google Cloud Platform (GCP)", "Azure", "Docker", "Kubernetes"], [65, 75, 55, 75, 65])    
+        creatBarChart("horizontalBar-OS & Tools", ["Linux", "Android", "Github", "Bitbucket", "Microsoft Office", "Excel", "VBA", "SDLC", "Object-Oriented Programming", "JUnit Testing"], [22, 33, 55])    
         creatBarChart("horizontalBar-business", ["Ratio Analysis", "Cash Flow Management", "Security Analysis", "Capital Budgeting", "Trading & P/L", "Balance Sheet Reports", "Financial Reporting"], [22, 33, 55])    
-        creatBarChart("horizontalBar-technical", ["MongoDB", "SQL", "PostgreSQL"], [22, 33, 55])  
+        // creatBarChart("horizontalBar-technical", ["MongoDB", "SQL", "PostgreSQL"], [22, 33, 55])  
         
-        
-        var ctx = document.getElementById('horizontalBar-misc').getContext('2d');
-        new Chart(
-                ctx, 
-                {
-                    type: 'horizontalBar',data: {  
-                        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],  
-                        datasets: [{    label: '# of Votes',    
-                        data: [12, 39, 20, 10, 25, 18],    
-                        backgroundColor: '#27AAC8'}]},
-                    options: {  
-                        legend: {
-                            display: false,
-                            labels: {
-                                display: false
-                            }
-                        },
-                        scales: {
-                            yAxes: [{
-                                ticks: {
-                                    beginAtZero:true,
-                                    fontSize: 10,
-                                    max: 80
-                                }
-                            }],
-                            xAxes: [{      
-                                ticks: {        
-                                    beginAtZero:true,        
-                                    fontSize: 11      
-                                }    
-                            }]  
-                        }
-                    }
-                }
-            );
-
     </script>
     
     <!-- ---------------------------------------------- Skills JS End ---------------------------------------------- -->
-
-    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-
-    <!-- ----------------------------------------------Projects Start---------------------------------------------- -->
-    <!-- <iframe src="html/projects.html" class="w-100" style="height: 2000px;"></iframe> -->
-
-    <div id="projects">
-        <h1 class="text-center">Projects</h1>
-    </div>
-
-    <div class="container py-5 justify-content-center" >
-        <!-- Sixth Row -->
-        <div class="row">
-
-            <!-- column-1 -->
-            <div class="col-md-6 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="images/DL-1.png" alt="Deep-Learning"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Deep Learning</h2>
-                                    <a class="stretched-link text-white p-2" href="html/deep_learning.html">
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                        <!-- <i class="fas fa-arrow-right px-2" aria-hidden="true"></i>  -->
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- column-2 -->
-            <div class="col-md-6 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="images/ML1.jpg" alt="Machine-Learning"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Machine Learning</h2>
-                                    <a class="stretched-link text-white" href="html/machine_learning.html"> 
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Sixth Row -->
-
-        <!-- Fifth Row -->
-        <div class="row">
-
-            <!-- column-1 -->
-            <div class="col-md-4 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" id="three-items" src="images/DV2.png" alt="Data-Visualization"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Data Visualization</h2>
-                                    <a class="stretched-link text-white" href="html/data_visualization.html"> 
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- column-2 -->
-            <div class="col-md-4 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" id="three-items" src="images/db1.png" alt="Database"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Database</h2>
-                                    <a class="stretched-link text-white" href="html/database.html"> 
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- column-3 -->
-            <div class="col-md-4 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" id="three-items" src="images/cv-3.jpg" alt="Computer-Vision"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Computer Vision</h2>
-                                    <a class="stretched-link text-white" href="html/computer_vision.html"> 
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- Fifth Row -->
-
-        <!-- Fourth Row -->
-        <div class="row">
-            <!-- column-1 -->
-            <div class="col-md-6 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" id="two-items" src="images/fe-0.png" alt="Frontend-Web-Development"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Frontend Web Development</h2>
-                                    <a class="stretched-link text-white" href="html/frontend.html"> 
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- column-2 -->
-            <div class="col-md-6 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" id="two-items" src="images/fs-2.jpg" alt="Full-Stack-Web-Development"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Full-Stack Web Development</h2>
-                                    <a class="stretched-link text-white" href="html/fullstack.html"> 
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- Fourth Row -->
-
-        <!-- Third Row -->
-        <div class="row">
-
-            <!-- column-1 -->
-            <div class="col-md-4 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" id="three-items" src="images/cloud-0.jpg" alt="Cloud-Container"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Cloud & Container</h2>
-                                    <a class="stretched-link text-white" href="html/cloud.html"> 
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- column-2 -->
-            <div class="col-md-4 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" id="three-items" src="images/ip1.jpg" alt="Networking"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Networking</h2>
-                                    <a class="stretched-link text-white" href="html/networking.html"> 
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- column-3 -->
-            <div class="col-md-4 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" id="three-items" src="images/sw-3.jpg" alt="Software-Applications"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Software Applications</h2>
-                                    <a class="stretched-link text-white" href="html/software_eng.html"> 
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Third Row -->
-
-        <!-- Second Row -->
-        <div class="row">
-
-            <!-- column-1 -->
-            <div class="col-md-6 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" id="two-items" src="images/algo5.jpeg" alt="Data-Structure-Algorithm"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Data Structure & Algorithm</h2>
-                                    <a class="stretched-link text-white" href="html/algorithm.html"> 
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- column-2 -->
-            <div class="col-md-6 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" id="two-items" src="images/OS1.jpg" alt="Operating-Systems"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Operating Systems</h2>
-                                    <a class="stretched-link text-white" href="html/os.html"> 
-                                        <i class="fa fa-arrow-circle-right p-2" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- Second Row -->
-
-        <!-- First Row -->
-        <div class="row">
-            <!-- column-1 -->
-            <div class="col-lg-12 mb-3">
-                <div class="card shadow zoom">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="images/android2.jpg" alt="Android" style="height: 450px;"/>
-                        <a>
-                            <div class="mask flex-center rgba-black-strong">
-                                <div class="justify-content-center">
-                                    <h2 class="text-white">Android</h2>
-                                    <a class="border text-white p-2" href="html/android.html">See Project   
-                                        <i class="fas fa-arrow-right px-2" aria-hidden="true"></i> 
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- First Row -->
-        
-    </div>
-    <hr class="p-5" id="partition">
-    <!-- ----------------------------------------------Projects End---------------------------------------------- -->
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     
