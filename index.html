@@ -34,6 +34,11 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
     <!------------------------------------------------------------ Material Design CDN ------------------------------------------------------------>
 
+    <!------------------------------------------------------------ ApexChart CDN ------------------------------------------------------------>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <!------------------------------------------------------------ ApexChart CDN ------------------------------------------------------------>
+
     <!------------------------------------------------------------ Other CDN ------------------------------------------------------------>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -116,78 +121,9 @@
         </pre>
     </div>
     <hr class="pt-5" id="partition">
-
-    <script>
-        function setupTypewriter(t) {
-            var HTML = t.innerHTML;
-
-            t.innerHTML = "";
-
-            var cursorPosition = 0,
-                tag = "",
-                writingTag = false,
-                tagOpen = false,
-                typeSpeed = 10,
-            tempTypeSpeed = 0;
-
-            var type = function() {
-            
-                if (writingTag === true) {
-                    tag += HTML[cursorPosition];
-                }
-
-                if (HTML[cursorPosition] === "<") {
-                    tempTypeSpeed = 0;
-                    if (tagOpen) {
-                        tagOpen = false;
-                        writingTag = true;
-                    } else {
-                        tag = "";
-                        tagOpen = true;
-                        writingTag = true;
-                        tag += HTML[cursorPosition];
-                    }
-                }
-                if (!writingTag && tagOpen) {
-                    tag.innerHTML += HTML[cursorPosition];
-                }
-                if (!writingTag && !tagOpen) {
-                    if (HTML[cursorPosition] === " ") {
-                        tempTypeSpeed = 0;
-                    }
-                    else {
-                        tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-                    }
-                    t.innerHTML += HTML[cursorPosition];
-                }
-                if (writingTag === true && HTML[cursorPosition] === ">") {
-                    tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-                    writingTag = false;
-                    if (tagOpen) {
-                        var newSpan = document.createElement("span");
-                        t.appendChild(newSpan);
-                        newSpan.innerHTML = tag;
-                        tag = newSpan.firstChild;
-                    }
-                }
-
-                cursorPosition += 1;
-                if (cursorPosition < HTML.length - 1) {
-                    setTimeout(type, tempTypeSpeed);
-                }
-
-            };
-
-            return {
-                type: type
-            };
-        }
-
-        var typer = document.getElementById('typewriter');
-        typewriter = setupTypewriter(typewriter);
-        typewriter.type();
-    </script>
     <!-- ----------------------------------------------About Me End---------------------------------------------- -->
+
+    
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
@@ -410,63 +346,11 @@
 
     </div>
     <hr class="px-5 py-2" id="partition">
-	<!-- ---------------------------------------------- Stepper End ---------------------------------------------- -->
-
-	<!-- ---------------------------------------------- Stepper JS Start ---------------------------------------------- -->
-	<script>
-	
-	let curOpen;
-	
-	$(document).ready(function() {
-		curOpen = $('.step')[0];
-		
-		$('.next-btn').on('click', function() {
-			let cur = $(this).closest('.step');
-			let next = $(cur).next();
-			$(cur).addClass('minimized');
-			setTimeout(function() {
-				$(next).removeClass('minimized');
-				curOpen = $(next);
-			}, 400);
-		});
-		
-		$('.close-btn').on('click', function() {
-			let cur = $(this).closest('.step');
-			$(cur).addClass('minimized');
-			curOpen = null;
-		});
-		
-		$('.step .step-content').on('click' ,function(e) {
-			e.stopPropagation();
-		});
-		
-		$('.step').on('click', function() {
-			if (!$(this).hasClass("minimized")) {
-				curOpen = null;
-				$(this).addClass('minimized');
-			}
-			else {
-				let next = $(this);
-				if (curOpen === null) {
-					curOpen = next;
-					$(curOpen).removeClass('minimized');
-				}
-				else {
-					$(curOpen).addClass('minimized');
-					setTimeout(function() {
-						$(next).removeClass('minimized');
-						curOpen = $(next);
-					}, 300);
-				}
-			}
-		});
-	})
-	</script>
-    <!-- ---------------------------------------------- Stepper JS End ---------------------------------------------- -->
+	<!-- ---------------------------------------------- Stepper End ---------------------------------------------- -->	
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
-    <!-- ---------------------------------------------- Skills JS Start ---------------------------------------------- -->
+    <!-- ---------------------------------------------- Skills Start ---------------------------------------------- -->
     <div class="container">
         <h1 class="text-center" id="heading">Skills</h1>
 
@@ -514,86 +398,8 @@
         </div>
     </div>
     <hr class="p-5" id="partition">
-
-    <!-- Technical Skills -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-
-    <script>
-
-
-        // function creatBarChart(id, labels, labelsData){
-        //     new Chart(document.getElementById(id), {
-        //     "type": "horizontalBar",
-        //     "data": {
-        //         // "labels": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey"],
-        //         "labels": labels,
-        //         "datasets": [{
-        //             "label": "",
-        //             "data": labelsData,
-        //             // "fill": false,
-        //             "backgroundColor": "#F07124"
-        //             ,
-        //             "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
-        //             "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"
-        //             ],
-        //             "borderWidth": 1
-        //         }]
-        //     },
-        //     "options": {
-        //         "scales": {
-        //             "xAxes": [{
-        //                 "ticks": {
-        //                     "beginAtZero": true
-        //                 }
-        //             }]
-        //         }
-        //     }
-        //     });
-        // }
-        
-        function creatBarChart(id, labels, labelsData){
-            var options = {
-                series: [{
-                    data: labelsData
-                }],
-                chart: {
-                type: 'bar',
-                height: 350
-                },
-                plotOptions: {
-                bar: {
-                    horizontal: true,
-                }
-                },
-                dataLabels: {
-                enabled: false
-                },
-                xaxis: {
-                categories: labels,
-                }
-            }; 
-
-            var chart = new ApexCharts(document.querySelector("#"+id), options);
-            chart.render();
-
-        } 
-
-        creatBarChart("horizontalBar-programming-language", ["Python", "C", "C++", "Java", "C#", ".NET"], [85, 60, 75, 80, 50, 50]);    
-        creatBarChart("horizontalBar-database", ["MongoDB", "SQL", "PostgreSQL"], [70, 75, 85]);
-        creatBarChart("horizontalBar-data-visualization", ["R", "RMarkdown", "Power BI", "DAX", "OLAP", "Data Mining", "Data Wrangling", "Data Modelling", "Data Analysis"], [80, 80, 90, 75, 50, 75, 70, 75, 65]);   
-        creatBarChart("horizontalBar-web-development", ["Flask", "HTML", "CSS", "Bootstrap", "Javascript", "React JS", "SharePoint", "GWT", "JSP", "Servlet", "REST API"], [80, 80, 75, 80, 80, 70, 75, 65, 65, 65, 65]);   
-        creatBarChart("horizontalBar-cloud", ["AWS", "GCP", "Azure", "Docker", "Kubernetes"], [65, 85, 75, 75, 65]);
-        creatBarChart("horizontalBar-os-tools", ["Linux", "Android", "Github", "Bitbucket", "Microsoft Office", "Excel", "VBA", "SDLC", "OOP", "JUnit"], [75, 65, 75, 70, 85, 65, 80, 70, 75]); 
-        creatBarChart("horizontalBar-business", ["Ratio Analysis", "Cash Flow Management", "Security Analysis", "Capital Budgeting", "Trading & P/L", "Balance Sheet Reports", "Financial Reporting"], [95, 85, 75, 75, 95, 95, 95]); 
-        
-
-        
-
-        
-    </script>
     
-    <!-- ---------------------------------------------- Skills JS End ---------------------------------------------- -->
+    <!-- ---------------------------------------------- Skills End ---------------------------------------------- -->
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     
