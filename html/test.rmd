@@ -1,6 +1,0 @@
----
-title: "title"
-output: html document
----
-
-# header
