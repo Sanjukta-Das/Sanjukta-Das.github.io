@@ -65,7 +65,7 @@
             </li>
 
             <li class="nav-item pr-5 pl-5">
-                <a class="text-dark" id="menu-item" href="resume.html" target="_blank">Resume</a>
+                <a class="text-dark" id="menu-item" href="../others/Sanjukta_Resume_2020.pdf" target="_blank">Resume</a>
             </li>
 
             <li class="nav-item pr-5 pl-5">
@@ -109,12 +109,7 @@
         </div>
     </div>
 
-    <script>
-        $(".hBack").on("click", function(e){
-            e.preventDefault();
-            window.history.back();
-            });
-    </script>
+    <script src="../js/go-back.js"></script>
     <!-- ----------------------------------------------Back Button End---------------------------------------------- -->
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
@@ -186,7 +181,6 @@
         <!--Section: Content-->
     </div>
 
-
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     
     <!-- ----------------------------------------------Contact Start---------------------------------------------- -->
@@ -256,24 +250,7 @@
         <!-- <i class="fas fa-chevron-up"></i> -->
     </a>
 
-    <script>
-        $(document).ready(function(){
-	$(window).scroll(function () {
-			if ($(this).scrollTop() > 200) {
-				$('#back-to-top').fadeIn();
-			} else {
-				$('#back-to-top').fadeOut();
-			}
-		});
-		// scroll body to 0px on click
-		$('#back-to-top').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 400);
-			return false;
-		});
-});
-    </script>
+    <script src="../js/back-to-top.js"></script>
     <!-- ----------------------------------------------Back-to-top End---------------------------------------------- -->
 </body>
 </html>

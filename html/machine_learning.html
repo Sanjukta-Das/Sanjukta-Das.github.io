@@ -65,7 +65,7 @@
             </li>
 
             <li class="nav-item pr-5 pl-5">
-                <a class="text-dark" id="menu-item" href="resume.html" target="_blank">Resume</a>
+                <a class="text-dark" id="menu-item" href="../others/Sanjukta_Resume_2020.pdf" target="_blank">Resume</a>
             </li>
 
             <li class="nav-item pr-5 pl-5">
@@ -109,12 +109,7 @@
         </div>
     </div>
 
-    <script>
-        $(".hBack").on("click", function(e){
-            e.preventDefault();
-            window.history.back();
-            });
-    </script>
+    <script src="../js/go-back.js"></script>
     <!-- ----------------------------------------------Back Button End---------------------------------------------- -->
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
@@ -392,42 +387,40 @@
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     
     <!-- ----------------------------------------------Contact Start---------------------------------------------- -->
-    <!-- <div class="bg-blue-gradient"> -->
-        <div class="container form-gradient w-50 p-5" id="contact-me">
-            <!--Form with header-->
-            <div class="card">
-                <!--Header-->
-                <div class="header pt-3 purple-gradient">
-                    <div class="row d-flex justify-content-center">
-                        <h3 class="white-text mb-4 pt-3 font-weight-bold">Contact Me</h3>
-                    </div>
+    <div class="container form-gradient w-50 p-5" id="contact-me">
+        <!--Form with header-->
+        <div class="card">
+            <!--Header-->
+            <div class="header pt-3 purple-gradient">
+                <div class="row d-flex justify-content-center">
+                    <h3 class="white-text mb-4 pt-3 font-weight-bold">Contact Me</h3>
                 </div>
-                <!--Header-->
-                
-                <!--Body-->
-                <div class="card-body mx-4 mt-4">
-                    <div class="md-form mb-4">
-                        <input type="text" id="form-name" class="form-control" placeholder="Your Name">
-                    </div>
-                    
-                    <div class="md-form mb-4">
-                        <input type="text" id="form-email" class="form-control" placeholder="Email">
-                    </div>
-                    
-                    <div class="md-form mb-5 mt-5">
-                        <textarea id="form-contact-message" class="form-control md-textarea" rows="1" placeholder="Message"></textarea>
-                    </div>
-
-                    
-                    <div class="md-form mb-3 d-flex justify-content-center">
-                        <button type="button" class="pr-4 pl-4 pt-2 pb-2 btn btn-black text-white z-depth-1a" style="font-size: 20px;">Send</button>
-                    </div>
-                </div>
-                <!--Body-->
             </div>
-            <!--Form with header-->
+            <!--Header-->
+            
+            <!--Body-->
+            <div class="card-body mx-4 mt-4">
+                <div class="md-form mb-4">
+                    <input type="text" id="form-name" class="form-control" placeholder="Your Name">
+                </div>
+                
+                <div class="md-form mb-4">
+                    <input type="text" id="form-email" class="form-control" placeholder="Email">
+                </div>
+                
+                <div class="md-form mb-5 mt-5">
+                    <textarea id="form-contact-message" class="form-control md-textarea" rows="1" placeholder="Message"></textarea>
+                </div>
+
+                
+                <div class="md-form mb-3 d-flex justify-content-center">
+                    <button type="button" class="pr-4 pl-4 pt-2 pb-2 btn btn-black text-white z-depth-1a" style="font-size: 20px;">Send</button>
+                </div>
+            </div>
+            <!--Body-->
         </div>
-    <!-- </div> -->
+        <!--Form with header-->
+    </div>
     <!-- ----------------------------------------------Contact End---------------------------------------------- -->
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
@@ -458,24 +451,7 @@
         <!-- <i class="fas fa-chevron-up"></i> -->
     </a>
 
-    <script>
-        $(document).ready(function(){
-	$(window).scroll(function () {
-			if ($(this).scrollTop() > 200) {
-				$('#back-to-top').fadeIn();
-			} else {
-				$('#back-to-top').fadeOut();
-			}
-		});
-		// scroll body to 0px on click
-		$('#back-to-top').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 400);
-			return false;
-		});
-});
-    </script>
+    <script src="../js/back-to-top.js"></script>
     <!-- ----------------------------------------------Back-to-top End---------------------------------------------- -->
 </body>
 </html>

@@ -64,8 +64,8 @@
 
 </head>
 <body>
-    <!-- <div class="bg" style=" background-image: url(./images/bridge1.jpg); background-position: center; background-repeat: no-repeat; background-size: contain; height: 60%; width: 1800px;"></div> -->
-
+    <!-- <div class="bg" style=" background-image: url(./images/bridge1.jpg); background-position: center; 
+        background-repeat: no-repeat; background-size: contain; height: 60%; width: 1800px;"></div> -->
 
     <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
     <nav class="justify-content-center p-5 sticky-top">
@@ -82,7 +82,7 @@
             </li>
 
             <li class="nav-item pr-5 pl-5">
-                <a class="text-dark" id="menu-item" href="html/resume.html" target="_blank">Resume</a>
+                <a class="text-dark" id="menu-item" href="others/Sanjukta_Resume_2020.pdf" target="_blank">Resume</a>
             </li>
 
             <li class="nav-item pr-5 pl-5">
@@ -120,10 +120,9 @@
                     and also worked as <b style="background-color: blueviolet; color: white">Finance Analyst Intern</b> at <b class="text-white" style="background-color: #009999">IDBI </b><b class="text-white" style="background-color: #ff8533">Capital</b> and <b style="background-color: blue; color: white;">OHPC</b>.
         </pre>
     </div>
+    <script src="js/about-me.js"></script>
     <hr class="pt-5" id="partition">
     <!-- ----------------------------------------------About Me End---------------------------------------------- -->
-
-    
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
@@ -345,6 +344,7 @@
         <!-- ---------------------------------------------- Education Stepper End ---------------------------------------------- -->
 
     </div>
+    <script src="js/stepper.js"></script>
     <hr class="px-5 py-2" id="partition">
 	<!-- ---------------------------------------------- Stepper End ---------------------------------------------- -->	
 
@@ -397,14 +397,13 @@
             </div>
         </div>
     </div>
+    <script src="js/skills.js"></script>
     <hr class="p-5" id="partition">
-    
     <!-- ---------------------------------------------- Skills End ---------------------------------------------- -->
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     
     <!-- ----------------------------------------------Contact Start---------------------------------------------- -->
-    <!-- <div style="background-color: rgb(220, 217, 230);"> -->
         <div class="container form-gradient w-50 p-5" id="contact-me">
             <!--Form with header-->
             <div class="card">
@@ -439,7 +438,6 @@
             </div>
             <!--Form with header-->
         </div>
-    <!-- </div> -->
     <!-- ----------------------------------------------Contact End---------------------------------------------- -->
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
@@ -469,25 +467,7 @@
         <i class="fa fa-angle-double-up" aria-hidden="true" style="color: #d30484; size: 20px;"></i>
         <!-- <i class="fas fa-chevron-up"></i> -->
     </a>
-
-    <script>
-        $(document).ready(function(){
-	$(window).scroll(function () {
-			if ($(this).scrollTop() > 200) {
-				$('#back-to-top').fadeIn();
-			} else {
-				$('#back-to-top').fadeOut();
-			}
-		});
-		// scroll body to 0px on click
-		$('#back-to-top').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 400);
-			return false;
-		});
-});
-    </script>
+    <script src="js/back-to-top.js"></script>
     <!-- ----------------------------------------------Back-to-top End---------------------------------------------- -->
 
 </body>
