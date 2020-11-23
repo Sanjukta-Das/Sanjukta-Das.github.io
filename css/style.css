@@ -35,7 +35,7 @@ nav{
 	color: #000;
 }
 
-/* change of appreance of menubar on scroll. The background color of menubar 
+/* change of appearance of menubar on scroll. The background color of menubar 
 changes to black where the menu items turn white upon scrolling down */
 .sticky-top.scrolled {
 	background-color: #000 !important;
