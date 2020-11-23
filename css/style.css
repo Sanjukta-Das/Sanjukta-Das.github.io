@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Sail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato&family=Lora:ital,wght@1,600&family=Major+Mono+Display&family=Roboto+Slab:wght@200&family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato&family=Lora:ital,wght@1,600&family=Major+Mono+Display&family=Montserrat+Alternates&family=Red+Rose:wght@300;400&family=Roboto+Slab:wght@200&family=Sail&display=swap');
+
+/* @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"; */
+
+html {
+	scroll-behavior: smooth;
+}
 
 body, html{
 	background-color: rgba(255, 255, 255, 0.815);
@@ -12,21 +19,50 @@ body, html{
 }
 
 nav{
-    background-color: rgba(255, 255, 255, 0.815);
-    font-size: 20px;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.815);
+	/* opacity: 100; */
 }
 
+/* styling the partition line after each section */
 #partition{
-  border-top: 1px solid #000000;
-  width: 60%;
+	border-top: 1px solid #000000;
+	width: 60%;
+}
+
+/* color of menu items on page load or before scrolling */
+.nav-link{
+	color: #000;
+}
+
+/* change of appreance of menubar on scroll. The background color of menubar 
+changes to black where the menu items turn white upon scrolling down */
+.sticky-top.scrolled {
+	background-color: #000 !important;
+	transition: background-color 100ms linear;
+}
+
+.sticky-top.scrolled .nav-link i{
+  	color:white;
+}
+
+.sticky-top.scrolled .nav-link{
+  	color:white;
+}
+
+.vl {
+	border-left: 2px solid rgb(0, 0, 0);
+	height: 500px;
 }
 
 #menu-item{
-	font-family: 'Lora', serif;
+	font-family: 'DM Serif Display', serif;
+	/* font-family: 'Red Rose', cursive; */
+	/* font-family: 'Lora', serif; */
 	/* font-family: 'Fredericka the Great', cursive; */
 }
 .fa{
-  font-size: 25px;
+  	font-size: 25px;
 }
 .fa-home{
     color: black;
@@ -41,24 +77,15 @@ nav{
     color: rgb(207, 0, 0);
 }
 
-#two-items{
-  height: 400px;
-}
-
-#three-items{
-  height: 350px;
-}
-
 .back-to-top {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  display: none;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	display: none;
 }
 
 /* Small devices (phones : 576px and down) */
 @media screen and (min-width: 576px) {
-
 
 }
 

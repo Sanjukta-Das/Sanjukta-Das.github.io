@@ -4,8 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Courier+Prime&family=DM+Serif+Display&family=Lato&family=Lora:ital,wght@1,600&family=Major+Mono+Display&family=Montserrat+Alternates&family=Red+Rose&family=Roboto+Slab:wght@200&family=Sail&display=swap');
 
 #back-button{
-    border-radius: 100%; 
-    width: 50px;
+	border-radius: 100%; 
+	width: 50px;
+}
+
+#two-items{
+  	height: 400px;
+}
+
+#three-items{
+  	height: 350px;
 }
 
 #heading{
@@ -17,26 +25,26 @@
 	/* color: white; */
 }
 hr{
-  border-top: 2px solid #000000;
+  	border-top: 2px solid #000000;
 }
 
 .fa{
-  font-size: 25px;
+  	font-size: 25px;
 }
 
 #project-description{
-  font-family: 'Aref Ruqaa', serif;
+  	font-family: 'Aref Ruqaa', serif;
 }
 
 .carousel-inner img {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 div.card.shadow.rounded.zoom {
-  height: 650px;
+  	height: 650px;
 }
 img .card-img-top {
-  width: 300px;
-  height: 250px;
+	width: 300px;
+	height: 250px;
 }

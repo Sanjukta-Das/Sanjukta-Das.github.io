@@ -48,39 +48,66 @@
     <link rel="stylesheet" href="../css/footer.css">
     <!------------------------------------------------------------ CSS Files ------------------------------------------------------------>
 
+    <style>
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 400px;  /* The height is 400 pixels */
+            width: 100%;  /* The width is the width of the web page */
+       }
+
+       .nav-link{
+           color: #000;
+       }
+
+       .sticky-top.scrolled {
+            background-color: #000 !important;
+            transition: background-color 100ms linear;
+        }
+
+        .sticky-top.scrolled .nav-link i{
+            color:white;
+        }
+
+        .sticky-top.scrolled .nav-link{
+            color:white;
+        }
+    </style>
+
 </head>
 <body>
 
+    <!-- navbar-fixed-top -->
+
     <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="justify-content-center px-5 pb-3 pt-5 sticky-top">
+    <nav class="justify-content-center px-5 pt-2 sticky-top">
         <ul class="nav justify-content-center">
             <li  class="nav-item pr-5 pl-5">
-                <a href="https://sanjukta-das.github.io/">
+                <a href="https://sanjukta-das.github.io/" class="nav-link">
                     <i class="fa fa-home" aria-hidden="true"></i>
                 </a>
             </li>
 
             <li class="nav-item pr-5 pl-5">
-                <a class="text-dark" id="menu-item" href="projects.html">Portfolio</a>
+                <a class="nav-link" id="menu-item" href="projects.html">Portfolio</a>
             </li>
 
             <li class="nav-item pr-5 pl-5">
-                <a class="text-dark" id="menu-item" href="../others/Sanjukta_Resume_2020.pdf" target="_blank">Resume</a>
+                <a class="nav-link" id="menu-item" href="../others/Sanjukta_Resume_2020.pdf" target="_blank">Resume</a>
             </li>
 
-            <li class="nav-item pr-5 pl-5">
-                <a href="linkedin.com/in/sanjukta-das-25333116a">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <li class="nav-item pr-5 pl-5" style="padding-top: 10px;">
+                <a href="https://linkedin.com/in/sanjukta-das-25333116a">
+                    <i class="fa fa-linkedin" aria-hidden="true" target="_blank"></i>
                 </a>
             </li>
 
-            <li class="nav-item pr-5 pl-5">
-                <a href="https://github.com/Sanjukta-Das/">
-                    <i class="fa fa-github" aria-hidden="true"></i>
+            <li class="nav-item pr-5 pl-5" style="padding-top: 5px;">
+                <a href="https://github.com/Sanjukta-Das/" class="nav-link">
+                    <i class="fa fa-github" aria-hidden="true" target="_blank"></i>
                 </a>
             </li>
 
-            <li class="nav-item pr-5 pl-5">
+            <li class="nav-item pr-5 pl-5" style="padding-top: 10px;">
                 <a href="#contact-me">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </a>
@@ -88,6 +115,8 @@
         </ul>
         <hr id="partition">
     </nav>
+
+    <script src="../js/navbar-on-scroll.js"></script>
     <!-- ----------------------------------------------Menubar End---------------------------------------------- -->
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
@@ -111,6 +140,8 @@
 
     <script src="../js/go-back.js"></script>
     <!-- ----------------------------------------------Back Button End---------------------------------------------- -->
+
+    <!-- --------------------------------------- Auto-Tagging StackOverflow Questions --------------------------------------- -->
 
     <div class="container my-5 py-5 z-depth-1">
         <!--Section: Content-->
@@ -187,40 +218,70 @@
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     
-    <!-- ----------------------------------------------Contact Start---------------------------------------------- -->
-    <div class="container form-gradient w-50 p-5" id="contact-me">
-        <!--Form with header-->
-        <div class="card">
-            <!--Header-->
-            <div class="header pt-3 purple-gradient">
-                <div class="row d-flex justify-content-center">
-                    <h3 class="white-text mb-4 pt-3 font-weight-bold">Contact Me</h3>
-                </div>
-            </div>
-            <!--Header-->
-            
-            <!--Body-->
-            <div class="card-body mx-4 mt-4">
-                <div class="md-form mb-4">
-                    <input type="text" id="form-name" class="form-control" placeholder="Your Name">
-                </div>
-                
-                <div class="md-form mb-4">
-                    <input type="text" id="form-email" class="form-control" placeholder="Email">
-                </div>
-                
-                <div class="md-form mb-5 mt-5">
-                    <textarea id="form-contact-message" class="form-control md-textarea" rows="1" placeholder="Message"></textarea>
-                </div>
 
-                
-                <div class="md-form mb-3 d-flex justify-content-center">
-                    <button type="button" class="pr-4 pl-4 pt-2 pb-2 btn btn-black text-white z-depth-1a" style="font-size: 20px;">Send</button>
-                </div>
-            </div>
-            <!--Body-->
+    <!-- ----------------------------------------------Contact Start---------------------------------------------- -->
+    <!-- class="py-5" -->
+    <div  style="background-color: rgba(242, 175, 255, 0.13);">
+        <div style="width: 950;
+            height: 40;
+            border-left: 950px solid transparent;
+            border-right: 950px solid transparent;
+            border-top: 80px solid rgb(255, 255, 255);">
         </div>
-        <!--Form with header-->
+    
+        
+    <div class="container-xl form-gradient py-5" id="contact-me" >
+        <div class="row ">
+            <div class="col-md-8">
+                <!-- Map Start -->
+                <iframe class="shadow"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d357919.6149462504!2d-122.67502609858211!3d45.50510636910565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b0b7da97427%3A0x1c36b9e6f6d18591!2sPortland%2C%20OR!5e0!3m2!1sen!2sus!4v1600311129057!5m2!1sen!2sus" 
+                width="758" height="467" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <!-- Map End -->
+            </div>
+
+            <div class="col-md-4">
+                <!--Form with header-->
+                <div class="card">
+                    <!--Header-->
+                    <div class="header pt-3 purple-gradient">
+                        <div class="row d-flex justify-content-center">
+                            <h3 class="white-text mb-4 pt-3 font-weight-bold">Contact Me</h3>
+                        </div>
+                    </div>
+                    <!--Header-->
+                    
+                    <!--Body-->
+                    <div class="card-body mx-4 mt-2">
+                        <div class="md-form mb-4">
+                            <input type="text" id="form-name" class="form-control" placeholder="Your Name">
+                        </div>
+                        
+                        <div class="md-form mb-4">
+                            <input type="text" id="form-email" class="form-control" placeholder="Email">
+                        </div>
+                        
+                        <div class="md-form mb-5 mt-5">
+                            <textarea id="form-contact-message" class="form-control md-textarea" rows="1" placeholder="Message"></textarea>
+                        </div>
+
+                        
+                        <div class="md-form mb-3 d-flex justify-content-center">
+                            <button type="button" class="px-4 py-2 btn btn-black text-white z-depth-1a" style="font-size: 20px;">Send</button>
+                        </div>
+                    </div>
+                    <!--Body-->
+                </div>
+                <!--Form with header-->
+            </div>
+        </div>
+    </div>
+    <div style="width: 0;
+    height: 0;
+    border-left: 950px solid transparent;
+    border-right: 950px solid transparent;
+    border-bottom: 80px solid rgb(255, 255, 255)">
+    </div>
     </div>
     <!-- ----------------------------------------------Contact End---------------------------------------------- -->
 
@@ -251,7 +312,6 @@
         <i class="fa fa-angle-double-up" aria-hidden="true" style="color: #d30484; size: 20px;"></i>
         <!-- <i class="fas fa-chevron-up"></i> -->
     </a>
-
     <script src="../js/back-to-top.js"></script>
     <!-- ----------------------------------------------Back-to-top End---------------------------------------------- -->
 </body>
