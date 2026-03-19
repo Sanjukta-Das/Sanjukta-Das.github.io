@@ -221,67 +221,60 @@
 
     <!-- ----------------------------------------------Contact Start---------------------------------------------- -->
     <!-- class="py-5" -->
-    <div  style="background-color: rgba(242, 175, 255, 0.13);">
+    <div id="contact-section" style="background-color: rgb(212, 229, 255);">
         <div style="width: 950;
             height: 40;
             border-left: 950px solid transparent;
             border-right: 950px solid transparent;
-            border-top: 80px solid rgb(255, 255, 255);">
+            border-top: 150px solid rgb(255, 255, 255);">
         </div>
     
-        
-    <div class="container-xl form-gradient py-5" id="contact-me" >
-        <div class="row ">
-            <div class="col-md-8">
-                <!-- Map Start -->
-                <iframe class="shadow"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d357919.6149462504!2d-122.67502609858211!3d45.50510636910565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b0b7da97427%3A0x1c36b9e6f6d18591!2sPortland%2C%20OR!5e0!3m2!1sen!2sus!4v1600311129057!5m2!1sen!2sus" 
-                width="758" height="467" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                <!-- Map End -->
-            </div>
-
-            <div class="col-md-4">
-                <!--Form with header-->
-                <div class="card">
-                    <!--Header-->
-                    <div class="header pt-3 purple-gradient">
-                        <div class="row d-flex justify-content-center">
-                            <h3 class="white-text mb-4 pt-3 font-weight-bold">Contact Me</h3>
-                        </div>
-                    </div>
-                    <!--Header-->
-                    
-                    <!--Body-->
-                    <div class="card-body mx-4 mt-2">
-                        <div class="md-form mb-4">
-                            <input type="text" id="form-name" class="form-control" placeholder="Your Name">
-                        </div>
-                        
-                        <div class="md-form mb-4">
-                            <input type="text" id="form-email" class="form-control" placeholder="Email">
-                        </div>
-                        
-                        <div class="md-form mb-5 mt-5">
-                            <textarea id="form-contact-message" class="form-control md-textarea" rows="1" placeholder="Message"></textarea>
-                        </div>
-
-                        
-                        <div class="md-form mb-3 d-flex justify-content-center">
-                            <button type="button" class="px-4 py-2 btn btn-black text-white z-depth-1a" style="font-size: 20px;">Send</button>
-                        </div>
-                    </div>
-                    <!--Body-->
+        <div class="container-fluid form-gradient py-5" id="contact-me" >
+            <div class="row ">
+                <div class="col-lg-6">
+                    <!-- Map Start -->
+                    <iframe class="shadow" title="location-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d357919.6149462504!2d-122.67502609858211!3d45.50510636910565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b0b7da97427%3A0x1c36b9e6f6d18591!2sPortland%2C%20OR!5e0!3m2!1sen!2sus!4v1600311129057!5m2!1sen!2sus" 
+                    width="100%" height="467" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                    <!-- Map End -->
                 </div>
-                <!--Form with header-->
+
+                <div class="col-lg-6">
+                    <!--Form with header-->
+                    <div class="card">
+                        <!--Header-->
+                        <div class="header pt-3 purple-gradient">
+                            <div class="row d-flex justify-content-center">
+                                <h3 class="white-text mb-4 pt-3 font-weight-bold">Contact Me</h3>
+                            </div>
+                        </div>
+                        <!--Header-->
+
+                        <!--Body-->
+                        <div class="card-body mx-4 mt-2">
+                            <div class="md-form mb-4">
+                                <input type="text" id="form-name" class="form-control" placeholder="Your Name">
+                            </div>
+                            
+                            <div class="md-form mb-4">
+                                <input type="text" id="form-email" class="form-control" placeholder="Email">
+                            </div>
+
+                            <div class="md-form mb-5 mt-5">
+                                <textarea id="form-contact-message" class="form-control md-textarea" rows="1" placeholder="Message"></textarea>
+                            </div>
+
+                            <div class="md-form mb-3 d-flex justify-content-center">
+                                <button type="button" class="px-4 py-2 btn btn-black text-white z-depth-1a" style="font-size: 20px;">Send</button>
+                            </div>
+                        </div>
+                        <!--Body-->
+                    </div>
+                    <!--Form with header-->
+                </div>
             </div>
         </div>
-    </div>
-    <div style="width: 0;
-    height: 0;
-    border-left: 950px solid transparent;
-    border-right: 950px solid transparent;
-    border-bottom: 80px solid rgb(255, 255, 255)">
-    </div>
     </div>
     <!-- ----------------------------------------------Contact End---------------------------------------------- -->
 
@@ -310,7 +303,6 @@
     <!-- ----------------------------------------------Back-to-top Start---------------------------------------------- -->
     <a id="back-to-top" href="#" class="btn rounded back-to-top" role="button">
         <i class="fa fa-angle-double-up" aria-hidden="true" style="color: #d30484; size: 20px;"></i>
-        <!-- <i class="fas fa-chevron-up"></i> -->
     </a>
     <script src="../js/back-to-top.js"></script>
     <!-- ----------------------------------------------Back-to-top End---------------------------------------------- -->
