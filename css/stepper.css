@@ -126,6 +126,7 @@ body {
     transition: all 0.4s ease-in-out;
     background-color: #FFF;
 }
+
 .step-edu::before{
     content: "\f19d";
     font-family: FontAwesome;
@@ -140,22 +141,6 @@ body {
     top: 10px;
     left: 0;
 }
-/* .step-edu::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 1px;
-    background-color: rgba(92, 83, 216, 0.726);
-    left: calc(50px / 2);
-    top: 0;
-    z-index: 1;
-} */
-/* .step-edu.minimized {
-    background-color: #FFF;
-    transition: background-color 0.3s ease-in-out;
-    cursor: pointer;
-} */
-/* ---------------------------------------------------------------------------------------------------- */
 
 .step.minimized {
     background-color: #FFF;
@@ -184,8 +169,6 @@ body {
     font-family: 'Aref Ruqaa', serif;
     color: #37009c;
     background-color: #fdebf1;
-    /* background-color: #e6f7ff; */
-    /* background-color: rgba(0, 0, 0, 0.781); */
     height: auto;
     width: 700px;
     border-radius: 4px;
@@ -197,105 +180,6 @@ body {
 .step.minimized > .step-content {
     height: 0px;
 }
-
-/* .step-content.intel {
-    height: auto;
-    width: 700px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.781);
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-left: 25px;
-} */
-
-/* .step-content.hsbc {
-    height: 270px;
-    width: 700px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.781);
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-left: 25px;
-} */
-
-/* .step-content.parle-agro {
-    height: 170px;
-    width: 700px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.781);
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-left: 25px;
-} */
-
-/* .step-content.idbi-capital {
-    height: 100px; 
-    width: 700px; 
-    color: white;
-    background-color: rgba(0, 0, 0, 0.781);
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-left: 25px; 
-} */
-
-/* .step-content.ohpc {
-    width: 700px;
-    height: 100px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.781);
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-left: 25px; 
-} */
-/* ---------------------------------------------------------------------------- */
-
-
-/* .next-btn {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    border: 0;
-    padding: 10px 20px;
-    border-radius: 4px;
-    background-color: red;
-    box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.3);
-    color: #FFF;
-    transition: background-color 0.3s ease-in-out;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-} */
-
-/* .close-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border: 0;
-    padding: 10px 20px;
-    border-radius: 4px;
-    background-color: rgb(255, 0, 255);
-    box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.3);
-    color: #FFF;
-    transition: background-color 0.3s ease-in-out;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-} */
-
-/* Irrelevant styling things */
-/* .close-btn:hover {
-    background-color: rgba(255, 0, 255, 0.6);
-} */
-
-/* .close-btn:focus {
-    outline: 0;
-} */
-
-/* .next-btn:hover {
-    background-color: rgba(255, 0, 0, 0.6);
-} */
-
-/* .next-btn:focus {
-    outline: 0;
-} */
 
 .step.minimized:hover {
     background-color: rgba(0, 0, 0, 0.06);
