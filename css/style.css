@@ -13,21 +13,11 @@ html {
 
 body, html{
 	background-color: rgba(255, 255, 255, 0.815);
-	/* height: 100%; */
-	/* position: relative; */
-	/* display: block; */
 }
 
 nav{
-	font-size: 20px;
+	font-size:16px;
 	background-color: rgba(255, 255, 255, 0.815);
-	/* opacity: 100; */
-}
-
-/* styling the partition line after each section */
-#partition{
-	border-top: 1px solid #000000;
-	width: 60%;
 }
 
 /* color of menu items on page load or before scrolling */
@@ -57,12 +47,9 @@ changes to black where the menu items turn white upon scrolling down */
 
 #menu-item{
 	font-family: 'DM Serif Display', serif;
-	/* font-family: 'Red Rose', cursive; */
-	/* font-family: 'Lora', serif; */
-	/* font-family: 'Fredericka the Great', cursive; */
 }
 .fa{
-  	font-size: 25px;
+  	font-size: 20px;
 }
 .fa-home{
     color: black;
@@ -75,6 +62,12 @@ changes to black where the menu items turn white upon scrolling down */
 }
 .fa-envelope{
     color: rgb(207, 0, 0);
+}
+
+/* styling the partition line after each section */
+#partition{
+	border-top: 1px solid #000000;
+	width:65%;
 }
 
 .back-to-top {
@@ -104,7 +97,7 @@ changes to black where the menu items turn white upon scrolling down */
 
 }
 
-
+/* __________________________________________________________________________________ */
 
 /* On smaller screens, where height is less than 450px, 
 change the style of the sidenav (less padding and a smaller font size) */
@@ -112,10 +105,6 @@ change the style of the sidenav (less padding and a smaller font size) */
     .navigationBar {padding-top: 15px;}
     .navigationBar a {font-size: 18px;}
 } */
-
-
-/* __________________________________________________________________________________ */
-
 
 /* html {
   height: 100%;
@@ -162,6 +151,3 @@ change the style of the sidenav (less padding and a smaller font size) */
     width: 75rem;
   }
 } */
-
-
-
