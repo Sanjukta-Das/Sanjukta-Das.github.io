@@ -66,7 +66,7 @@
 <body>
 
     <!-- ----------------------------------------------Menubar Start---------------------------------------------- -->
-    <nav class="justify-content-center px-5 pt-2 mb-5 sticky-top">
+    <nav class="justify-content-center px-3 pt-2 mb-3 sticky-top">
         <ul class="nav justify-content-center">
             <li  class="nav-item pr-5 pl-5">
                 <a href="https://sanjukta-das.github.io/" class="nav-link">
@@ -75,7 +75,7 @@
             </li>
 
             <li class="nav-item pr-5 pl-5">
-                <a class="nav-link" id="menu-item" href="html/projects.html">Portfolio</a>
+                <a class="nav-link" id="menu-item" href="html/projects.html">Projects</a>
             </li>
 
             <li class="nav-item pr-5 pl-5">
@@ -110,17 +110,38 @@
 
     <!-- ----------------------------------------------About Me Start---------------------------------------------- -->
     <br>
-    <div class="justify-content-center">
-        <pre class="justify-content-center m-5" style="font-family: 'Courier New', Courier, monospace; font-size: large;">
-            Hi, I am <strong>Sanjukta</strong>.
-            I am a Software Engineer, experienced in designing scalable backend systems, manufacturing test Software, data-driven validation frameworks, 
-            automation systems, cloud-native analytics applications and automated reporting systems in C++ and python. Proven track record of 
-            improving production yield visibility, release efficiency, and test reliability in high-volume production systems. 
-            Strong foundation in data structure & algorithms, with additional experience in financial analytics, statistical modeling, 
-            and large-scale data systems, building OLAP models.
-        </pre>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="container-xl">
+                    <figure class="figure text-center">
+                        <!-- <img src="images/sanjukta_3.jpeg" class="figure-img img-fluid rounded" alt="..."> -->
+                        <img src="images/sanjukta_4.jpeg" class="figure-img img-thumbnail img-fluid rounded" alt="..."  style="height: 600px;">
+                        <figcaption class="figure-caption">
+                            <header>
+                                <h1 id="heading">Sanjukta Das</h1>
+                                <p>Software Engineer</p>
+                            </header>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="container-xl">
+                    <p style="font-family: 'Courier New', Courier, monospace; font-size: large;">
+                        I am a Software Engineer, experienced in designing scalable backend systems, manufacturing test Software, data-driven validation frameworks, 
+                        automation systems, cloud-native analytics applications and automated reporting systems in C++ and python. Proven track record of 
+                        improving production yield visibility, release efficiency, and test reliability in high-volume production systems. 
+                        Strong foundation in data structure & algorithms, with additional experience in financial analytics, statistical modeling, 
+                        and large-scale data systems, building OLAP models.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="js/about-me.js"></script>
+
+    <!-- <script src="js/about-me.js"></script> -->
     <hr class="pt-4" id="partition">
     <!-- ----------------------------------------------About Me End---------------------------------------------- -->
 
@@ -132,7 +153,8 @@
 		<div class="col">
 			<div class="container-xl">
 				<div class="steps">
-                    <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Experience</h2>
+                    <!-- <h3 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Experience</h3> -->
+                    <h3 id="heading">Experience</h3>
                     <div class="step">
 						<div class="step-header">
 							<div class="header">Software Engineer</div>
@@ -140,30 +162,16 @@
 						</div>
 						<div class="step-content solidigm">
 							<p class="p-1">
-								<ul style="text-align: left;">
-									<li>
-                                        Build tool to automate tape release for test developers.
-									</li>
-									<li>
-                                        Created a python based tool to perform eFAI check on NPI SSDs.
-									</li>
-									<li>
-                                        Solely developed a web application to visualize and manipulate yield on High Volume Manufacturing & Testing of SSD.
-                                    </li>
-                                    <li>
-                                        Designed & developed a web application to standardize the validation program release process.
-                                    </li>
-                                    <li>
-                                        Created a JMP based application to gather usage statistics of iPC testers.
-                                    </li>
-                                    <li>
-                                        Successfully led the development and support of validation programs for multiple SSD products in C++, ensuring adherence to high-quality standards.
-                                    </li>
-								</ul>
+								Engineered data-driven validation and yield analytics systems for NAND SSDs across NPI and HVM environments. 
+                                Built Python-based platforms (Flask, Dash) enabling real-time production visibility, cutting manual analysis by ~80%. 
+                                Automated validation workflows (BRTC, eFAI) to accelerate release cycles and improve reliability at scale. 
+                                Contributed to C++ test infrastructure and led a $50M-impact project restoring fused drive functionality. 
+                                Strong focus on debugging, experimentation, and scalable test frameworks, 
+                                with experience mentoring engineers and supporting technical hiring.
 							</p>
 						</div>
 					</div>
-
+                    <!-- -------------------------------------------------------------------------------- -->
                     <div class="step minimized">
 						<div class="step-header">
 							<div class="header">Product Development Engineer</div>
@@ -171,20 +179,15 @@
 						</div>
 						<div class="step-content intel">
 							<p class="p-1">
-								<ul style="text-align: left;">
-									<li>
-										Developed a tool in Python that automatically installs Operating Systems and update BIOS on a set of dell blades.
-									</li>
-									<li>
-										The tool reads the OS & BIOS images from a repo and installs on dell servers using redfish REST endpoints.
-									</li>
-								</ul>
+								Built and optimized C++-based SSD test programs for NPI and high-volume manufacturing environments. 
+                                Refactored the test software stack into modular components, improving maintainability and decoupling production releases. 
+                                Performed yield analysis to validate test coverage and ensure alignment with internal quality targets. 
+                                Designed and executed complex debug experiments to isolate manufacturing-only failures. 
+                                Led initiatives to enhance tooling capabilities and drove adoption of modern development practices across the team.
 							</p>
 						</div>
 					</div>
-
-<!-- ------------------------------------------------------------------------------ -->
-
+                    <!-- -------------------------------------------------------------------------------- -->
 					<div class="step minimized">
 						<div class="step-header">
 							<div class="header">Product Development Engineer Intern</div>
@@ -192,55 +195,17 @@
 						</div>
 						<div class="step-content intel">
 							<p class="p-1">
-								<ul style="text-align: left;">
-									<li>
-                                        Collaborated with multiple teams – Operating Margin Task Force, IOTG-Finance, Sales & Marketing Group(SMG) – for data collection, analysis, modeling & visualization.
-									</li>
-									<li>
-                                        Performed
-                                        <ul>
-                                            <li>
-                                                Exploratory Data Analysis(EDA) of financial, and administrative data contained within the organization’s data warehouse to maximize insight, 
-                                                detect underlying structure, important variables, outliers & anomalies, test underlying assumptions, etc. 
-                                            </li>
-                                            <li>
-                                                Statistical analysis like hypothesis testing for validation and verification of data models.
-                                            </li>
-                                        </ul>
-									</li>
-									<li>
-										Designed, developed and maintained key indicators necessary to deliver analytical findings.
-									</li>
-									<li>
-										Developed and executed strategy for gathering and analyzing data, investigate data trends, anomalies and business opportunities.
-                                    </li>
-                                    <li>
-                                        Designed & developed
-                                        <ul>
-                                            <li>
-                                                Data visualizations and real-time dashboards to drive standardization and year-round tracking of IOTG Operating Margin.
-                                            </li>
-                                            <li>
-                                                Executive view dashboard with SKU level margin tool for Sales & Marketing Group team to set margin goals and allow comparable margin visibility.
-                                            </li>
-                                            <li>
-                                                Interactive team website with one stop project management repository using SharePoint, HTML, CSS and JavaScript.
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        Extensive use of Power BI to produce operational dashboards and visualization in support of in-depth analysis.
-                                    </li>
-                                    <li>
-                                        Achieved an accuracy of more than 85% on the data model(OLAP Cube) built for the margin tool embedded in the executive view dashboard for SMG team.
-                                    </li>
-								</ul>
+								Engineered a cloud-native data and analytics platform for NAND SSD manufacturing, 
+                                consolidating reporting and eliminating ~90% of manual analysis workflows. 
+                                Built Python-based applications (Flask, Dash) delivering real-time insights into yield, 
+                                test time, thermal metrics, and hardware health. Developed advanced statistical tools for 
+                                product monitoring, including outlier detection, kill limits, and validation reporting. 
+                                Established automated testing, CI/CD pipelines on Cloud Foundry, and robust version control practices, 
+                                enabling scalable and reliable application delivery.
 							</p>
 						</div>
 					</div>
-
-                    <!-- ___________________________________________________________________________________ -->
-
+                    <!-- -------------------------------------------------------------------------------- -->
 					<div class="step minimized">
 						<div class="step-header">
 							<div class="header">IOTG Profit Optimization Intern</div>
@@ -248,53 +213,15 @@
 						</div>
 						<div class="step-content intel">
 							<p class="p-1">
-								<ul style="text-align: left;">
-									<li>
-                                        Collaborated with multiple teams – Operating Margin Task Force, IOTG-Finance, Sales & Marketing Group(SMG) – for data collection, analysis, modeling & visualization.
-									</li>
-									<li>
-                                        Performed
-                                        <ul>
-                                            <li>
-                                                Exploratory Data Analysis(EDA) of financial, and administrative data contained within the organization’s data warehouse to maximize insight, 
-                                                detect underlying structure, important variables, outliers & anomalies, test underlying assumptions, etc. 
-                                            </li>
-                                            <li>
-                                                Statistical analysis like hypothesis testing for validation and verification of data models.
-                                            </li>
-                                        </ul>
-									</li>
-									<li>
-										Designed, developed and maintained key indicators necessary to deliver analytical findings.
-									</li>
-									<li>
-										Developed and executed strategy for gathering and analyzing data, investigate data trends, anomalies and business opportunities.
-                                    </li>
-                                    <li>
-                                        Designed & developed
-                                        <ul>
-                                            <li>
-                                                Data visualizations and real-time dashboards to drive standardization and year-round tracking of IOTG Operating Margin.
-                                            </li>
-                                            <li>
-                                                Executive view dashboard with SKU level margin tool for Sales & Marketing Group team to set margin goals and allow comparable margin visibility.
-                                            </li>
-                                            <li>
-                                                Interactive team website with one stop project management repository using SharePoint, HTML, CSS and JavaScript.
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        Extensive use of Power BI to produce operational dashboards and visualization in support of in-depth analysis.
-                                    </li>
-                                    <li>
-                                        Achieved an accuracy of more than 85% on the data model(OLAP Cube) built for the margin tool embedded in the executive view dashboard for SMG team.
-                                    </li>
-								</ul>
+								Designed and delivered data-driven analytics solutions for financial performance and operating margin optimization. 
+                                Processed and analyzed terabyte-scale datasets using EDA and statistical techniques to uncover trends, anomalies, and business opportunities. 
+                                Built Power BI dashboards and KPI systems enabling real-time tracking and standardization of operating margin metrics. 
+                                Developed an executive dashboard with an embedded SKU-level margin tool (OLAP-based) achieving >85% accuracy. 
+                                Collaborated across Finance and Sales teams and built a centralized SharePoint-based platform for project and data management.
 							</p>
 						</div>
 					</div>
-					
+                    <!-- -------------------------------------------------------------------------------- -->
 					<div class="step minimized">
 						<div class="step-header">
 							<div class="header">Monitoring & Visualization Engineer</div>
@@ -302,18 +229,12 @@
 						</div>
 						<div class="step-content hsbc">
 							<p class="p-1">
-                                <ul style="text-align: left;">
-                                    <li>
-                                        Developed a monitoring tool using Java and Google Web Toolkit to display network traffic statistics and heartbeats of a cluster of nodes.
-                                    </li>
-                                    <li>
-                                        Created matrix visualization of nodes connectivity status and network health.
-                                    </li>
-								</ul>
+                                Developed a monitoring tool using Java and Google Web Toolkit to display network traffic statistics and heartbeats of a cluster of nodes.
+                                Created matrix visualization of nodes connectivity status and network health.
 							</p>
 						</div>
 					</div>
-
+                    <!-- -------------------------------------------------------------------------------- -->
 					<div class="step minimized">
 						<div class="step-header">
 							<div class="header">Revenue Data Analyst</div>
@@ -321,24 +242,13 @@
 						</div>
 						<div class="step-content parle-agro">
 							<p class="p-1">
-                                <ul style="text-align: left;">
-									<!-- <li>
-                                        Administering both Primary and Secondary Sales of Modern Trade division.
-                                    </li>
-									<li>
-                                        Responsible for producing daily, weekly & monthly basis Purchase Order Tracking & Sales Report, updating MBQ of the products.
-                                    </li>
-									<li>
-                                        Oversee channeling of stock from manufacturer through the intermediaries to the consumer. (manufacturer - wholesalers - distributor - retailer)
-                                    </li>
-									<li>
-                                        Develop and execute promotion strategy.
-                                    </li> -->
-								</ul>
+                                Perform statistical analysis of both primary & secondary revenue data of Modern Trade division.
+                                Developed a web application using Python that generates revenue reports and visualization on a 
+                                daily, weekly & monthly basis when it's fed with PO Tracking data.
 							</p>
 						</div>
 					</div>
-					
+                    <!-- -------------------------------------------------------------------------------- -->
 					<div class="step minimized">
 						<div class="step-header">
 							<div class="header">Finance Analyst Intern</div>
@@ -346,22 +256,15 @@
 						</div>
 						<div class="step-content idbi-capital">
 							<p class="p-1">
-                                <ul style="text-align: left;">
-                                    <!-- <li>
-                                        Study factors affecting stock market volatility & investor perception towards market trading.
-                                    </li>
-                                    <li>
-                                        Data collections, analysis, and investigate trends in stock market data of 5 years i.e., from 2007 to 2012.
-                                    </li>
-                                    <li>
-                                        In these sessions, stock market was most volatile so I covered various analyses with most affected factors to the global market.
-                                    </li>  -->
-                                </ul>
+                                Data collections, analysis, and investigate trends in stock market data of 5 years i.e., from 2007 to 2011, 
+                                to study factors that contribute to market volatility. Developed an internal web application using HTML, CSS, 
+                                and JavaScript to visualize stock price fluctuations over a given duration of time. 
+                                Automating the process to generate daily reports indicating invalid, duplicate, and corrupt date and 
+                                other discrepancies which improved data quality by 80%.
 							</p>
-							<!-- <button class="next-btn">Next</button> -->
 						</div>
 					</div>
-					
+                    <!-- -------------------------------------------------------------------------------- -->
 					<div class="step minimized">
 						<div class="step-header">
 							<div class="header">Finance Analyst Intern</div>
@@ -369,32 +272,9 @@
 						</div>
 						<div class="step-content ohpc">
 							<p class="p-1">
-                                <ul style="text-align: left;">
-                                    <!-- <li>
-                                        Study Profitability and Performance of OHPC Limited for three financial years. 
-                                    </li>
-                                    <li>
-                                        prime role was to perform financial analysis, further more involved in the measuring the various ratio analysis and explicitly focusing on the working capital.
-                                    </li>
-                                    <li>
-                                        Collect accurate picture of strength and stability of the organization, know the Operational efficiency, to find out the profit and loss made by the business at the end of the interval and ascertain the financial position. 
-                                    </li>
-                                    <li>
-                                        Synthesizing and analyzing financial data (like budgets and income statement forecasts) with consideration for the company’s goals.
-                                    </li>
-                                    <li>
-                                        Generating reports, charts, and tables on financial information, and prepare a comparative study for previous 3 consecutive years on the performance and financial attributes of the organization.
-                                    </li>
-                                    <li>
-                                        Recommend alternate courses of actions to reduce costs and improve the company’s finances.
-                                    </li>
-                                    <li>
-                                        Suggest methodology for improvement in profitability and liquidity position.
-                                    </li> -->
-                                </ul>
-								
+                                I build systems that bring structure to financial data. From transaction workflows to real-time financial analytics, 
+                                I design tools that improve data accuracy, automate processes, and make key business metrics instantly accessible.								
 							</p>
-							<!-- <button class="close-btn">Close</button> -->
 						</div>
 					</div>
 				</div>
@@ -408,7 +288,9 @@
         <div class="col">
 			<div class="container-xl">
 				<div class="steps-edu">
-					<h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Education</h2>
+					<!-- <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Education</h2> -->
+                    <h3 id="heading">Education</h3>
+
 					<div class="step-edu">
 						<div class="step-header">
 							<div class="header">MS in Computer Science</div>

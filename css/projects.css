@@ -18,7 +18,7 @@
 
 #heading{
 	font-family: 'Fredericka the Great', cursive;
-	text-align: center;
+	/* text-align: center; */
 	opacity: 100%;
 	padding: 20px;
 }
